@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers type="array">
+  <customer>
+    <id type="integer">1614793</id>
+    <customer-number type="integer">1</customer-number>
+    <origin>manual</origin>
+    <created-at type="dateTime">2009-02-24T13:58:26-05:00</created-at>
+    <name>Adrienne Smith</name>
+    <phone-number>(404) 413-3294</phone-number>
+    <fax nil="true"/>
+    <service-address>Adrienne Smith
+1972 Wright's Way</service-address>
+    <service-city>Jonesboro</service-city>
+    <service-state>GA</service-state>
+    <service-zip-code>30236</service-zip-code>
+    <billing-address>Adrienne Smith
+1972 Wright's Way</billing-address>
+    <billing-city>Jonesboro</billing-city>
+    <billing-state>GA</billing-state>
+    <billing-zip-code>30236</billing-zip-code>
+    <special-instructions nil="true"/>
+    <email-address>asmith221@gmail.com</email-address>
+    <alt-phone-number nil="true"/>
+    <parent-id type="integer" nil="true"/>
+    <password-digest nil="true"/>
+    <list-id>800000AB-1220549967</list-id>
+    <time-created type="dateTime">2008-09-04T14:39:27-04:00</time-created>
+    <time-modified type="dateTime">2008-09-04T14:39:27-04:00</time-modified>
+    <edit-sequence>1220549967</edit-sequence>
+    <full-name>Adrienne Smith</full-name>
+    <is-active type="boolean">true</is-active>
+    <parent-ref-list-id nil="true"/>
+    <sublevel type="integer">0</sublevel>
+    <company-name nil="true"/>
+    <first-name>Adrienne</first-name>
+    <last-name>Smith</last-name>
+    <phone>(404) 413-3294</phone>
+    <mobile nil="true"/>
+    <pager nil="true"/>
+    <alt-phone nil="true"/>
+    <email>asmith221@gmail.com</email>
+    <contact>Adrian Smith</contact>
+    <alt-contact nil="true"/>
+    <customer-type-ref-full-name>Internet:Spotrunner Web</customer-type-ref-full-name>
+    <terms-ref-full-name>Due on receipt</terms-ref-full-name>
+    <sales-rep-ref-full-name>JT</sales-rep-ref-full-name>
+    <balance type="decimal">0.0</balance>
+    <total-balance type="decimal">0.0</total-balance>
+    <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>
+    <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>
+    <resale-number nil="true"/>
+    <account-number nil="true"/>
+    <credit-limit type="decimal" nil="true"/>
+    <preferred-payment-method-ref-full-name>Check</preferred-payment-method-ref-full-name>
+    <job-status>None</job-status>
+    <job-start-date type="dateTime" nil="true"/>
+    <job-projected-end-date type="dateTime" nil="true"/>
+    <job-end-date type="dateTime" nil="true"/>
+    <job-desc nil="true"/>
+    <job-type-ref-full-name nil="true"/>
+    <is-statement-with-parent type="boolean" nil="true"/>
+    <delivery-method nil="true"/>
+    <price-level-ref-full-name nil="true"/>
+    <custom-text1 nil="true"/>
+    <custom-number1 type="decimal" nil="true"/>
+    <custom-datetime1 type="dateTime" nil="true"/>
+    <custom-text2 nil="true"/>
+    <custom-number2 type="decimal" nil="true"/>
+    <custom-datetime2 type="dateTime" nil="true"/>
+    <custom-text3 nil="true"/>
+    <custom-number3 type="decimal" nil="true"/>
+    <custom-datetime3 type="dateTime" nil="true"/>
+    <custom-text4 nil="true"/>
+    <custom-number4 type="decimal" nil="true"/>
+    <custom-datetime4 type="dateTime" nil="true"/>
+    <custom-text5 nil="true"/>
+    <custom-number5 type="decimal" nil="true"/>
+    <custom-datetime5 type="dateTime" nil="true"/>
+    <custom-text6 nil="true"/>
+    <custom-number6 type="decimal" nil="true"/>
+    <custom-datetime6 type="dateTime" nil="true"/>
+    <custom-text7 nil="true"/>
+    <custom-number7 type="decimal" nil="true"/>
+    <custom-datetime7 type="dateTime" nil="true"/>
+    <custom-text8 nil="true"/>
+    <custom-number8 type="decimal" nil="true"/>
+    <custom-datetime8 type="dateTime" nil="true"/>
+    <custom-text9 nil="true"/>
+    <custom-number9 type="decimal" nil="true"/>
+    <custom-datetime9 type="dateTime" nil="true"/>
+    <custom-text10 nil="true"/>
+    <custom-number10 type="decimal" nil="true"/>
+    <custom-datetime10 type="dateTime" nil="true"/>
+    <updated-at type="dateTime">2009-02-24T14:00:09-05:00</updated-at>
+    <service-country></service-country>
+    <billing-country></billing-country>
+    <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>
+    <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>
+    <custom-text11 nil="true"/>
+    <custom-text12 nil="true"/>
+    <custom-text13 nil="true"/>
+    <custom-text14 nil="true"/>
+    <custom-text15 nil="true"/>
+    <custom-text16 nil="true"/>
+    <custom-text17 nil="true"/>
+    <custom-text18 nil="true"/>
+    <custom-text19 nil="true"/>
+    <custom-text20 nil="true"/>
+    <created-by type="integer" nil="true"/>
+    <updated-by type="integer" nil="true"/>
+    <tax-id type="integer" nil="true"/>
+    <which-billing-address>service</which-billing-address>
+    <customer-type-id type="integer" nil="true"/>
+    <customer-source-id type="integer" nil="true"/>
+    <import-id type="integer" nil="true"/>
+    <stripe-customer-id nil="true"/>
+    <token>i507UQopHskZWqyHFaalQrszpWJBg2XFmI5nQixXbq8</token>
+    <remember-me-token nil="true"/>
+    <latitude type="float" nil="true"/>
+    <longitude type="float" nil="true"/>
+    <company type="boolean">false</company>
+    <deleted-at type="dateTime" nil="true"/>
+    <qb-error nil="true"/>
+    <send-reminders type="boolean">true</send-reminders>
+    <notification-email-address nil="true"/>
+    <notification-phone-number nil="true"/>
+    <notify-via-email type="boolean">true</notify-via-email>
+    <notify-via-sms type="boolean">false</notify-via-sms>
+    <send-notifications type="boolean">true</send-notifications>
+    <notification-email nil="true"/>
+    <sales-terms-ref-id nil="true"/>
+    <sales-tax-code-id type="integer" nil="true"/>
+    <service-address-2 nil="true"/>
+    <billing-address-2 nil="true"/>
+    <children type="array">
+      <child type="Customer">
+        <id type="integer">1614794</id>
+        <customer-number type="integer">2</customer-number>
+        <origin>manual</origin>
+        <created-at type="dateTime">2009-02-24T13:58:26-05:00</created-at>
+        <name>083108AS</name>
+        <phone-number>(404) 413-3294</phone-number>
+        <fax nil="true"/>
+        <service-address>Adrienne Smith
+1972 Wright's Way</service-address>
+        <service-city>Jonesboro</service-city>
+        <service-state>GA</service-state>
+        <service-zip-code>30236</service-zip-code>
+        <billing-address>Adrienne Smith
+1972 Wright's Way</billing-address>
+        <billing-city>Jonesboro</billing-city>
+        <billing-state>GA</billing-state>
+        <billing-zip-code>30236</billing-zip-code>
+        <special-instructions nil="true"/>
+        <email-address>asmith221@gmail.com</email-address>
+        <alt-phone-number nil="true"/>
+        <parent-id type="integer">1614793</parent-id>
+        <password-digest nil="true"/>
+        <list-id>800000AC-1220550022</list-id>
+        <time-created type="dateTime">2008-09-04T14:40:22-04:00</time-created>
+        <time-modified type="dateTime">2008-09-04T14:41:30-04:00</time-modified>
+        <edit-sequence>1220550022</edit-sequence>
+        <full-name>083108AS</full-name>
+        <is-active type="boolean">true</is-active>
+        <parent-ref-list-id>800000AB-1220549967</parent-ref-list-id>
+        <sublevel type="integer">1</sublevel>
+        <company-name nil="true"/>
+        <first-name>Adrienne</first-name>
+        <last-name>Smith</last-name>
+        <phone>(404) 413-3294</phone>
+        <mobile nil="true"/>
+        <pager nil="true"/>
+        <alt-phone nil="true"/>
+        <email>asmith221@gmail.com</email>
+        <contact>Adrian Smith</contact>
+        <alt-contact nil="true"/>
+        <customer-type-ref-full-name>Internet:Spotrunner Web</customer-type-ref-full-name>
+        <terms-ref-full-name>Due on receipt</terms-ref-full-name>
+        <sales-rep-ref-full-name>JT</sales-rep-ref-full-name>
+        <balance type="decimal">0.0</balance>
+        <total-balance type="decimal">0.0</total-balance>
+        <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>
+        <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>
+        <resale-number nil="true"/>
+        <account-number nil="true"/>
+        <credit-limit type="decimal" nil="true"/>
+        <preferred-payment-method-ref-full-name nil="true"/>
+        <job-status>Closed</job-status>
+        <job-start-date type="dateTime">2008-08-31T00:00:00-04:00</job-start-date>
+        <job-projected-end-date type="dateTime">2008-08-31T00:00:00-04:00</job-projected-end-date>
+        <job-end-date type="dateTime">2008-08-31T00:00:00-04:00</job-end-date>
+        <job-desc>GOLD</job-desc>
+        <job-type-ref-full-name>Residential</job-type-ref-full-name>
+        <is-statement-with-parent type="boolean" nil="true"/>
+        <delivery-method nil="true"/>
+        <price-level-ref-full-name nil="true"/>
+        <custom-text1 nil="true"/>
+        <custom-number1 type="decimal" nil="true"/>
+        <custom-datetime1 type="dateTime" nil="true"/>
+        <custom-text2 nil="true"/>
+        <custom-number2 type="decimal" nil="true"/>
+        <custom-datetime2 type="dateTime" nil="true"/>
+        <custom-text3 nil="true"/>
+        <custom-number3 type="decimal" nil="true"/>
+        <custom-datetime3 type="dateTime" nil="true"/>
+        <custom-text4 nil="true"/>
+        <custom-number4 type="decimal" nil="true"/>
+        <custom-datetime4 type="dateTime" nil="true"/>
+        <custom-text5 nil="true"/>
+        <custom-number5 type="decimal" nil="true"/>
+        <custom-datetime5 type="dateTime" nil="true"/>
+        <custom-text6 nil="true"/>
+        <custom-number6 type="decimal" nil="true"/>
+        <custom-datetime6 type="dateTime" nil="true"/>
+        <custom-text7 nil="true"/>
+        <custom-number7 type="decimal" nil="true"/>
+        <custom-datetime7 type="dateTime" nil="true"/>
+        <custom-text8 nil="true"/>
+        <custom-number8 type="decimal" nil="true"/>
+        <custom-datetime8 type="dateTime" nil="true"/>
+        <custom-text9 nil="true"/>
+        <custom-number9 type="decimal" nil="true"/>
+        <custom-datetime9 type="dateTime" nil="true"/>
+        <custom-text10 nil="true"/>
+        <custom-number10 type="decimal" nil="true"/>
+        <custom-datetime10 type="dateTime" nil="true"/>
+        <updated-at type="dateTime">2009-02-24T14:00:09-05:00</updated-at>
+        <service-country></service-country>
+        <billing-country></billing-country>
+        <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>
+        <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>
+        <custom-text11 nil="true"/>
+        <custom-text12 nil="true"/>
+        <custom-text13 nil="true"/>
+        <custom-text14 nil="true"/>
+        <custom-text15 nil="true"/>
+        <custom-text16 nil="true"/>
+        <custom-text17 nil="true"/>
+        <custom-text18 nil="true"/>
+        <custom-text19 nil="true"/>
+        <custom-text20 nil="true"/>
+        <created-by type="integer" nil="true"/>
+        <updated-by type="integer" nil="true"/>
+        <tax-id type="integer" nil="true"/>
+        <which-billing-address>service</which-billing-address>
+        <customer-type-id type="integer" nil="true"/>
+        <customer-source-id type="integer" nil="true"/>
+        <import-id type="integer" nil="true"/>
+        <stripe-customer-id nil="true"/>
+        <token>8Y5UX7H8rs7A7ouE2_QM4ck7dQVwgpxdzKVX3TGZX08</token>
+        <remember-me-token nil="true"/>
+        <latitude type="float" nil="true"/>
+        <longitude type="float" nil="true"/>
+        <company type="boolean">false</company>
+        <deleted-at type="dateTime" nil="true"/>
+        <qb-error nil="true"/>
+        <send-reminders type="boolean">true</send-reminders>
+        <notification-email-address nil="true"/>
+        <notification-phone-number nil="true"/>
+        <notify-via-email type="boolean">true</notify-via-email>
+        <notify-via-sms type="boolean">false</notify-via-sms>
+        <send-notifications type="boolean">true</send-notifications>
+        <notification-email nil="true"/>
+        <sales-terms-ref-id nil="true"/>
+        <sales-tax-code-id type="integer" nil="true"/>
+        <service-address-2 nil="true"/>
+        <billing-address-2 nil="true"/>
+      </child>
+      <child type="Customer">
+        <id type="integer">1615208</id>
+        <customer-number type="integer">421</customer-number>
+        <origin>manual</origin>
+        <created-at type="dateTime">2009-03-30T17:38:54-04:00</created-at>
+        <name>Andrean smith (test)</name>
+        <phone-number>555-555-5555</phone-number>
+        <fax></fax>
+        <service-address>1972 Wright's Way
+</service-address>
+        <service-city>Jonesboro</service-city>
+        <service-state>GA</service-state>
+        <service-zip-code>30236</service-zip-code>
+        <billing-address>1972 Wright's Way
+</billing-address>
+        <billing-city>Jonesboro</billing-city>
+        <billing-state>GA</billing-state>
+        <billing-zip-code>30236</billing-zip-code>
+        <special-instructions>DVC $150</special-instructions>
+        <email-address></email-address>
+        <alt-phone-number></alt-phone-number>
+        <parent-id type="integer">1614793</parent-id>
+        <password-digest nil="true"/>
+        <list-id nil="true"/>
+        <time-created type="dateTime" nil="true"/>
+        <time-modified type="dateTime" nil="true"/>
+        <edit-sequence nil="true"/>
+        <full-name>Andrean smith (test)</full-name>
+        <is-active type="boolean">true</is-active>
+        <parent-ref-list-id nil="true"/>
+        <sublevel type="integer" nil="true"/>
+        <company-name nil="true"/>
+        <first-name nil="true"/>
+        <last-name nil="true"/>
+        <phone>555-555-5555</phone>
+        <mobile nil="true"/>
+        <pager nil="true"/>
+        <alt-phone nil="true"/>
+        <email nil="true"/>
+        <contact nil="true"/>
+        <alt-contact nil="true"/>
+        <customer-type-ref-full-name nil="true"/>
+        <terms-ref-full-name nil="true"/>
+        <sales-rep-ref-full-name nil="true"/>
+        <balance type="decimal" nil="true"/>
+        <total-balance type="decimal" nil="true"/>
+        <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>
+        <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>
+        <resale-number nil="true"/>
+        <account-number nil="true"/>
+        <credit-limit type="decimal" nil="true"/>
+        <preferred-payment-method-ref-full-name nil="true"/>
+        <job-status nil="true"/>
+        <job-start-date type="dateTime" nil="true"/>
+        <job-projected-end-date type="dateTime" nil="true"/>
+        <job-end-date type="dateTime" nil="true"/>
+        <job-desc nil="true"/>
+        <job-type-ref-full-name nil="true"/>
+        <is-statement-with-parent type="boolean" nil="true"/>
+        <delivery-method nil="true"/>
+        <price-level-ref-full-name nil="true"/>
+        <custom-text1>Better Business Bureau</custom-text1>
+        <custom-number1 type="decimal" nil="true"/>
+        <custom-datetime1 type="dateTime" nil="true"/>
+        <custom-text2>Existing Customer</custom-text2>
+        <custom-number2 type="decimal" nil="true"/>
+        <custom-datetime2 type="dateTime" nil="true"/>
+        <custom-text3></custom-text3>
+        <custom-number3 type="decimal" nil="true"/>
+        <custom-datetime3 type="dateTime" nil="true"/>
+        <custom-text4></custom-text4>
+        <custom-number4 type="decimal" nil="true"/>
+        <custom-datetime4 type="dateTime" nil="true"/>
+        <custom-text5 nil="true"/>
+        <custom-number5 type="decimal" nil="true"/>
+        <custom-datetime5 type="dateTime" nil="true"/>
+        <custom-text6 nil="true"/>
+        <custom-number6 type="decimal" nil="true"/>
+        <custom-datetime6 type="dateTime" nil="true"/>
+        <custom-text7 nil="true"/>
+        <custom-number7 type="decimal" nil="true"/>
+        <custom-datetime7 type="dateTime" nil="true"/>
+        <custom-text8 nil="true"/>
+        <custom-number8 type="decimal" nil="true"/>
+        <custom-datetime8 type="dateTime" nil="true"/>
+        <custom-text9 nil="true"/>
+        <custom-number9 type="decimal" nil="true"/>
+        <custom-datetime9 type="dateTime" nil="true"/>
+        <custom-text10 nil="true"/>
+        <custom-number10 type="decimal" nil="true"/>
+        <custom-datetime10 type="dateTime" nil="true"/>
+        <updated-at type="dateTime">2009-03-30T17:44:24-04:00</updated-at>
+        <service-country></service-country>
+        <billing-country></billing-country>
+        <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>
+        <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>
+        <custom-text11 nil="true"/>
+        <custom-text12 nil="true"/>
+        <custom-text13 nil="true"/>
+        <custom-text14 nil="true"/>
+        <custom-text15 nil="true"/>
+        <custom-text16 nil="true"/>
+        <custom-text17 nil="true"/>
+        <custom-text18 nil="true"/>
+        <custom-text19 nil="true"/>
+        <custom-text20 nil="true"/>
+        <created-by type="integer">11301</created-by>
+        <updated-by type="integer">11301</updated-by>
+        <tax-id type="integer" nil="true"/>
+        <which-billing-address>service</which-billing-address>
+        <customer-type-id type="integer" nil="true"/>
+        <customer-source-id type="integer">17961</customer-source-id>
+        <import-id type="integer" nil="true"/>
+        <stripe-customer-id nil="true"/>
+        <token>qtkST7mBoA5LWtW_I8VMI33USATVeUIgmFaewHE_8Ck</token>
+        <remember-me-token nil="true"/>
+        <latitude type="float" nil="true"/>
+        <longitude type="float" nil="true"/>
+        <company type="boolean">false</company>
+        <deleted-at type="dateTime" nil="true"/>
+        <qb-error nil="true"/>
+        <send-reminders type="boolean">true</send-reminders>
+        <notification-email-address nil="true"/>
+        <notification-phone-number nil="true"/>
+        <notify-via-email type="boolean">true</notify-via-email>
+        <notify-via-sms type="boolean">false</notify-via-sms>
+        <send-notifications type="boolean">true</send-notifications>
+        <notification-email nil="true"/>
+        <sales-terms-ref-id nil="true"/>
+        <sales-tax-code-id type="integer" nil="true"/>
+        <service-address-2 nil="true"/>
+        <billing-address-2 nil="true"/>
+      </child>
+    </children>
+  </customer>
+  <customer>
+    <id type="integer">1614795</id>
+    <customer-number type="integer">3</customer-number>
+    <origin>manual</origin>
+    <created-at type="dateTime">2009-02-24T13:58:26-05:00</created-at>
+    <name>Aime Pavao</name>
+    <phone-number>770-795-1310</phone-number>
+    <fax nil="true"/>
+    <service-address>Aime Pavao
+1177 Meadow Oaks Drive</service-address>
+    <service-city>Acworth</service-city>
+    <service-state>GA</service-state>
+    <service-zip-code>30102</service-zip-code>
+    <billing-address>Aime Pavao
+1177 Meadow Oaks Drive</billing-address>
+    <billing-city>Acworth</billing-city>
+    <billing-state>GA</billing-state>
+    <billing-zip-code>30102</billing-zip-code>
+    <special-instructions nil="true"/>
+    <email-address>apavao@comcast.net</email-address>
+    <alt-phone-number nil="true"/>
+    <parent-id type="integer" nil="true"/>
+    <password-digest nil="true"/>
+    <list-id>800000EF-1223666518</list-id>
+    <time-created type="dateTime">2008-10-10T16:21:58-04:00</time-created>
+    <time-modified type="dateTime">2008-10-10T16:21:58-04:00</time-modified>
+    <edit-sequence>1223666518</edit-sequence>
+    <full-name>Aime Pavao</full-name>
+    <is-active type="boolean">true</is-active>
+    <parent-ref-list-id nil="true"/>
+    <sublevel type="integer">0</sublevel>
+    <company-name nil="true"/>
+    <first-name>Aime</first-name>
+    <last-name>Pavao</last-name>
+    <phone>770-795-1310</phone>
+    <mobile nil="true"/>
+    <pager nil="true"/>
+    <alt-phone nil="true"/>
+    <email>apavao@comcast.net</email>
+    <contact>Aime Pavao</contact>
+    <alt-contact nil="true"/>
+    <customer-type-ref-full-name>Internet:Spotrunner Web</customer-type-ref-full-name>
+    <terms-ref-full-name>Due on receipt</terms-ref-full-name>
+    <sales-rep-ref-full-name>JT</sales-rep-ref-full-name>
+    <balance type="decimal">0.0</balance>
+    <total-balance type="decimal">0.0</total-balance>
+    <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>
+    <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>
+    <resale-number nil="true"/>
+    <account-number nil="true"/>
+    <credit-limit type="decimal" nil="true"/>
+    <preferred-payment-method-ref-full-name>MasterCard</preferred-payment-method-ref-full-name>
+    <job-status>None</job-status>
+    <job-start-date type="dateTime" nil="true"/>
+    <job-projected-end-date type="dateTime" nil="true"/>
+    <job-end-date type="dateTime" nil="true"/>
+    <job-desc nil="true"/>
+    <job-type-ref-full-name nil="true"/>
+    <is-statement-with-parent type="boolean" nil="true"/>
+    <delivery-method nil="true"/>
+    <price-level-ref-full-name nil="true"/>
+    <custom-text1 nil="true"/>
+    <custom-number1 type="decimal" nil="true"/>
+    <custom-datetime1 type="dateTime" nil="true"/>
+    <custom-text2 nil="true"/>
+    <custom-number2 type="decimal" nil="true"/>
+    <custom-datetime2 type="dateTime" nil="true"/>
+    <custom-text3 nil="true"/>
+    <custom-number3 type="decimal" nil="true"/>
+    <custom-datetime3 type="dateTime" nil="true"/>
+    <custom-text4 nil="true"/>
+    <custom-number4 type="decimal" nil="true"/>
+    <custom-datetime4 type="dateTime" nil="true"/>
+    <custom-text5 nil="true"/>
+    <custom-number5 type="decimal" nil="true"/>
+    <custom-datetime5 type="dateTime" nil="true"/>
+    <custom-text6 nil="true"/>
+    <custom-number6 type="decimal" nil="true"/>
+    <custom-datetime6 type="dateTime" nil="true"/>
+    <custom-text7 nil="true"/>
+    <custom-number7 type="decimal" nil="true"/>
+    <custom-datetime7 type="dateTime" nil="true"/>
+    <custom-text8 nil="true"/>
+    <custom-number8 type="decimal" nil="true"/>
+    <custom-datetime8 type="dateTime" nil="true"/>
+    <custom-text9 nil="true"/>
+    <custom-number9 type="decimal" nil="true"/>
+    <custom-datetime9 type="dateTime" nil="true"/>
+    <custom-text10 nil="true"/>
+    <custom-number10 type="decimal" nil="true"/>
+    <custom-datetime10 type="dateTime" nil="true"/>
+    <updated-at type="dateTime">2009-02-24T14:00:09-05:00</updated-at>
+    <service-country></service-country>
+    <billing-country></billing-country>
+    <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>
+    <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>
+    <custom-text11 nil="true"/>
+    <custom-text12 nil="true"/>
+    <custom-text13 nil="true"/>
+    <custom-text14 nil="true"/>
+    <custom-text15 nil="true"/>
+    <custom-text16 nil="true"/>
+    <custom-text17 nil="true"/>
+    <custom-text18 nil="true"/>
+    <custom-text19 nil="true"/>
+    <custom-text20 nil="true"/>
+    <created-by type="integer" nil="true"/>
+    <updated-by type="integer" nil="true"/>
+    <tax-id type="integer" nil="true"/>
+    <which-billing-address>service</which-billing-address>
+    <customer-type-id type="integer" nil="true"/>
+    <customer-source-id type="integer" nil="true"/>
+    <import-id type="integer" nil="true"/>
+    <stripe-customer-id nil="true"/>
+    <token>aM1x3Nf3L3Xq07Knz8JxkqfNRRAG-gDXOoNbUsMpOtc</token>
+    <remember-me-token nil="true"/>
+    <latitude type="float" nil="true"/>
+    <longitude type="float" nil="true"/>
+    <company type="boolean">false</company>
+    <deleted-at type="dateTime" nil="true"/>
+    <qb-error nil="true"/>
+    <send-reminders type="boolean">true</send-reminders>
+    <notification-email-address nil="true"/>
+    <notification-phone-number nil="true"/>
+    <notify-via-email type="boolean">true</notify-via-email>
+    <notify-via-sms type="boolean">false</notify-via-sms>
+    <send-notifications type="boolean">true</send-notifications>
+    <notification-email nil="true"/>
+    <sales-terms-ref-id nil="true"/>
+    <sales-tax-code-id type="integer" nil="true"/>
+    <service-address-2 nil="true"/>
+    <billing-address-2 nil="true"/>
+    <children type="array">
+      <child type="Customer">
+        <id type="integer">1614796</id>
+        <customer-number type="integer">4</customer-number>
+        <origin>manual</origin>
+        <created-at type="dateTime">2009-02-24T13:58:26-05:00</created-at>
+        <name>100908APDUCTDRYEROXINE</name>
+        <phone-number>770-795-1310</phone-number>
+        <fax nil="true"/>
+        <service-address>Aime Pavao
+1177 Meadow Oaks Drive</service-address>
+        <service-city>Acworth</service-city>
+        <service-state>GA</service-state>
+        <service-zip-code>30102</service-zip-code>
+        <billing-address>Aime Pavao
+1177 Meadow Oaks Drive</billing-address>
+        <billing-city>Acworth</billing-city>
+        <billing-state>GA</billing-state>
+        <billing-zip-code>30102</billing-zip-code>
+        <special-instructions nil="true"/>
+        <email-address>apavao@comcast.net</email-address>
+        <alt-phone-number nil="true"/>
+        <parent-id type="integer">1614795</parent-id>
+        <password-digest nil="true"/>
+        <list-id>800000F0-1223666564</list-id>
+        <time-created type="dateTime">2008-10-10T16:22:44-04:00</time-created>
+        <time-modified type="dateTime">2008-10-20T17:47:40-04:00</time-modified>
+        <edit-sequence>1223666730</edit-sequence>
+        <full-name>100908APDUCTDRYEROXINE</full-name>
+        <is-active type="boolean">true</is-active>
+        <parent-ref-list-id>800000EF-1223666518</parent-ref-list-id>
+        <sublevel type="integer">1</sublevel>
+        <company-name nil="true"/>
+        <first-name>Aime</first-name>
+        <last-name>Pavao</last-name>
+        <phone>770-795-1310</phone>
+        <mobile nil="true"/>
+        <pager nil="true"/>
+        <alt-phone nil="true"/>
+        <email>apavao@comcast.net</email>
+        <contact>Aime Pavao</contact>
+        <alt-contact nil="true"/>
+        <customer-type-ref-full-name>Internet:Spotrunner Web</customer-type-ref-full-name>
+        <terms-ref-full-name>Due on receipt</terms-ref-full-name>
+        <sales-rep-ref-full-name>JT</sales-rep-ref-full-name>
+        <balance type="decimal">0.0</balance>
+        <total-balance type="decimal">0.0</total-balance>
+        <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>
+        <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>
+        <resale-number nil="true"/>
+        <account-number nil="true"/>
+        <credit-limit type="decimal" nil="true"/>
+        <preferred-payment-method-ref-full-name>MasterCard</preferred-payment-method-ref-full-name>
+        <job-status>Closed</job-status>
+        <job-start-date type="dateTime">2008-10-09T00:00:00-04:00</job-start-date>
+        <job-projected-end-date type="dateTime">2008-10-09T00:00:00-04:00</job-projected-end-date>
+        <job-end-date type="dateTime">2008-10-10T00:00:00-04:00</job-end-date>
+        <job-desc>DUCT AND DRYER AND OXINE</job-desc>
+        <job-type-ref-full-name>Residential</job-type-ref-full-name>
+        <is-statement-with-parent type="boolean" nil="true"/>
+        <delivery-method nil="true"/>
+        <price-level-ref-full-name nil="true"/>
+        <custom-text1 nil="true"/>
+        <custom-number1 type="decimal" nil="true"/>
+        <custom-datetime1 type="dateTime" nil="true"/>
+        <custom-text2 nil="true"/>
+        <custom-number2 type="decimal" nil="true"/>
+        <custom-datetime2 type="dateTime" nil="true"/>
+        <custom-text3 nil="true"/>
+        <custom-number3 type="decimal" nil="true"/>
+        <custom-datetime3 type="dateTime" nil="true"/>
+        <custom-text4 nil="true"/>
+        <custom-number4 type="decimal" nil="true"/>
+        <custom-datetime4 type="dateTime" nil="true"/>
+        <custom-text5 nil="true"/>
+        <custom-number5 type="decimal" nil="true"/>
+        <custom-datetime5 type="dateTime" nil="true"/>
+        <custom-text6 nil="true"/>
+        <custom-number6 type="decimal" nil="true"/>
+        <custom-datetime6 type="dateTime" nil="true"/>
+        <custom-text7 nil="true"/>
+        <custom-number7 type="decimal" nil="true"/>
+        <custom-datetime7 type="dateTime" nil="true"/>
+        <custom-text8 nil="true"/>
+        <custom-number8 type="decimal" nil="true"/>
+        <custom-datetime8 type="dateTime" nil="true"/>
+        <custom-text9 nil="true"/>
+        <custom-number9 type="decimal" nil="true"/>
+        <custom-datetime9 type="dateTime" nil="true"/>
+        <custom-text10 nil="true"/>
+        <custom-number10 type="decimal" nil="true"/>
+        <custom-datetime10 type="dateTime" nil="true"/>
+        <updated-at type="dateTime">2009-02-24T14:00:09-05:00</updated-at>
+        <service-country></service-country>
+        <billing-country></billing-country>
+        <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>
+        <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>
+        <custom-text11 nil="true"/>
+        <custom-text12 nil="true"/>
+        <custom-text13 nil="true"/>
+        <custom-text14 nil="true"/>
+        <custom-text15 nil="true"/>
+        <custom-text16 nil="true"/>
+        <custom-text17 nil="true"/>
+        <custom-text18 nil="true"/>
+        <custom-text19 nil="true"/>
+        <custom-text20 nil="true"/>
+        <created-by type="integer" nil="true"/>
+        <updated-by type="integer" nil="true"/>
+        <tax-id type="integer" nil="true"/>
+        <which-billing-address>service</which-billing-address>
+        <customer-type-id type="integer" nil="true"/>
+        <customer-source-id type="integer" nil="true"/>
+        <import-id type="integer" nil="true"/>
+        <stripe-customer-id nil="true"/>
+        <token>8Sew-ORu13TKuMFAwjBb69z47eo_Rrp99pNSmB0gdoo</token>
+        <remember-me-token nil="true"/>
+        <latitude type="float" nil="true"/>
+        <longitude type="float" nil="true"/>
+        <company type="boolean">false</company>
+        <deleted-at type="dateTime" nil="true"/>
+        <qb-error nil="true"/>
+        <send-reminders type="boolean">true</send-reminders>
+        <notification-email-address nil="true"/>
+        <notification-phone-number nil="true"/>
+        <notify-via-email type="boolean">true</notify-via-email>
+        <notify-via-sms type="boolean">false</notify-via-sms>
+        <send-notifications type="boolean">true</send-notifications>
+        <notification-email nil="true"/>
+        <sales-terms-ref-id nil="true"/>
+        <sales-tax-code-id type="integer" nil="true"/>
+        <service-address-2 nil="true"/>
+        <billing-address-2 nil="true"/>
+      </child>
+    </children>
+  </customer>
+</customers>

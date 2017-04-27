@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs type="array">
+  <job>
+    <id type="integer">16168073</id>
+    <customer-id type="integer">2157206</customer-id>
+    <job-number type="integer">11334</job-number>
+    <created-at type="dateTime">2017-04-27T10:05:33-04:00</created-at>
+    <name>Dryer Vent Cleaning</name>
+    <scheduled-on type="dateTime">2022-02-06T12:00:00-05:00</scheduled-on>
+    <completed-on type="dateTime" nil="true"/>
+    <ok-to-sync type="boolean" nil="true"/>
+    <txn-id nil="true"/>
+    <edit-sequence nil="true"/>
+    <ref-number nil="true"/>
+    <subtotal type="decimal">250.0</subtotal>
+    <tax type="decimal">0.0</tax>
+    <balance-remaining type="decimal">250.0</balance-remaining>
+    <estimate-type nil="true"/>
+    <self-service type="boolean">false</self-service>
+    <custom-text1>Natasha Tarr</custom-text1>
+    <custom-number1 type="decimal" nil="true"/>
+    <custom-datetime1 type="dateTime" nil="true"/>
+    <custom-text2></custom-text2>
+    <custom-number2 type="decimal" nil="true"/>
+    <custom-datetime2 type="dateTime" nil="true"/>
+    <custom-text3></custom-text3>
+    <custom-number3 type="decimal" nil="true"/>
+    <custom-datetime3 type="dateTime" nil="true"/>
+    <custom-text4></custom-text4>
+    <custom-number4 type="decimal" nil="true"/>
+    <custom-datetime4 type="dateTime" nil="true"/>
+    <custom-text5>Inbound</custom-text5>
+    <custom-number5 type="decimal" nil="true"/>
+    <custom-datetime5 type="dateTime" nil="true"/>
+    <custom-text6></custom-text6>
+    <custom-number6 type="decimal" nil="true"/>
+    <custom-datetime6 type="dateTime" nil="true"/>
+    <custom-text7></custom-text7>
+    <custom-number7 type="decimal" nil="true"/>
+    <custom-datetime7 type="dateTime" nil="true"/>
+    <custom-text8></custom-text8>
+    <custom-number8 type="decimal" nil="true"/>
+    <custom-datetime8 type="dateTime" nil="true"/>
+    <custom-text9></custom-text9>
+    <custom-number9 type="decimal" nil="true"/>
+    <custom-datetime9 type="dateTime" nil="true"/>
+    <custom-text10></custom-text10>
+    <custom-number10 type="decimal" nil="true"/>
+    <custom-datetime10 type="dateTime" nil="true"/>
+    <total type="decimal">250.0</total>
+    <recurring-job-id type="integer">7102958</recurring-job-id>
+    <recurring-interval nil="true"/>
+    <updated-at type="dateTime">2017-04-27T10:05:34-04:00</updated-at>
+    <job-type-id type="integer">14759</job-type-id>
+    <job-status-id type="integer" nil="true"/>
+    <recurring-end-date type="dateTime" nil="true"/>
+    <customer-ref-list-id>80001023-1443309950</customer-ref-list-id>
+    <txn-number nil="true"/>
+    <txn-date type="dateTime" nil="true"/>
+    <sales-tax-percentage type="decimal">0.0</sales-tax-percentage>
+    <item-sales-tax-ref-list-id nil="true"/>
+    <item-sales-tax-ref-full-name nil="true"/>
+    <customer-sales-tax-code-ref-list-id nil="true"/>
+    <customer-sales-tax-code-ref-full-name nil="true"/>
+    <custom-text11></custom-text11>
+    <custom-text12></custom-text12>
+    <custom-text13></custom-text13>
+    <custom-text14></custom-text14>
+    <custom-text15></custom-text15>
+    <custom-text16></custom-text16>
+    <custom-text17></custom-text17>
+    <custom-text18></custom-text18>
+    <custom-text19></custom-text19>
+    <custom-text20></custom-text20>
+    <duration type="decimal" nil="true"/>
+    <ends-at type="dateTime" nil="true"/>
+    <created-by type="integer">11315</created-by>
+    <updated-by type="integer" nil="true"/>
+    <invoice-terms>Due upon receipt
+
+Upon cleaning dryer we got a burning smell coming from dryer. Might be advised to have an appliance man come take a look at dryer to make sure the element is not going out in it.
+
+
+Please make arranggement to pay invoice. 
+
+Thank You
+</invoice-terms>
+    <invoice-notes>There is a 1.5% monthly fee for past due invoices. Thank you for your business.</invoice-notes>
+    <estimate-terms>Bid price good for 7 days.</estimate-terms>
+    <estimate-notes></estimate-notes>
+    <tax-id type="integer" nil="true"/>
+    <ship-date type="dateTime">2015-05-12T00:00:00-04:00</ship-date>
+    <ship-method-ref-full-name nil="true"/>
+    <description>$250,Stockbridge,DVC.</description>
+    <chosen-days-of-week type="array"/>
+    <max-recurring-iterator type="integer" nil="true"/>
+    <recurring-iterator type="integer" nil="true"/>
+    <detailed-invoice type="boolean">true</detailed-invoice>
+    <service-type-id type="integer" nil="true"/>
+    <status>scheduled</status>
+    <invoice-status>unpaid</invoice-status>
+    <invoice-date type="dateTime" nil="true"/>
+    <invoice-sent-date type="dateTime" nil="true"/>
+    <tasks-count type="integer">4</tasks-count>
+    <won-date type="dateTime">2015-05-11T00:00:00-04:00</won-date>
+    <po-number nil="true"/>
+    <deleted-at type="dateTime" nil="true"/>
+    <schedule nil="true"/>
+    <on-hold type="dateTime" nil="true"/>
+    <estimate-scheduled-on type="dateTime" nil="true"/>
+    <estimate-sent-on type="dateTime" nil="true"/>
+    <estimate-viewed-on type="dateTime" nil="true"/>
+    <invoice-viewed-on type="dateTime" nil="true"/>
+    <lost-date type="dateTime" nil="true"/>
+    <started-on type="dateTime" nil="true"/>
+    <canceled-on type="dateTime" nil="true"/>
+    <qb-error nil="true"/>
+    <invoice-paid-on type="dateTime" nil="true"/>
+    <notification-sent type="boolean">false</notification-sent>
+    <total-expenses type="decimal" nil="true"/>
+  </job>
+  <job>
+    <id type="integer">16168072</id>
+    <customer-id type="integer">2157206</customer-id>
+    <job-number type="integer">11333</job-number>
+    <created-at type="dateTime">2017-04-27T10:05:32-04:00</created-at>
+    <name>Dryer Vent Cleaning</name>
+    <scheduled-on type="dateTime">2021-08-06T12:00:00-04:00</scheduled-on>
+    <completed-on type="dateTime" nil="true"/>
+    <ok-to-sync type="boolean" nil="true"/>
+    <txn-id nil="true"/>
+    <edit-sequence nil="true"/>
+    <ref-number nil="true"/>
+    <subtotal type="decimal">250.0</subtotal>
+    <tax type="decimal">0.0</tax>
+    <balance-remaining type="decimal">250.0</balance-remaining>
+    <estimate-type nil="true"/>
+    <self-service type="boolean">false</self-service>
+    <custom-text1>Natasha Tarr</custom-text1>
+    <custom-number1 type="decimal" nil="true"/>
+    <custom-datetime1 type="dateTime" nil="true"/>
+    <custom-text2></custom-text2>
+    <custom-number2 type="decimal" nil="true"/>
+    <custom-datetime2 type="dateTime" nil="true"/>
+    <custom-text3></custom-text3>
+    <custom-number3 type="decimal" nil="true"/>
+    <custom-datetime3 type="dateTime" nil="true"/>
+    <custom-text4></custom-text4>
+    <custom-number4 type="decimal" nil="true"/>
+    <custom-datetime4 type="dateTime" nil="true"/>
+    <custom-text5>Inbound</custom-text5>
+    <custom-number5 type="decimal" nil="true"/>
+    <custom-datetime5 type="dateTime" nil="true"/>
+    <custom-text6></custom-text6>
+    <custom-number6 type="decimal" nil="true"/>
+    <custom-datetime6 type="dateTime" nil="true"/>
+    <custom-text7></custom-text7>
+    <custom-number7 type="decimal" nil="true"/>
+    <custom-datetime7 type="dateTime" nil="true"/>
+    <custom-text8></custom-text8>
+    <custom-number8 type="decimal" nil="true"/>
+    <custom-datetime8 type="dateTime" nil="true"/>
+    <custom-text9></custom-text9>
+    <custom-number9 type="decimal" nil="true"/>
+    <custom-datetime9 type="dateTime" nil="true"/>
+    <custom-text10></custom-text10>
+    <custom-number10 type="decimal" nil="true"/>
+    <custom-datetime10 type="dateTime" nil="true"/>
+    <total type="decimal">250.0</total>
+    <recurring-job-id type="integer">7102958</recurring-job-id>
+    <recurring-interval nil="true"/>
+    <updated-at type="dateTime">2017-04-27T10:05:32-04:00</updated-at>
+    <job-type-id type="integer">14759</job-type-id>
+    <job-status-id type="integer" nil="true"/>
+    <recurring-end-date type="dateTime" nil="true"/>
+    <customer-ref-list-id>80001023-1443309950</customer-ref-list-id>
+    <txn-number nil="true"/>
+    <txn-date type="dateTime" nil="true"/>
+    <sales-tax-percentage type="decimal">0.0</sales-tax-percentage>
+    <item-sales-tax-ref-list-id nil="true"/>
+    <item-sales-tax-ref-full-name nil="true"/>
+    <customer-sales-tax-code-ref-list-id nil="true"/>
+    <customer-sales-tax-code-ref-full-name nil="true"/>
+    <custom-text11></custom-text11>
+    <custom-text12></custom-text12>
+    <custom-text13></custom-text13>
+    <custom-text14></custom-text14>
+    <custom-text15></custom-text15>
+    <custom-text16></custom-text16>
+    <custom-text17></custom-text17>
+    <custom-text18></custom-text18>
+    <custom-text19></custom-text19>
+    <custom-text20></custom-text20>
+    <duration type="decimal" nil="true"/>
+    <ends-at type="dateTime" nil="true"/>
+    <created-by type="integer">11315</created-by>
+    <updated-by type="integer" nil="true"/>
+    <invoice-terms>Due upon receipt
+
+Upon cleaning dryer we got a burning smell coming from dryer. Might be advised to have an appliance man come take a look at dryer to make sure the element is not going out in it.
+
+
+Please make arranggement to pay invoice. 
+
+Thank You
+</invoice-terms>
+    <invoice-notes>There is a 1.5% monthly fee for past due invoices. Thank you for your business.</invoice-notes>
+    <estimate-terms>Bid price good for 7 days.</estimate-terms>
+    <estimate-notes></estimate-notes>
+    <tax-id type="integer" nil="true"/>
+    <ship-date type="dateTime">2015-05-12T00:00:00-04:00</ship-date>
+    <ship-method-ref-full-name nil="true"/>
+    <description>$250,Stockbridge,DVC.</description>
+    <chosen-days-of-week type="array"/>
+    <max-recurring-iterator type="integer" nil="true"/>
+    <recurring-iterator type="integer" nil="true"/>
+    <detailed-invoice type="boolean">true</detailed-invoice>
+    <service-type-id type="integer" nil="true"/>
+    <status>scheduled</status>
+    <invoice-status>unpaid</invoice-status>
+    <invoice-date type="dateTime" nil="true"/>
+    <invoice-sent-date type="dateTime" nil="true"/>
+    <tasks-count type="integer">4</tasks-count>
+    <won-date type="dateTime">2015-05-11T00:00:00-04:00</won-date>
+    <po-number nil="true"/>
+    <deleted-at type="dateTime" nil="true"/>
+    <schedule nil="true"/>
+    <on-hold type="dateTime" nil="true"/>
+    <estimate-scheduled-on type="dateTime" nil="true"/>
+    <estimate-sent-on type="dateTime" nil="true"/>
+    <estimate-viewed-on type="dateTime" nil="true"/>
+    <invoice-viewed-on type="dateTime" nil="true"/>
+    <lost-date type="dateTime" nil="true"/>
+    <started-on type="dateTime" nil="true"/>
+    <canceled-on type="dateTime" nil="true"/>
+    <qb-error nil="true"/>
+    <invoice-paid-on type="dateTime" nil="true"/>
+    <notification-sent type="boolean">false</notification-sent>
+    <total-expenses type="decimal" nil="true"/>
+  </job>
+</jobs>
