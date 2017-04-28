@@ -12,8 +12,8 @@
     <txn-id nil="true"/>
     <edit-sequence nil="true"/>
     <ref-number nil="true"/>
-    <subtotal type="decimal">250.0</subtotal>
-    <tax type="decimal">0.0</tax>
+    <subtotal type="decimal">275.0</subtotal>
+    <tax type="decimal">10.0</tax>
     <balance-remaining type="decimal">250.0</balance-remaining>
     <estimate-type nil="true"/>
     <self-service type="boolean">false</self-service>
