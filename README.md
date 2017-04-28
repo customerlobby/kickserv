@@ -41,6 +41,20 @@ end
 client = Kickserv.client
 ```
 
+### Get customers
+
+```ruby
+client.customers
+client.customers(page: 2)
+```
+
+### Get jobs
+
+```ruby
+client.jobs
+client.jobs(page: 2, only: %w{total subtotal})
+```
+
 ## Contributing
 
 1. Fork it
