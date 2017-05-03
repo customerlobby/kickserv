@@ -29,7 +29,7 @@ There are two ways to configure the  gem. You can pass a hash of configuration o
 a client, or you can use a configure block.
 
 ```ruby
-client = Kickserv.client(api_key: "YOUR_TOKEN_HERE", subdomain: "YOUR_DOMAIN_HERE")
+client = Kickserv.client(api_key: "YOUR_TOKEN_HERE", subdomain: "YOUR_SUBDOMAIN_HERE")
 ```
 
 ```ruby
@@ -39,6 +39,20 @@ Kickserv.configure do |config|
 end
 
 client = Kickserv.client
+```
+
+### Get customers
+
+```ruby
+client.customers
+client.customers(page: 2)
+```
+
+### Get jobs
+
+```ruby
+client.jobs
+client.jobs(page: 2, only: %w{total subtotal})
 ```
 
 ## Contributing
