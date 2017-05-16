@@ -31,13 +31,13 @@
     <is-active type="boolean">true</is-active>
     <parent-ref-list-id nil="true"/>
     <sublevel type="integer">0</sublevel>
-    <company-name nil="true"/>
+    <company-name>not company</company-name>
     <first-name>Adrienne</first-name>
     <last-name>Smith</last-name>
     <phone>(404) 413-3294</phone>
-    <mobile nil="true"/>
+    <mobile>123-456</mobile>
     <pager nil="true"/>
-    <alt-phone nil="true"/>
+    <alt-phone>456-789</alt-phone>
     <email>asmith221@gmail.com</email>
     <contact>Adrian Smith</contact>
     <alt-contact nil="true"/>
@@ -130,7 +130,7 @@
     <notification-email nil="true"/>
     <sales-terms-ref-id nil="true"/>
     <sales-tax-code-id type="integer" nil="true"/>
-    <service-address-2 nil="true"/>
+    <service-address-2>Room.1</service-address-2>
     <billing-address-2 nil="true"/>
     <children type="array">
       <child type="Customer">

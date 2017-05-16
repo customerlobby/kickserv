@@ -9,3 +9,9 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+def source(file_name)
+  path = File.expand_path('../fixtures', __FILE__)
+  File.join(path, file_name)
+end
+
