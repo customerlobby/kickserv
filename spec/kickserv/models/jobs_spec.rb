@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Kickserv::Client::Jobs do
+RSpec.describe Kickserv::Model::Job do
   it 'should get jobs' do
     client = Kickserv::Client.new
     expect(client).to receive(:get).with('jobs.xml', page: 2).and_return("xml")

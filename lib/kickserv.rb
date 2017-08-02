@@ -6,7 +6,6 @@ require "kickserv/version"
 require File.expand_path('../kickserv/configuration', __FILE__)
 require File.expand_path('../kickserv/api', __FILE__)
 require File.expand_path('../kickserv/client', __FILE__)
-require File.expand_path('../kickserv/xml_reader',__FILE__)
 
 module Kickserv
   extend Configuration

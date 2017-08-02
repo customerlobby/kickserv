@@ -1,9 +1,10 @@
 module Kickserv
-  # Wrapper for the Kickserv REST API.
+  # Wrapper for the Kickserv HTTP API.
   class Client < API
-    Dir[File.expand_path('../client/*.rb', __FILE__)].each{|f| require f}
+    require File.expand_path('../models/customer', __FILE__)
+    require File.expand_path('../models/job', __FILE__)
 
-    include Kickserv::Client::Customers
-    include Kickserv::Client::Jobs
+    include Kickserv::Models::Customer
+    include Kickserv::Models::Job
   end
 end
