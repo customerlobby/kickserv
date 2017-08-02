@@ -1,5 +1,6 @@
 require File.expand_path('../../errors/authorization_error', __FILE__)
 require File.expand_path('../../errors/connection_error', __FILE__)
+require File.expand_path('../../http_utils/response', __FILE__)
 
 module Kickserv
   module HttpUtils
@@ -35,8 +36,10 @@ module Kickserv
             request.options.open_timeout = 300   # connection timeout
           end
         rescue
+          # handle connection related failures and raise gem specific standard error
           raise ConnectionError.new, 'Connection failed.'
         end
+        # check if the status code is 401
         if response.status == 401
           raise AuthorizationError.new, 'Invalid credentials.'
         else
