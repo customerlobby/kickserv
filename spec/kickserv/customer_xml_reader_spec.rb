@@ -3,7 +3,7 @@ require 'nokogiri'
 
 RSpec.configure do |config|
   config.before(:each) do
-    @customers =  Kickserv::CustomerXmlReader.new(File.read(source("customers.xml"))).customers
+    @customers = Kickserv::CustomerXmlReader.new(File.read(source("customers.xml"))).customers
   end
 end
 
@@ -40,26 +40,20 @@ RSpec.describe Kickserv::CustomerXmlReader do
     expect(@customers[0]["notify-via-email"]).to eq("true")
     expect(@customers[0]["send-notifications"]).to eq("true")
   end
-end
 
-# Total number of keys in customer xml.
-RSpec.describe Kickserv::CustomerXmlReader do
+  # Total number of keys in customer xml.
   it "should check customer object of type xml" do
     xml_file = File.read(source("customers.xml"))
     doc = Nokogiri::XML.parse(xml_file)
     expect(doc.class).to eq(Nokogiri::XML::Document)
   end
-end
 
-# Total number of keys in customer xml.
-RSpec.describe Kickserv::CustomerXmlReader do
+  # Total number of keys in customer xml.
   it "should check customer total number of attributes" do
     expect(@customers[0].keys.length).to eq(35)
   end
-end
 
-# Test case for validate xml fields
-RSpec.describe Kickserv::CustomerXmlReader do
+  # Test case for validate xml fields
   it "should validate fields for customer xml" do
     key_hash = ['id', 'name', 'first-name', 'last-name', 'email', 'phone',
                 'alt-phone-number', 'alt-phone', 'mobile',

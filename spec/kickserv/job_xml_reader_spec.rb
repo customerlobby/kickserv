@@ -28,26 +28,20 @@ RSpec.describe Kickserv::JobXmlReader do
     expect(@jobs[0]["invoice-status"]).to eq("unpaid")
     expect(@jobs[0]["notification-sent"]).to eq("false")
   end
-end
 
-# Total number of keys in job xml.
-RSpec.describe Kickserv::JobXmlReader do
+  # Total number of keys in job xml.
   it "should check job total number of attributes" do
     expect(@jobs[0].keys.length).to eq(26)
   end
-end
 
-# Total number of keys in customer xml.
-RSpec.describe Kickserv::JobXmlReader do
+  # Total number of keys in customer xml.
   it "should check job object of type xml" do
     xml_file = File.read(source("jobs.xml"))
     doc = Nokogiri::XML.parse(xml_file)
     expect(doc.class).to eq(Nokogiri::XML::Document)
   end
-end
 
-# Test case for validate xml fields
-RSpec.describe Kickserv::CustomerXmlReader do
+  # Test case for validate xml fields
   it "should validate fields for jobs xml" do
     key_hash = ['id', 'customer-id', 'total', 'subtotal', 'balance-remaining',
                 'created-at', 'scheduled-on', 'started-on', 'completed-on',
