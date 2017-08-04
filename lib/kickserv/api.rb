@@ -1,9 +1,13 @@
-require File.expand_path('../request', __FILE__)
-require File.expand_path('../response', __FILE__)
-require File.expand_path('../connection', __FILE__)
+require File.expand_path('../http_utils/request', __FILE__)
+require File.expand_path('../http_utils/response', __FILE__)
+require File.expand_path('../http_utils/connection', __FILE__)
 
 module Kickserv
+  # Kickserv HTTP API Handler Implementation
   class API
+    include HttpUtils::Request
+    include HttpUtils::Response
+    include HttpUtils::Connection
 
     attr_accessor *Configuration::VALID_OPTIONS_KEYS
 
@@ -21,9 +25,5 @@ module Kickserv
       end
       conf
     end
-
-    include Request
-    include Response
-    include Connection
   end
 end

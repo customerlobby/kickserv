@@ -1,0 +1,1071 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://daffyducts.kickservapp.com/customers.xml?service_zip_code=30102
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Authorization:
+      - Basic MGVkNzNlZDVlMGUxNzYzMzZiMjkxZjI5ZGEzZjUzNTE3ZDM4YmY3YjowZWQ3M2VkNWUwZTE3NjMzNmIyOTFmMjlkYTNmNTM1MTdkMzhiZjdi
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      cache-control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      content-type:
+      - application/xml; charset=utf-8
+      date:
+      - Fri, 04 Aug 2017 12:31:36 GMT
+      expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      pragma:
+      - no-cache
+      server:
+      - Kickserv
+      set-cookie:
+      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTY2YzFjNjJhY2RjMjI4YTA0MzNmZGY3ZmY4ZjI0MWU0BjsAVEkiDnJldHVybl90bwY7AEYiKi9jdXN0b21lcnMueG1sP3NlcnZpY2VfemlwX2NvZGU9MzAxMDI%3D--a912b6c8ed33e8970bafb40642615b2c1c74af16;
+        domain=.kickservapp.com; path=/; secure; HttpOnly
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - fa74aede-ad94-442a-bd73-4351b7581a87
+      x-revision:
+      - 67a1a84f27ec46afa3a239b981591786763d139a
+      x-runtime:
+      - '0.245012'
+      x-served-by:
+      - chandler
+      x-transaction:
+      - 520278e7-dcbb-4410-ad19-69f5f8cf67b8
+      x-xss-protection:
+      - 1; mode=block
+      content-length:
+      - '7620'
+      connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<customers type=\"array\">\n
+        \ <customer>\n    <id type=\"integer\">1614795</id>\n    <customer-number
+        type=\"integer\">3</customer-number>\n    <origin>manual</origin>\n    <created-at
+        type=\"dateTime\">2009-02-24T13:58:26-05:00</created-at>\n    <name>Aime Pavao</name>\n
+        \   <phone-number>770-795-1310</phone-number>\n    <fax nil=\"true\"/>\n    <service-address>Aime
+        Pavao\n1177 Meadow Oaks Drive</service-address>\n    <service-city>Acworth</service-city>\n
+        \   <service-state>GA</service-state>\n    <service-zip-code>30102</service-zip-code>\n
+        \   <billing-address>Aime Pavao\n1177 Meadow Oaks Drive</billing-address>\n
+        \   <billing-city>Acworth</billing-city>\n    <billing-state>GA</billing-state>\n
+        \   <billing-zip-code>30102</billing-zip-code>\n    <special-instructions
+        nil=\"true\"/>\n    <email-address>apavao@comcast.net</email-address>\n    <alt-phone-number
+        nil=\"true\"/>\n    <parent-id type=\"integer\" nil=\"true\"/>\n    <password-digest
+        nil=\"true\"/>\n    <list-id>800000EF-1223666518</list-id>\n    <time-created
+        type=\"dateTime\">2008-10-10T16:21:58-04:00</time-created>\n    <time-modified
+        type=\"dateTime\">2008-10-10T16:21:58-04:00</time-modified>\n    <edit-sequence>1223666518</edit-sequence>\n
+        \   <full-name>Aime Pavao</full-name>\n    <is-active type=\"boolean\">true</is-active>\n
+        \   <parent-ref-list-id nil=\"true\"/>\n    <sublevel type=\"integer\">0</sublevel>\n
+        \   <company-name nil=\"true\"/>\n    <first-name>Aime</first-name>\n    <last-name>Pavao</last-name>\n
+        \   <phone>770-795-1310</phone>\n    <mobile nil=\"true\"/>\n    <pager nil=\"true\"/>\n
+        \   <alt-phone nil=\"true\"/>\n    <email>apavao@comcast.net</email>\n    <contact>Aime
+        Pavao</contact>\n    <alt-contact nil=\"true\"/>\n    <customer-type-ref-full-name>Internet:Spotrunner
+        Web</customer-type-ref-full-name>\n    <terms-ref-full-name>Due on receipt</terms-ref-full-name>\n
+        \   <sales-rep-ref-full-name>JT</sales-rep-ref-full-name>\n    <balance type=\"decimal\">0.0</balance>\n
+        \   <total-balance type=\"decimal\">0.0</total-balance>\n    <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n
+        \   <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>\n
+        \   <resale-number nil=\"true\"/>\n    <account-number nil=\"true\"/>\n    <credit-limit
+        type=\"decimal\" nil=\"true\"/>\n    <preferred-payment-method-ref-full-name>MasterCard</preferred-payment-method-ref-full-name>\n
+        \   <job-status>None</job-status>\n    <job-start-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-projected-end-date type=\"dateTime\" nil=\"true\"/>\n    <job-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-desc nil=\"true\"/>\n    <job-type-ref-full-name
+        nil=\"true\"/>\n    <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n
+        \   <delivery-method nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n
+        \   <custom-text1 nil=\"true\"/>\n    <custom-number1 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime1 type=\"dateTime\" nil=\"true\"/>\n    <custom-text2
+        nil=\"true\"/>\n    <custom-number2 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime2
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text3 nil=\"true\"/>\n    <custom-number3
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text4 nil=\"true\"/>\n    <custom-number4 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n    <custom-text5
+        nil=\"true\"/>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime5
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text6 nil=\"true\"/>\n    <custom-number6
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text7 nil=\"true\"/>\n    <custom-number7 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime7 type=\"dateTime\" nil=\"true\"/>\n    <custom-text8
+        nil=\"true\"/>\n    <custom-number8 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text9 nil=\"true\"/>\n    <custom-number9
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text10 nil=\"true\"/>\n    <custom-number10 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime10 type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2009-02-24T14:00:09-05:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\" nil=\"true\"/>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\" nil=\"true\"/>\n    <import-id type=\"integer\" nil=\"true\"/>\n
+        \   <stripe-customer-id nil=\"true\"/>\n    <token>aM1x3Nf3L3Xq07Knz8JxkqfNRRAG-gDXOoNbUsMpOtc</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\">\n      <child type=\"Customer\">\n
+        \       <id type=\"integer\">1614796</id>\n        <customer-number type=\"integer\">4</customer-number>\n
+        \       <origin>manual</origin>\n        <created-at type=\"dateTime\">2009-02-24T13:58:26-05:00</created-at>\n
+        \       <name>100908APDUCTDRYEROXINE</name>\n        <phone-number>770-795-1310</phone-number>\n
+        \       <fax nil=\"true\"/>\n        <service-address>Aime Pavao\n1177 Meadow
+        Oaks Drive</service-address>\n        <service-city>Acworth</service-city>\n
+        \       <service-state>GA</service-state>\n        <service-zip-code>30102</service-zip-code>\n
+        \       <billing-address>Aime Pavao\n1177 Meadow Oaks Drive</billing-address>\n
+        \       <billing-city>Acworth</billing-city>\n        <billing-state>GA</billing-state>\n
+        \       <billing-zip-code>30102</billing-zip-code>\n        <special-instructions
+        nil=\"true\"/>\n        <email-address>apavao@comcast.net</email-address>\n
+        \       <alt-phone-number nil=\"true\"/>\n        <parent-id type=\"integer\">1614795</parent-id>\n
+        \       <password-digest nil=\"true\"/>\n        <list-id>800000F0-1223666564</list-id>\n
+        \       <time-created type=\"dateTime\">2008-10-10T16:22:44-04:00</time-created>\n
+        \       <time-modified type=\"dateTime\">2008-10-20T17:47:40-04:00</time-modified>\n
+        \       <edit-sequence>1223666730</edit-sequence>\n        <full-name>100908APDUCTDRYEROXINE</full-name>\n
+        \       <is-active type=\"boolean\">true</is-active>\n        <parent-ref-list-id>800000EF-1223666518</parent-ref-list-id>\n
+        \       <sublevel type=\"integer\">1</sublevel>\n        <company-name nil=\"true\"/>\n
+        \       <first-name>Aime</first-name>\n        <last-name>Pavao</last-name>\n
+        \       <phone>770-795-1310</phone>\n        <mobile nil=\"true\"/>\n        <pager
+        nil=\"true\"/>\n        <alt-phone nil=\"true\"/>\n        <email>apavao@comcast.net</email>\n
+        \       <contact>Aime Pavao</contact>\n        <alt-contact nil=\"true\"/>\n
+        \       <customer-type-ref-full-name>Internet:Spotrunner Web</customer-type-ref-full-name>\n
+        \       <terms-ref-full-name>Due on receipt</terms-ref-full-name>\n        <sales-rep-ref-full-name>JT</sales-rep-ref-full-name>\n
+        \       <balance type=\"decimal\">0.0</balance>\n        <total-balance type=\"decimal\">0.0</total-balance>\n
+        \       <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n
+        \       <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>\n
+        \       <resale-number nil=\"true\"/>\n        <account-number nil=\"true\"/>\n
+        \       <credit-limit type=\"decimal\" nil=\"true\"/>\n        <preferred-payment-method-ref-full-name>MasterCard</preferred-payment-method-ref-full-name>\n
+        \       <job-status>Closed</job-status>\n        <job-start-date type=\"dateTime\">2008-10-09T00:00:00-04:00</job-start-date>\n
+        \       <job-projected-end-date type=\"dateTime\">2008-10-09T00:00:00-04:00</job-projected-end-date>\n
+        \       <job-end-date type=\"dateTime\">2008-10-10T00:00:00-04:00</job-end-date>\n
+        \       <job-desc>DUCT AND DRYER AND OXINE</job-desc>\n        <job-type-ref-full-name>Residential</job-type-ref-full-name>\n
+        \       <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n        <delivery-method
+        nil=\"true\"/>\n        <price-level-ref-full-name nil=\"true\"/>\n        <custom-text1
+        nil=\"true\"/>\n        <custom-number1 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime1 type=\"dateTime\" nil=\"true\"/>\n        <custom-text2
+        nil=\"true\"/>\n        <custom-number2 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n        <custom-text3
+        nil=\"true\"/>\n        <custom-number3 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime3 type=\"dateTime\" nil=\"true\"/>\n        <custom-text4
+        nil=\"true\"/>\n        <custom-number4 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n        <custom-text5
+        nil=\"true\"/>\n        <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n        <custom-text6
+        nil=\"true\"/>\n        <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n        <custom-text7
+        nil=\"true\"/>\n        <custom-number7 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime7 type=\"dateTime\" nil=\"true\"/>\n        <custom-text8
+        nil=\"true\"/>\n        <custom-number8 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n        <custom-text9
+        nil=\"true\"/>\n        <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n        <custom-text10
+        nil=\"true\"/>\n        <custom-number10 type=\"decimal\" nil=\"true\"/>\n
+        \       <custom-datetime10 type=\"dateTime\" nil=\"true\"/>\n        <updated-at
+        type=\"dateTime\">2009-02-24T14:00:09-05:00</updated-at>\n        <service-country></service-country>\n
+        \       <billing-country></billing-country>\n        <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \       <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \       <custom-text11 nil=\"true\"/>\n        <custom-text12 nil=\"true\"/>\n
+        \       <custom-text13 nil=\"true\"/>\n        <custom-text14 nil=\"true\"/>\n
+        \       <custom-text15 nil=\"true\"/>\n        <custom-text16 nil=\"true\"/>\n
+        \       <custom-text17 nil=\"true\"/>\n        <custom-text18 nil=\"true\"/>\n
+        \       <custom-text19 nil=\"true\"/>\n        <custom-text20 nil=\"true\"/>\n
+        \       <created-by type=\"integer\" nil=\"true\"/>\n        <updated-by type=\"integer\"
+        nil=\"true\"/>\n        <tax-id type=\"integer\" nil=\"true\"/>\n        <which-billing-address>service</which-billing-address>\n
+        \       <customer-type-id type=\"integer\" nil=\"true\"/>\n        <customer-source-id
+        type=\"integer\" nil=\"true\"/>\n        <import-id type=\"integer\" nil=\"true\"/>\n
+        \       <stripe-customer-id nil=\"true\"/>\n        <token>8Sew-ORu13TKuMFAwjBb69z47eo_Rrp99pNSmB0gdoo</token>\n
+        \       <remember-me-token nil=\"true\"/>\n        <latitude type=\"float\"
+        nil=\"true\"/>\n        <longitude type=\"float\" nil=\"true\"/>\n        <company
+        type=\"boolean\">false</company>\n        <deleted-at type=\"dateTime\" nil=\"true\"/>\n
+        \       <qb-error nil=\"true\"/>\n        <send-reminders type=\"boolean\">true</send-reminders>\n
+        \       <notification-email-address nil=\"true\"/>\n        <notification-phone-number
+        nil=\"true\"/>\n        <notify-via-email type=\"boolean\">true</notify-via-email>\n
+        \       <notify-via-sms type=\"boolean\">false</notify-via-sms>\n        <send-notifications
+        type=\"boolean\">true</send-notifications>\n        <notification-email nil=\"true\"/>\n
+        \       <sales-terms-ref-id nil=\"true\"/>\n        <sales-tax-code-id type=\"integer\"
+        nil=\"true\"/>\n        <service-address-2 nil=\"true\"/>\n        <billing-address-2
+        nil=\"true\"/>\n      </child>\n    </children>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">1614796</id>\n    <customer-number type=\"integer\">4</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2009-02-24T13:58:26-05:00</created-at>\n
+        \   <name>100908APDUCTDRYEROXINE</name>\n    <phone-number>770-795-1310</phone-number>\n
+        \   <fax nil=\"true\"/>\n    <service-address>Aime Pavao\n1177 Meadow Oaks
+        Drive</service-address>\n    <service-city>Acworth</service-city>\n    <service-state>GA</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>Aime
+        Pavao\n1177 Meadow Oaks Drive</billing-address>\n    <billing-city>Acworth</billing-city>\n
+        \   <billing-state>GA</billing-state>\n    <billing-zip-code>30102</billing-zip-code>\n
+        \   <special-instructions nil=\"true\"/>\n    <email-address>apavao@comcast.net</email-address>\n
+        \   <alt-phone-number nil=\"true\"/>\n    <parent-id type=\"integer\">1614795</parent-id>\n
+        \   <password-digest nil=\"true\"/>\n    <list-id>800000F0-1223666564</list-id>\n
+        \   <time-created type=\"dateTime\">2008-10-10T16:22:44-04:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2008-10-20T17:47:40-04:00</time-modified>\n
+        \   <edit-sequence>1223666730</edit-sequence>\n    <full-name>100908APDUCTDRYEROXINE</full-name>\n
+        \   <is-active type=\"boolean\">true</is-active>\n    <parent-ref-list-id>800000EF-1223666518</parent-ref-list-id>\n
+        \   <sublevel type=\"integer\">1</sublevel>\n    <company-name nil=\"true\"/>\n
+        \   <first-name>Aime</first-name>\n    <last-name>Pavao</last-name>\n    <phone>770-795-1310</phone>\n
+        \   <mobile nil=\"true\"/>\n    <pager nil=\"true\"/>\n    <alt-phone nil=\"true\"/>\n
+        \   <email>apavao@comcast.net</email>\n    <contact>Aime Pavao</contact>\n
+        \   <alt-contact nil=\"true\"/>\n    <customer-type-ref-full-name>Internet:Spotrunner
+        Web</customer-type-ref-full-name>\n    <terms-ref-full-name>Due on receipt</terms-ref-full-name>\n
+        \   <sales-rep-ref-full-name>JT</sales-rep-ref-full-name>\n    <balance type=\"decimal\">0.0</balance>\n
+        \   <total-balance type=\"decimal\">0.0</total-balance>\n    <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n
+        \   <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>\n
+        \   <resale-number nil=\"true\"/>\n    <account-number nil=\"true\"/>\n    <credit-limit
+        type=\"decimal\" nil=\"true\"/>\n    <preferred-payment-method-ref-full-name>MasterCard</preferred-payment-method-ref-full-name>\n
+        \   <job-status>Closed</job-status>\n    <job-start-date type=\"dateTime\">2008-10-09T00:00:00-04:00</job-start-date>\n
+        \   <job-projected-end-date type=\"dateTime\">2008-10-09T00:00:00-04:00</job-projected-end-date>\n
+        \   <job-end-date type=\"dateTime\">2008-10-10T00:00:00-04:00</job-end-date>\n
+        \   <job-desc>DUCT AND DRYER AND OXINE</job-desc>\n    <job-type-ref-full-name>Residential</job-type-ref-full-name>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1
+        nil=\"true\"/>\n    <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text2 nil=\"true\"/>\n    <custom-number2
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text3 nil=\"true\"/>\n    <custom-number3 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime3 type=\"dateTime\" nil=\"true\"/>\n    <custom-text4
+        nil=\"true\"/>\n    <custom-number4 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text5 nil=\"true\"/>\n    <custom-number5
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text6 nil=\"true\"/>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7
+        nil=\"true\"/>\n    <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8 nil=\"true\"/>\n    <custom-number8
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text9 nil=\"true\"/>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n    <custom-text10
+        nil=\"true\"/>\n    <custom-number10 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10
+        type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2009-02-24T14:00:09-05:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\" nil=\"true\"/>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\" nil=\"true\"/>\n    <import-id type=\"integer\" nil=\"true\"/>\n
+        \   <stripe-customer-id nil=\"true\"/>\n    <token>8Sew-ORu13TKuMFAwjBb69z47eo_Rrp99pNSmB0gdoo</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">1615359</id>\n    <customer-number type=\"integer\">578</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2009-05-23T09:31:01-04:00</created-at>\n
+        \   <name>Patricia Kimball</name>\n    <phone-number>678-933-4551</phone-number>\n
+        \   <fax></fax>\n    <service-address>5243 Centennial Hill Drive</service-address>\n
+        \   <service-city>Acworth</service-city>\n    <service-state>GA</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>5243
+        Centennial Hill Drive</billing-address>\n    <billing-city>Acworth</billing-city>\n
+        \   <billing-state>GA</billing-state>\n    <billing-zip-code>30102</billing-zip-code>\n
+        \   <special-instructions>Centennial Commons Subdivision on Woodstock Road.
+        Exit 92 off I75. </special-instructions>\n    <email-address>kimballp1234@yahoo.com</email-address>\n
+        \   <alt-phone-number></alt-phone-number>\n    <parent-id type=\"integer\"
+        nil=\"true\"/>\n    <password-digest nil=\"true\"/>\n    <list-id>80000A59-1366336901</list-id>\n
+        \   <time-created type=\"dateTime\">2013-04-18T23:01:41-04:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2013-04-18T23:01:41-04:00</time-modified>\n
+        \   <edit-sequence>1366336901</edit-sequence>\n    <full-name>Patricia Kimball</full-name>\n
+        \   <is-active type=\"boolean\">true</is-active>\n    <parent-ref-list-id
+        nil=\"true\"/>\n    <sublevel type=\"integer\">0</sublevel>\n    <company-name
+        nil=\"true\"/>\n    <first-name>Patricia</first-name>\n    <last-name>Kimball</last-name>\n
+        \   <phone>678-933-4551</phone>\n    <mobile nil=\"true\"/>\n    <pager nil=\"true\"/>\n
+        \   <alt-phone nil=\"true\"/>\n    <email>kimballp1234@yahoo.com</email>\n
+        \   <contact>Patricia  Kimball</contact>\n    <alt-contact nil=\"true\"/>\n
+        \   <customer-type-ref-full-name nil=\"true\"/>\n    <terms-ref-full-name
+        nil=\"true\"/>\n    <sales-rep-ref-full-name nil=\"true\"/>\n    <balance
+        type=\"decimal\">125.0</balance>\n    <total-balance type=\"decimal\">125.0</total-balance>\n
+        \   <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n    <item-sales-tax-ref-full-name>Out
+        of State</item-sales-tax-ref-full-name>\n    <resale-number nil=\"true\"/>\n
+        \   <account-number nil=\"true\"/>\n    <credit-limit type=\"decimal\" nil=\"true\"/>\n
+        \   <preferred-payment-method-ref-full-name nil=\"true\"/>\n    <job-status>None</job-status>\n
+        \   <job-start-date type=\"dateTime\" nil=\"true\"/>\n    <job-projected-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-desc nil=\"true\"/>\n    <job-type-ref-full-name nil=\"true\"/>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1>Yodle</custom-text1>\n
+        \   <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\">2009-05-23T00:00:00-04:00</custom-datetime1>\n    <custom-text2>New
+        Customer</custom-text2>\n    <custom-number2 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5>Vent Cleaning</custom-text5>\n    <custom-number5 type=\"decimal\"
+        nil=\"true\"/>\n    <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6
+        nil=\"true\"/>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime6
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text7 nil=\"true\"/>\n    <custom-number7
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text8 nil=\"true\"/>\n    <custom-number8 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n    <custom-text9
+        nil=\"true\"/>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime9
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text10 nil=\"true\"/>\n    <custom-number10
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10 type=\"dateTime\"
+        nil=\"true\"/>\n    <updated-at type=\"dateTime\">2013-04-18T22:03:52-04:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11283</created-by>\n    <updated-by type=\"integer\">11283</updated-by>\n
+        \   <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\">17978</customer-source-id>\n    <import-id type=\"integer\"
+        nil=\"true\"/>\n    <stripe-customer-id nil=\"true\"/>\n    <token>Ex_aFJjTyRus9FQ5zTTKbnMvrwX9B4FXrMCoCO3lnwc</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">1615447</id>\n    <customer-number type=\"integer\">666</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2009-06-30T16:50:43-04:00</created-at>\n
+        \   <name>Mary Hood</name>\n    <phone-number>770-876-4626</phone-number>\n
+        \   <fax></fax>\n    <service-address>6670 Redfield Court</service-address>\n
+        \   <service-city>Acworth</service-city>\n    <service-state>Ga</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>6670
+        Redfield Court</billing-address>\n    <billing-city>Acworth</billing-city>\n
+        \   <billing-state>Ga</billing-state>\n    <billing-zip-code>30102</billing-zip-code>\n
+        \   <special-instructions></special-instructions>\n    <email-address>mary.e.hood@gmail.com</email-address>\n
+        \   <alt-phone-number>770-917-9141</alt-phone-number>\n    <parent-id type=\"integer\"
+        nil=\"true\"/>\n    <password-digest nil=\"true\"/>\n    <list-id>80000308-1246571695</list-id>\n
+        \   <time-created type=\"dateTime\">2009-07-02T18:54:55-04:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2009-07-02T18:54:55-04:00</time-modified>\n
+        \   <edit-sequence>1246571695</edit-sequence>\n    <full-name>Mary Hood</full-name>\n
+        \   <is-active type=\"boolean\">true</is-active>\n    <parent-ref-list-id
+        nil=\"true\"/>\n    <sublevel type=\"integer\">0</sublevel>\n    <company-name
+        nil=\"true\"/>\n    <first-name nil=\"true\"/>\n    <last-name nil=\"true\"/>\n
+        \   <phone>770-876-4626</phone>\n    <mobile nil=\"true\"/>\n    <pager nil=\"true\"/>\n
+        \   <alt-phone>770-917-9141</alt-phone>\n    <email>mary.e.hood@gmail.com</email>\n
+        \   <contact nil=\"true\"/>\n    <alt-contact nil=\"true\"/>\n    <customer-type-ref-full-name
+        nil=\"true\"/>\n    <terms-ref-full-name nil=\"true\"/>\n    <sales-rep-ref-full-name
+        nil=\"true\"/>\n    <balance type=\"decimal\">0.0</balance>\n    <total-balance
+        type=\"decimal\">0.0</total-balance>\n    <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n
+        \   <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>\n
+        \   <resale-number nil=\"true\"/>\n    <account-number nil=\"true\"/>\n    <credit-limit
+        type=\"decimal\" nil=\"true\"/>\n    <preferred-payment-method-ref-full-name
+        nil=\"true\"/>\n    <job-status>None</job-status>\n    <job-start-date type=\"dateTime\"
+        nil=\"true\"/>\n    <job-projected-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-end-date type=\"dateTime\" nil=\"true\"/>\n    <job-desc nil=\"true\"/>\n
+        \   <job-type-ref-full-name nil=\"true\"/>\n    <is-statement-with-parent
+        type=\"boolean\" nil=\"true\"/>\n    <delivery-method nil=\"true\"/>\n    <price-level-ref-full-name
+        nil=\"true\"/>\n    <custom-text1></custom-text1>\n    <custom-number1 type=\"decimal\"
+        nil=\"true\"/>\n    <custom-datetime1 type=\"dateTime\">2009-06-30T00:00:00-04:00</custom-datetime1>\n
+        \   <custom-text2>New Customer</custom-text2>\n    <custom-number2 type=\"decimal\"
+        nil=\"true\"/>\n    <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5></custom-text5>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6
+        nil=\"true\"/>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime6
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text7 nil=\"true\"/>\n    <custom-number7
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text8 nil=\"true\"/>\n    <custom-number8 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n    <custom-text9
+        nil=\"true\"/>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime9
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text10 nil=\"true\"/>\n    <custom-number10
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10 type=\"dateTime\"
+        nil=\"true\"/>\n    <updated-at type=\"dateTime\">2009-07-08T12:15:17-04:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11301</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\" nil=\"true\"/>\n    <import-id type=\"integer\" nil=\"true\"/>\n
+        \   <stripe-customer-id nil=\"true\"/>\n    <token>bUkwAjVUmK6iZtl5pf6l8iYh9__N3T61292NVtxsU6k</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">1615774</id>\n    <customer-number type=\"integer\">993</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2010-01-18T13:13:47-05:00</created-at>\n
+        \   <name>Integrity Restoration c/o Fatema Sadiq</name>\n    <phone-number>404-819-2402</phone-number>\n
+        \   <fax></fax>\n    <service-address>510 Lady Bell Court</service-address>\n
+        \   <service-city>Acworth</service-city>\n    <service-state>GA</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>PO Box
+        2770\r\n</billing-address>\n    <billing-city>Acworth</billing-city>\n    <billing-state>GA</billing-state>\n
+        \   <billing-zip-code>30102 </billing-zip-code>\n    <special-instructions></special-instructions>\n
+        \   <email-address>jimmy@integrityrest.com</email-address>\n    <alt-phone-number></alt-phone-number>\n
+        \   <parent-id type=\"integer\">1615698</parent-id>\n    <password-digest
+        nil=\"true\"/>\n    <list-id>8000040F-1266005944</list-id>\n    <time-created
+        type=\"dateTime\">2010-02-12T15:19:04-05:00</time-created>\n    <time-modified
+        type=\"dateTime\">2010-02-12T15:19:04-05:00</time-modified>\n    <edit-sequence>1266005944</edit-sequence>\n
+        \   <full-name>Integrity Restoration c/o Tayaun Messer:Integrity Restoration
+        c/o Fatema Sadiq</full-name>\n    <is-active type=\"boolean\">true</is-active>\n
+        \   <parent-ref-list-id>800003CA-1260242315</parent-ref-list-id>\n    <sublevel
+        type=\"integer\">1</sublevel>\n    <company-name nil=\"true\"/>\n    <first-name>Fatema</first-name>\n
+        \   <last-name>Sadiq</last-name>\n    <phone>404-819-2402</phone>\n    <mobile
+        nil=\"true\"/>\n    <pager nil=\"true\"/>\n    <alt-phone nil=\"true\"/>\n
+        \   <email>jimmy@integrityrest.com</email>\n    <contact>Fatema Sadiq</contact>\n
+        \   <alt-contact nil=\"true\"/>\n    <customer-type-ref-full-name nil=\"true\"/>\n
+        \   <terms-ref-full-name nil=\"true\"/>\n    <sales-rep-ref-full-name nil=\"true\"/>\n
+        \   <balance type=\"decimal\">0.0</balance>\n    <total-balance type=\"decimal\">0.0</total-balance>\n
+        \   <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n    <item-sales-tax-ref-full-name>Out
+        of State</item-sales-tax-ref-full-name>\n    <resale-number nil=\"true\"/>\n
+        \   <account-number nil=\"true\"/>\n    <credit-limit type=\"decimal\" nil=\"true\"/>\n
+        \   <preferred-payment-method-ref-full-name nil=\"true\"/>\n    <job-status>None</job-status>\n
+        \   <job-start-date type=\"dateTime\" nil=\"true\"/>\n    <job-projected-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-desc nil=\"true\"/>\n    <job-type-ref-full-name nil=\"true\"/>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1>Other</custom-text1>\n
+        \   <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\">2010-01-18T00:00:00-05:00</custom-datetime1>\n    <custom-text2>New
+        Customer</custom-text2>\n    <custom-number2 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4>Integrity Restoration</custom-text4>\n
+        \   <custom-number4 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text5></custom-text5>\n    <custom-number5
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text6 nil=\"true\"/>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7
+        nil=\"true\"/>\n    <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8 nil=\"true\"/>\n    <custom-number8
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text9 nil=\"true\"/>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n    <custom-text10
+        nil=\"true\"/>\n    <custom-number10 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10
+        type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2010-02-14T22:19:51-05:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11283</created-by>\n    <updated-by type=\"integer\">11283</updated-by>\n
+        \   <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>parent</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\" nil=\"true\"/>\n    <import-id type=\"integer\" nil=\"true\"/>\n
+        \   <stripe-customer-id nil=\"true\"/>\n    <token>CfCW6bEpahRbDfqy1K2qVUNJTtQQS3M9uKRA4dMWIdc</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">1617215</id>\n    <customer-number type=\"integer\">2435</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2012-01-17T10:43:17-05:00</created-at>\n
+        \   <name>Craig Smith</name>\n    <phone-number>678-640-1136</phone-number>\n
+        \   <fax></fax>\n    <service-address>5809 Monarda Ct</service-address>\n
+        \   <service-city>Acworth</service-city>\n    <service-state>GA</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>5809
+        Monarda Ct</billing-address>\n    <billing-city>Acworth</billing-city>\n    <billing-state>GA</billing-state>\n
+        \   <billing-zip-code>30102</billing-zip-code>\n    <special-instructions></special-instructions>\n
+        \   <email-address>clt.smith@att.net</email-address>\n    <alt-phone-number></alt-phone-number>\n
+        \   <parent-id type=\"integer\" nil=\"true\"/>\n    <password-digest nil=\"true\"/>\n
+        \   <list-id>80000808-1328315048</list-id>\n    <time-created type=\"dateTime\">2012-02-03T19:24:08-05:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2012-02-03T19:24:08-05:00</time-modified>\n
+        \   <edit-sequence>1328315048</edit-sequence>\n    <full-name>Craig Smith</full-name>\n
+        \   <is-active type=\"boolean\">true</is-active>\n    <parent-ref-list-id
+        nil=\"true\"/>\n    <sublevel type=\"integer\">0</sublevel>\n    <company-name
+        nil=\"true\"/>\n    <first-name>Craig</first-name>\n    <last-name nil=\"true\"/>\n
+        \   <phone>678-640-1136</phone>\n    <mobile nil=\"true\"/>\n    <pager nil=\"true\"/>\n
+        \   <alt-phone nil=\"true\"/>\n    <email>clt.smith@att.net</email>\n    <contact>Craig</contact>\n
+        \   <alt-contact nil=\"true\"/>\n    <customer-type-ref-full-name nil=\"true\"/>\n
+        \   <terms-ref-full-name nil=\"true\"/>\n    <sales-rep-ref-full-name nil=\"true\"/>\n
+        \   <balance type=\"decimal\">0.0</balance>\n    <total-balance type=\"decimal\">0.0</total-balance>\n
+        \   <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n    <item-sales-tax-ref-full-name>Out
+        of State</item-sales-tax-ref-full-name>\n    <resale-number nil=\"true\"/>\n
+        \   <account-number nil=\"true\"/>\n    <credit-limit type=\"decimal\" nil=\"true\"/>\n
+        \   <preferred-payment-method-ref-full-name nil=\"true\"/>\n    <job-status>None</job-status>\n
+        \   <job-start-date type=\"dateTime\" nil=\"true\"/>\n    <job-projected-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-desc nil=\"true\"/>\n    <job-type-ref-full-name nil=\"true\"/>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1>Google&gt;Website</custom-text1>\n
+        \   <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\">2012-01-17T00:00:00-05:00</custom-datetime1>\n    <custom-text2>New
+        Customer</custom-text2>\n    <custom-number2 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5></custom-text5>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6>Matt
+        Pine</custom-text6>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7>1</custom-text7>\n
+        \   <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8>price and availability</custom-text8>\n
+        \   <custom-number8 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text9></custom-text9>\n    <custom-number9
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text10 nil=\"true\"/>\n    <custom-number10 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime10 type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2012-02-03T19:24:19-05:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11315</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\" nil=\"true\"/>\n    <import-id type=\"integer\" nil=\"true\"/>\n
+        \   <stripe-customer-id nil=\"true\"/>\n    <token>3oLr-UJNVf1_QaYyra_3cDD8sREx7Cw5HQXHadyprx0</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">1618363</id>\n    <customer-number type=\"integer\">3590</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2013-06-17T13:51:58-04:00</created-at>\n
+        \   <name>Wesley Gee</name>\n    <phone-number>770-309-6323</phone-number>\n
+        \   <fax></fax>\n    <service-address>4516 Sawnee Trl</service-address>\n
+        \   <service-city>Acworth</service-city>\n    <service-state>GA</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>4516
+        Sawnee Trl</billing-address>\n    <billing-city>Acworth</billing-city>\n    <billing-state>GA</billing-state>\n
+        \   <billing-zip-code>30102</billing-zip-code>\n    <special-instructions></special-instructions>\n
+        \   <email-address>wesgee@aol.com</email-address>\n    <alt-phone-number></alt-phone-number>\n
+        \   <parent-id type=\"integer\" nil=\"true\"/>\n    <password-digest nil=\"true\"/>\n
+        \   <list-id nil=\"true\"/>\n    <time-created type=\"dateTime\" nil=\"true\"/>\n
+        \   <time-modified type=\"dateTime\" nil=\"true\"/>\n    <edit-sequence nil=\"true\"/>\n
+        \   <full-name>Wesley Gee</full-name>\n    <is-active type=\"boolean\">true</is-active>\n
+        \   <parent-ref-list-id nil=\"true\"/>\n    <sublevel type=\"integer\" nil=\"true\"/>\n
+        \   <company-name nil=\"true\"/>\n    <first-name nil=\"true\"/>\n    <last-name
+        nil=\"true\"/>\n    <phone>770-309-6323</phone>\n    <mobile nil=\"true\"/>\n
+        \   <pager nil=\"true\"/>\n    <alt-phone nil=\"true\"/>\n    <email nil=\"true\"/>\n
+        \   <contact nil=\"true\"/>\n    <alt-contact nil=\"true\"/>\n    <customer-type-ref-full-name
+        nil=\"true\"/>\n    <terms-ref-full-name nil=\"true\"/>\n    <sales-rep-ref-full-name
+        nil=\"true\"/>\n    <balance type=\"decimal\" nil=\"true\"/>\n    <total-balance
+        type=\"decimal\" nil=\"true\"/>\n    <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n
+        \   <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>\n
+        \   <resale-number nil=\"true\"/>\n    <account-number nil=\"true\"/>\n    <credit-limit
+        type=\"decimal\" nil=\"true\"/>\n    <preferred-payment-method-ref-full-name
+        nil=\"true\"/>\n    <job-status nil=\"true\"/>\n    <job-start-date type=\"dateTime\"
+        nil=\"true\"/>\n    <job-projected-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-end-date type=\"dateTime\" nil=\"true\"/>\n    <job-desc nil=\"true\"/>\n
+        \   <job-type-ref-full-name nil=\"true\"/>\n    <is-statement-with-parent
+        type=\"boolean\" nil=\"true\"/>\n    <delivery-method nil=\"true\"/>\n    <price-level-ref-full-name
+        nil=\"true\"/>\n    <custom-text1></custom-text1>\n    <custom-number1 type=\"decimal\"
+        nil=\"true\"/>\n    <custom-datetime1 type=\"dateTime\">2013-06-17T00:00:00-04:00</custom-datetime1>\n
+        \   <custom-text2>Lead</custom-text2>\n    <custom-number2 type=\"decimal\"
+        nil=\"true\"/>\n    <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5></custom-text5>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6>Matt
+        Pine</custom-text6>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7></custom-text7>\n
+        \   <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8></custom-text8>\n    <custom-number8
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text9></custom-text9>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n    <custom-text10></custom-text10>\n
+        \   <custom-number10 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10
+        type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2013-06-17T13:51:58-04:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11301</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\">17981</customer-source-id>\n    <import-id type=\"integer\"
+        nil=\"true\"/>\n    <stripe-customer-id nil=\"true\"/>\n    <token>lGMTMAuBq3NVKy63I9Y5tnmLWtXWq2A76WEpTZ9cB3Q</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">1618440</id>\n    <customer-number type=\"integer\">3668</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2013-07-20T13:38:41-04:00</created-at>\n
+        \   <name>Full Service (New Mill)</name>\n    <phone-number>678-858-9723</phone-number>\n
+        \   <fax></fax>\n    <service-address>2509 New Mill Ct </service-address>\n
+        \   <service-city>Acworth</service-city>\n    <service-state>Ga</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>2509
+        New Mill Ct </billing-address>\n    <billing-city>Acworth</billing-city>\n
+        \   <billing-state>Ga</billing-state>\n    <billing-zip-code>30102</billing-zip-code>\n
+        \   <special-instructions></special-instructions>\n    <email-address>danny@moldtrust.com</email-address>\n
+        \   <alt-phone-number></alt-phone-number>\n    <parent-id type=\"integer\">1617976</parent-id>\n
+        \   <password-digest nil=\"true\"/>\n    <list-id>80000B0E-1376059794</list-id>\n
+        \   <time-created type=\"dateTime\">2013-08-09T11:49:54-04:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2013-08-09T11:49:54-04:00</time-modified>\n
+        \   <edit-sequence>1376059794</edit-sequence>\n    <full-name>Full Service
+        Restoration:Full Service (New Mill)</full-name>\n    <is-active type=\"boolean\">true</is-active>\n
+        \   <parent-ref-list-id>80000951-1357922961</parent-ref-list-id>\n    <sublevel
+        type=\"integer\">1</sublevel>\n    <company-name nil=\"true\"/>\n    <first-name>Aaron</first-name>\n
+        \   <last-name nil=\"true\"/>\n    <phone>678-858-9723</phone>\n    <mobile
+        nil=\"true\"/>\n    <pager nil=\"true\"/>\n    <alt-phone nil=\"true\"/>\n
+        \   <email>danny@moldtrust.com</email>\n    <contact>Aaron</contact>\n    <alt-contact
+        nil=\"true\"/>\n    <customer-type-ref-full-name nil=\"true\"/>\n    <terms-ref-full-name
+        nil=\"true\"/>\n    <sales-rep-ref-full-name nil=\"true\"/>\n    <balance
+        type=\"decimal\">0.0</balance>\n    <total-balance type=\"decimal\">0.0</total-balance>\n
+        \   <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n    <item-sales-tax-ref-full-name>Out
+        of State</item-sales-tax-ref-full-name>\n    <resale-number nil=\"true\"/>\n
+        \   <account-number nil=\"true\"/>\n    <credit-limit type=\"decimal\" nil=\"true\"/>\n
+        \   <preferred-payment-method-ref-full-name nil=\"true\"/>\n    <job-status>None</job-status>\n
+        \   <job-start-date type=\"dateTime\" nil=\"true\"/>\n    <job-projected-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-desc nil=\"true\"/>\n    <job-type-ref-full-name nil=\"true\"/>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1></custom-text1>\n
+        \   <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\">2013-07-20T00:00:00-04:00</custom-datetime1>\n    <custom-text2>Existing
+        Customer</custom-text2>\n    <custom-number2 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5></custom-text5>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6>Matt
+        Pine</custom-text6>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7></custom-text7>\n
+        \   <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8></custom-text8>\n    <custom-number8
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text9></custom-text9>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n    <custom-text10></custom-text10>\n
+        \   <custom-number10 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10
+        type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2013-08-22T10:06:40-04:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11301</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\">17982</customer-source-id>\n    <import-id type=\"integer\"
+        nil=\"true\"/>\n    <stripe-customer-id nil=\"true\"/>\n    <token>UuMtMTpyeIIbT7NJaKB3cH2guCnKL46jfZvP9igutbA</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">1618693</id>\n    <customer-number type=\"integer\">3922</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2013-10-17T16:01:30-04:00</created-at>\n
+        \   <name>American Homes (Queensbury) c/o Reliable</name>\n    <phone-number>912-690-0947</phone-number>\n
+        \   <fax></fax>\n    <service-address>2058 Queensbury Dr</service-address>\n
+        \   <service-city>Acworth</service-city>\n    <service-state>Ga</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>2058
+        Queensbury Dr</billing-address>\n    <billing-city>Acworth</billing-city>\n
+        \   <billing-state>Ga</billing-state>\n    <billing-zip-code>30102</billing-zip-code>\n
+        \   <special-instructions></special-instructions>\n    <email-address>rachelparm@reliableair.com</email-address>\n
+        \   <alt-phone-number></alt-phone-number>\n    <parent-id type=\"integer\">1617722</parent-id>\n
+        \   <password-digest nil=\"true\"/>\n    <list-id>80000B7E-1390781049</list-id>\n
+        \   <time-created type=\"dateTime\">2014-01-26T19:04:09-05:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2014-01-26T19:04:09-05:00</time-modified>\n
+        \   <edit-sequence>1390781049</edit-sequence>\n    <full-name>Reliable Htg
+        &amp; Air Woodstock:American Homes (Queensbury) c/o Reliable</full-name>\n
+        \   <is-active type=\"boolean\">true</is-active>\n    <parent-ref-list-id>8000092C-1356659611</parent-ref-list-id>\n
+        \   <sublevel type=\"integer\">1</sublevel>\n    <company-name nil=\"true\"/>\n
+        \   <first-name>Rachel</first-name>\n    <last-name nil=\"true\"/>\n    <phone>912-690-0947</phone>\n
+        \   <mobile nil=\"true\"/>\n    <pager nil=\"true\"/>\n    <alt-phone nil=\"true\"/>\n
+        \   <email>rachelparm@reliableair.com</email>\n    <contact>Rachel</contact>\n
+        \   <alt-contact nil=\"true\"/>\n    <customer-type-ref-full-name nil=\"true\"/>\n
+        \   <terms-ref-full-name nil=\"true\"/>\n    <sales-rep-ref-full-name nil=\"true\"/>\n
+        \   <balance type=\"decimal\">0.0</balance>\n    <total-balance type=\"decimal\">0.0</total-balance>\n
+        \   <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n    <item-sales-tax-ref-full-name>Out
+        of State</item-sales-tax-ref-full-name>\n    <resale-number nil=\"true\"/>\n
+        \   <account-number nil=\"true\"/>\n    <credit-limit type=\"decimal\" nil=\"true\"/>\n
+        \   <preferred-payment-method-ref-full-name nil=\"true\"/>\n    <job-status>None</job-status>\n
+        \   <job-start-date type=\"dateTime\" nil=\"true\"/>\n    <job-projected-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-desc nil=\"true\"/>\n    <job-type-ref-full-name nil=\"true\"/>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1></custom-text1>\n
+        \   <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\">2013-10-17T00:00:00-04:00</custom-datetime1>\n    <custom-text2>Existing
+        Customer</custom-text2>\n    <custom-number2 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5></custom-text5>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6>Matt
+        Pine</custom-text6>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7></custom-text7>\n
+        \   <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8></custom-text8>\n    <custom-number8
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text9></custom-text9>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n    <custom-text10></custom-text10>\n
+        \   <custom-number10 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10
+        type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2014-01-26T19:04:23-05:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11315</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\">17981</customer-source-id>\n    <import-id type=\"integer\"
+        nil=\"true\"/>\n    <stripe-customer-id nil=\"true\"/>\n    <token>WnZKRU4U1WsKUZT__P83p9dCDLlkLITm_gxnD8jJ4p0</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">3361353</id>\n    <customer-number type=\"integer\">5873</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2016-03-09T16:05:41-05:00</created-at>\n
+        \   <name>Peachtree Service ( Victory Dr)</name>\n    <phone-number>(678)
+        235-9699</phone-number>\n    <fax></fax>\n    <service-address>6660 Victory
+        Dr            </service-address>\n    <service-city>Acworth</service-city>\n
+        \   <service-state>GA</service-state>\n    <service-zip-code>30102</service-zip-code>\n
+        \   <billing-address>2500 Meadowbrook Pkwy Suite F</billing-address>\n    <billing-city>Duluth</billing-city>\n
+        \   <billing-state>GA</billing-state>\n    <billing-zip-code>30096</billing-zip-code>\n
+        \   <special-instructions></special-instructions>\n    <email-address>Karyn.Norton@ServiceExperts.com</email-address>\n
+        \   <alt-phone-number></alt-phone-number>\n    <parent-id type=\"integer\">3070779</parent-id>\n
+        \   <password-digest nil=\"true\"/>\n    <list-id>800011DB-1466727007</list-id>\n
+        \   <time-created type=\"dateTime\">2016-06-23T21:10:07-04:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2016-06-23T21:10:07-04:00</time-modified>\n
+        \   <edit-sequence>1466727007</edit-sequence>\n    <full-name>Peachtree Service
+        Experts:Peachtree Service ( Victory Dr)</full-name>\n    <is-active type=\"boolean\">true</is-active>\n
+        \   <parent-ref-list-id>80001138-1455239584</parent-ref-list-id>\n    <sublevel
+        type=\"integer\">1</sublevel>\n    <company-name>Peachtree Service ( Victory
+        Dr)</company-name>\n    <first-name>Wayne</first-name>\n    <last-name>Gehrhardt</last-name>\n
+        \   <phone>(678) 235-9699</phone>\n    <mobile></mobile>\n    <pager nil=\"true\"/>\n
+        \   <alt-phone nil=\"true\"/>\n    <email>Karyn.Norton@ServiceExperts.com</email>\n
+        \   <contact>Wayne Gehrhardt</contact>\n    <alt-contact nil=\"true\"/>\n
+        \   <customer-type-ref-full-name nil=\"true\"/>\n    <terms-ref-full-name
+        nil=\"true\"/>\n    <sales-rep-ref-full-name nil=\"true\"/>\n    <balance
+        type=\"decimal\">0.0</balance>\n    <total-balance type=\"decimal\">0.0</total-balance>\n
+        \   <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n    <item-sales-tax-ref-full-name>Out
+        of State</item-sales-tax-ref-full-name>\n    <resale-number nil=\"true\"/>\n
+        \   <account-number nil=\"true\"/>\n    <credit-limit type=\"decimal\" nil=\"true\"/>\n
+        \   <preferred-payment-method-ref-full-name nil=\"true\"/>\n    <job-status>None</job-status>\n
+        \   <job-start-date type=\"dateTime\" nil=\"true\"/>\n    <job-projected-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-desc nil=\"true\"/>\n    <job-type-ref-full-name nil=\"true\"/>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1>Other</custom-text1>\n
+        \   <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\">2016-03-09T00:00:00-05:00</custom-datetime1>\n    <custom-text2>Existing
+        Customer</custom-text2>\n    <custom-number2 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5></custom-text5>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6>Natasha
+        Tarr</custom-text6>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7></custom-text7>\n
+        \   <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8></custom-text8>\n    <custom-number8
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text9></custom-text9>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n    <custom-text10></custom-text10>\n
+        \   <custom-number10 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10
+        type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2016-06-24T00:09:42-04:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11315</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>billing</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\">17969</customer-source-id>\n    <import-id type=\"integer\"
+        nil=\"true\"/>\n    <stripe-customer-id nil=\"true\"/>\n    <token>mN6QlQ9kuQ2C-QVI3F48w4TjuxsuigMnROrsGv0yzQ8</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">4291183</id>\n    <customer-number type=\"integer\">6466</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2016-09-06T11:53:25-04:00</created-at>\n
+        \   <name>Donna H Wilson</name>\n    <phone-number>404-213-3588</phone-number>\n
+        \   <fax></fax>\n    <service-address>5490 E Emerald Ct</service-address>\n
+        \   <service-city>Acworth</service-city>\n    <service-state>GA</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>5490
+        E Emerald Ct</billing-address>\n    <billing-city>Acworth</billing-city>\n
+        \   <billing-state>GA</billing-state>\n    <billing-zip-code>30102</billing-zip-code>\n
+        \   <special-instructions></special-instructions>\n    <email-address>donnahwilson@gmail.com</email-address>\n
+        \   <alt-phone-number></alt-phone-number>\n    <parent-id type=\"integer\"
+        nil=\"true\"/>\n    <password-digest nil=\"true\"/>\n    <list-id>800012FA-1477667173</list-id>\n
+        \   <time-created type=\"dateTime\">2016-10-28T12:06:13-04:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2016-10-28T12:06:13-04:00</time-modified>\n
+        \   <edit-sequence>1477667173</edit-sequence>\n    <full-name>Donna H Wilson</full-name>\n
+        \   <is-active type=\"boolean\">true</is-active>\n    <parent-ref-list-id
+        nil=\"true\"/>\n    <sublevel type=\"integer\">0</sublevel>\n    <company-name>Donna
+        H Wilson </company-name>\n    <first-name nil=\"true\"/>\n    <last-name nil=\"true\"/>\n
+        \   <phone>404-213-3588</phone>\n    <mobile></mobile>\n    <pager nil=\"true\"/>\n
+        \   <alt-phone nil=\"true\"/>\n    <email>donnahwilson@gmail.com</email>\n
+        \   <contact nil=\"true\"/>\n    <alt-contact nil=\"true\"/>\n    <customer-type-ref-full-name
+        nil=\"true\"/>\n    <terms-ref-full-name nil=\"true\"/>\n    <sales-rep-ref-full-name
+        nil=\"true\"/>\n    <balance type=\"decimal\">0.0</balance>\n    <total-balance
+        type=\"decimal\">0.0</total-balance>\n    <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n
+        \   <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>\n
+        \   <resale-number nil=\"true\"/>\n    <account-number nil=\"true\"/>\n    <credit-limit
+        type=\"decimal\" nil=\"true\"/>\n    <preferred-payment-method-ref-full-name
+        nil=\"true\"/>\n    <job-status>None</job-status>\n    <job-start-date type=\"dateTime\"
+        nil=\"true\"/>\n    <job-projected-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-end-date type=\"dateTime\" nil=\"true\"/>\n    <job-desc nil=\"true\"/>\n
+        \   <job-type-ref-full-name nil=\"true\"/>\n    <is-statement-with-parent
+        type=\"boolean\" nil=\"true\"/>\n    <delivery-method nil=\"true\"/>\n    <price-level-ref-full-name
+        nil=\"true\"/>\n    <custom-text1>Google</custom-text1>\n    <custom-number1
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1 type=\"dateTime\">2016-09-06T00:00:00-04:00</custom-datetime1>\n
+        \   <custom-text2>New Customer</custom-text2>\n    <custom-number2 type=\"decimal\"
+        nil=\"true\"/>\n    <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5></custom-text5>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6>Natasha
+        Tarr</custom-text6>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7></custom-text7>\n
+        \   <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8></custom-text8>\n    <custom-number8
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text9></custom-text9>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n    <custom-text10></custom-text10>\n
+        \   <custom-number10 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10
+        type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2016-10-28T11:06:17-04:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11315</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>service</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\">17964</customer-source-id>\n    <import-id type=\"integer\"
+        nil=\"true\"/>\n    <stripe-customer-id nil=\"true\"/>\n    <token>tf79ijjAxfNi0pRiFSIDcsS84vuAW5jANfMWfIIxpgY</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">4440241</id>\n    <customer-number type=\"integer\">6597</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2016-10-06T17:45:20-04:00</created-at>\n
+        \   <name>Peachtree Service (Ridgeside Dr NW)</name>\n    <phone-number>(678)
+        235-9699</phone-number>\n    <fax></fax>\n    <service-address>1190 Ridgeside
+        Dr NW</service-address>\n    <service-city>Acworth</service-city>\n    <service-state>GA</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>2500
+        Meadowbrook Pkwy Suite F</billing-address>\n    <billing-city>Duluth</billing-city>\n
+        \   <billing-state>GA</billing-state>\n    <billing-zip-code>30096</billing-zip-code>\n
+        \   <special-instructions></special-instructions>\n    <email-address>Deanna.McClendon@serviceexperts.com</email-address>\n
+        \   <alt-phone-number></alt-phone-number>\n    <parent-id type=\"integer\">3070779</parent-id>\n
+        \   <password-digest nil=\"true\"/>\n    <list-id>8000136A-1482370986</list-id>\n
+        \   <time-created type=\"dateTime\">2016-12-21T20:43:06-05:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2016-12-21T20:43:06-05:00</time-modified>\n
+        \   <edit-sequence>1482370986</edit-sequence>\n    <full-name>Peachtree Service
+        Experts:Peachtree Service (Ridgeside Dr NW)</full-name>\n    <is-active type=\"boolean\">true</is-active>\n
+        \   <parent-ref-list-id>80001138-1455239584</parent-ref-list-id>\n    <sublevel
+        type=\"integer\">1</sublevel>\n    <company-name>Peachtree Service (Ridgeside
+        Dr NW)</company-name>\n    <first-name>Wayne</first-name>\n    <last-name>Gehrhardt</last-name>\n
+        \   <phone>(678) 235-9699</phone>\n    <mobile></mobile>\n    <pager nil=\"true\"/>\n
+        \   <alt-phone nil=\"true\"/>\n    <email>Deanna.McClendon@serviceexperts.com</email>\n
+        \   <contact>Wayne Gehrhardt</contact>\n    <alt-contact nil=\"true\"/>\n
+        \   <customer-type-ref-full-name nil=\"true\"/>\n    <terms-ref-full-name
+        nil=\"true\"/>\n    <sales-rep-ref-full-name nil=\"true\"/>\n    <balance
+        type=\"decimal\">0.0</balance>\n    <total-balance type=\"decimal\">0.0</total-balance>\n
+        \   <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n    <item-sales-tax-ref-full-name>Out
+        of State</item-sales-tax-ref-full-name>\n    <resale-number nil=\"true\"/>\n
+        \   <account-number nil=\"true\"/>\n    <credit-limit type=\"decimal\" nil=\"true\"/>\n
+        \   <preferred-payment-method-ref-full-name nil=\"true\"/>\n    <job-status>None</job-status>\n
+        \   <job-start-date type=\"dateTime\" nil=\"true\"/>\n    <job-projected-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-desc nil=\"true\"/>\n    <job-type-ref-full-name nil=\"true\"/>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1>Other</custom-text1>\n
+        \   <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\">2016-10-06T00:00:00-04:00</custom-datetime1>\n    <custom-text2>Existing
+        Customer</custom-text2>\n    <custom-number2 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime2 type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n
+        \   <custom-number3 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text4></custom-text4>\n    <custom-number4
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text5></custom-text5>\n    <custom-number5 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime5 type=\"dateTime\" nil=\"true\"/>\n    <custom-text6>Natasha
+        Tarr</custom-text6>\n    <custom-number6 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime6 type=\"dateTime\" nil=\"true\"/>\n    <custom-text7></custom-text7>\n
+        \   <custom-number7 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text8></custom-text8>\n    <custom-number8
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text9></custom-text9>\n    <custom-number9 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime9 type=\"dateTime\" nil=\"true\"/>\n    <custom-text10></custom-text10>\n
+        \   <custom-number10 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10
+        type=\"dateTime\" nil=\"true\"/>\n    <updated-at type=\"dateTime\">2016-12-21T20:43:15-05:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11315</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>billing</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\">17969</customer-source-id>\n    <import-id type=\"integer\"
+        nil=\"true\"/>\n    <stripe-customer-id nil=\"true\"/>\n    <token>DQOGkepbxR1Mr-iOydfV2KVQAQBvlTPF3c5oOq3Bo20</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\" nil=\"true\"/>\n
+        \   <longitude type=\"float\" nil=\"true\"/>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2
+        nil=\"true\"/>\n    <children type=\"array\"/>\n  </customer>\n  <customer>\n
+        \   <id type=\"integer\">4732123</id>\n    <customer-number type=\"integer\">6775</customer-number>\n
+        \   <origin>manual</origin>\n    <created-at type=\"dateTime\">2016-12-09T22:21:12-05:00</created-at>\n
+        \   <name>Peachtree Service ( Maddox Rd SE )</name>\n    <phone-number>(678)
+        235-9699</phone-number>\n    <fax></fax>\n    <service-address>11 Maddox Rd
+        SE</service-address>\n    <service-city>Acworth</service-city>\n    <service-state>GA</service-state>\n
+        \   <service-zip-code>30102</service-zip-code>\n    <billing-address>2500
+        Meadowbrook Pkwy Suite F</billing-address>\n    <billing-city>Duluth</billing-city>\n
+        \   <billing-state>GA</billing-state>\n    <billing-zip-code>30096</billing-zip-code>\n
+        \   <special-instructions></special-instructions>\n    <email-address>Deanna.McClendon@serviceexperts.com</email-address>\n
+        \   <alt-phone-number></alt-phone-number>\n    <parent-id type=\"integer\">3070779</parent-id>\n
+        \   <password-digest nil=\"true\"/>\n    <list-id>800013E3-1488250311</list-id>\n
+        \   <time-created type=\"dateTime\">2017-02-27T21:51:51-05:00</time-created>\n
+        \   <time-modified type=\"dateTime\">2017-02-27T21:51:51-05:00</time-modified>\n
+        \   <edit-sequence>1488250311</edit-sequence>\n    <full-name>Peachtree Service
+        Experts:Peachtree Service ( Maddox Rd SE )</full-name>\n    <is-active type=\"boolean\">true</is-active>\n
+        \   <parent-ref-list-id>80001138-1455239584</parent-ref-list-id>\n    <sublevel
+        type=\"integer\">1</sublevel>\n    <company-name>Peachtree Service ( Maddox
+        Rd SE )</company-name>\n    <first-name>Wayne</first-name>\n    <last-name>Gehrhardt</last-name>\n
+        \   <phone>(678) 235-9699</phone>\n    <mobile></mobile>\n    <pager nil=\"true\"/>\n
+        \   <alt-phone nil=\"true\"/>\n    <email>Deanna.McClendon@serviceexperts.com</email>\n
+        \   <contact>Wayne Gehrhardt</contact>\n    <alt-contact nil=\"true\"/>\n
+        \   <customer-type-ref-full-name nil=\"true\"/>\n    <terms-ref-full-name
+        nil=\"true\"/>\n    <sales-rep-ref-full-name nil=\"true\"/>\n    <balance
+        type=\"decimal\">0.0</balance>\n    <total-balance type=\"decimal\">0.0</total-balance>\n
+        \   <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>\n    <item-sales-tax-ref-full-name>Out
+        of State</item-sales-tax-ref-full-name>\n    <resale-number nil=\"true\"/>\n
+        \   <account-number nil=\"true\"/>\n    <credit-limit type=\"decimal\" nil=\"true\"/>\n
+        \   <preferred-payment-method-ref-full-name nil=\"true\"/>\n    <job-status>None</job-status>\n
+        \   <job-start-date type=\"dateTime\" nil=\"true\"/>\n    <job-projected-end-date
+        type=\"dateTime\" nil=\"true\"/>\n    <job-end-date type=\"dateTime\" nil=\"true\"/>\n
+        \   <job-desc nil=\"true\"/>\n    <job-type-ref-full-name nil=\"true\"/>\n
+        \   <is-statement-with-parent type=\"boolean\" nil=\"true\"/>\n    <delivery-method
+        nil=\"true\"/>\n    <price-level-ref-full-name nil=\"true\"/>\n    <custom-text1></custom-text1>\n
+        \   <custom-number1 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime1
+        type=\"dateTime\">2016-12-09T00:00:00-05:00</custom-datetime1>\n    <custom-text2></custom-text2>\n
+        \   <custom-number2 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime2
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text3></custom-text3>\n    <custom-number3
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime3 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text4></custom-text4>\n    <custom-number4 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime4 type=\"dateTime\" nil=\"true\"/>\n    <custom-text5></custom-text5>\n
+        \   <custom-number5 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime5
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text6>Natasha Tarr</custom-text6>\n
+        \   <custom-number6 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime6
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text7></custom-text7>\n    <custom-number7
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime7 type=\"dateTime\" nil=\"true\"/>\n
+        \   <custom-text8></custom-text8>\n    <custom-number8 type=\"decimal\" nil=\"true\"/>\n
+        \   <custom-datetime8 type=\"dateTime\" nil=\"true\"/>\n    <custom-text9></custom-text9>\n
+        \   <custom-number9 type=\"decimal\" nil=\"true\"/>\n    <custom-datetime9
+        type=\"dateTime\" nil=\"true\"/>\n    <custom-text10></custom-text10>\n    <custom-number10
+        type=\"decimal\" nil=\"true\"/>\n    <custom-datetime10 type=\"dateTime\"
+        nil=\"true\"/>\n    <updated-at type=\"dateTime\">2017-02-27T21:51:54-05:00</updated-at>\n
+        \   <service-country></service-country>\n    <billing-country></billing-country>\n
+        \   <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>\n
+        \   <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>\n
+        \   <custom-text11 nil=\"true\"/>\n    <custom-text12 nil=\"true\"/>\n    <custom-text13
+        nil=\"true\"/>\n    <custom-text14 nil=\"true\"/>\n    <custom-text15 nil=\"true\"/>\n
+        \   <custom-text16 nil=\"true\"/>\n    <custom-text17 nil=\"true\"/>\n    <custom-text18
+        nil=\"true\"/>\n    <custom-text19 nil=\"true\"/>\n    <custom-text20 nil=\"true\"/>\n
+        \   <created-by type=\"integer\">11315</created-by>\n    <updated-by type=\"integer\"
+        nil=\"true\"/>\n    <tax-id type=\"integer\" nil=\"true\"/>\n    <which-billing-address>parent</which-billing-address>\n
+        \   <customer-type-id type=\"integer\" nil=\"true\"/>\n    <customer-source-id
+        type=\"integer\">50865</customer-source-id>\n    <import-id type=\"integer\"
+        nil=\"true\"/>\n    <stripe-customer-id nil=\"true\"/>\n    <token>KEuvEZv08IVUzFJYW5JZHWkXv3Sk-Bi7mbhW5tkcVkE</token>\n
+        \   <remember-me-token nil=\"true\"/>\n    <latitude type=\"float\">34.109805</latitude>\n
+        \   <longitude type=\"float\">-84.660392</longitude>\n    <company type=\"boolean\">false</company>\n
+        \   <deleted-at type=\"dateTime\" nil=\"true\"/>\n    <qb-error nil=\"true\"/>\n
+        \   <send-reminders type=\"boolean\">true</send-reminders>\n    <notification-email-address
+        nil=\"true\"/>\n    <notification-phone-number nil=\"true\"/>\n    <notify-via-email
+        type=\"boolean\">true</notify-via-email>\n    <notify-via-sms type=\"boolean\">false</notify-via-sms>\n
+        \   <send-notifications type=\"boolean\">true</send-notifications>\n    <notification-email
+        nil=\"true\"/>\n    <sales-terms-ref-id nil=\"true\"/>\n    <sales-tax-code-id
+        type=\"integer\" nil=\"true\"/>\n    <service-address-2 nil=\"true\"/>\n    <billing-address-2></billing-address-2>\n
+        \   <children type=\"array\"/>\n  </customer>\n</customers>\n"
+    http_version: 
+  recorded_at: Fri, 04 Aug 2017 12:31:36 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,416 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://daffyducts.kickservapp.com/jobs.xml?only=job_number%2Cid%2Ccustomer_id%2Cname%2Cstatus
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Authorization:
+      - Basic MGVkNzNlZDVlMGUxNzYzMzZiMjkxZjI5ZGEzZjUzNTE3ZDM4YmY3YjowZWQ3M2VkNWUwZTE3NjMzNmIyOTFmMjlkYTNmNTM1MTdkMzhiZjdi
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      cache-control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      content-type:
+      - application/xml; charset=utf-8
+      date:
+      - Fri, 04 Aug 2017 12:31:43 GMT
+      expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      pragma:
+      - no-cache
+      server:
+      - Kickserv
+      set-cookie:
+      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTllZWI4MzhiZGUwMTYyNDYxMTBlN2JmMDZlMjZiNDBmBjsAVEkiDnJldHVybl90bwY7AEYiQS9qb2JzLnhtbD9vbmx5PWpvYl9udW1iZXIlMkNpZCUyQ2N1c3RvbWVyX2lkJTJDbmFtZSUyQ3N0YXR1cw%3D%3D--815830ccabf8c6cff24bf400e59bd562295fd970;
+        domain=.kickservapp.com; path=/; secure; HttpOnly
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 287dd816-e35a-40ab-ae08-314ac969b90b
+      x-revision:
+      - 67a1a84f27ec46afa3a239b981591786763d139a
+      x-runtime:
+      - '0.226915'
+      x-served-by:
+      - rochester
+      x-transaction:
+      - 4e86afe5-75e8-449d-aba9-25a8b392e87d
+      x-xss-protection:
+      - 1; mode=block
+      content-length:
+      - '1221'
+      connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <jobs type="array">
+          <job>
+            <id type="integer">17487404</id>
+            <customer-id type="integer">1615210</customer-id>
+            <job-number type="integer">12142</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">17462216</id>
+            <customer-id type="integer">6852483</customer-id>
+            <job-number type="integer">12139</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">17251663</id>
+            <customer-id type="integer">6821634</customer-id>
+            <job-number type="integer">12070</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17325261</id>
+            <customer-id type="integer">6845284</customer-id>
+            <job-number type="integer">12087</job-number>
+            <name>Duct Cleaning</name>
+            <status>in_progress</status>
+          </job>
+          <job>
+            <id type="integer">17241073</id>
+            <customer-id type="integer">6819275</customer-id>
+            <job-number type="integer">12062</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17405105</id>
+            <customer-id type="integer">6863826</customer-id>
+            <job-number type="integer">12112</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17419035</id>
+            <customer-id type="integer">6873740</customer-id>
+            <job-number type="integer">12122</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17251257</id>
+            <customer-id type="integer">6821210</customer-id>
+            <job-number type="integer">12068</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17335093</id>
+            <customer-id type="integer">6847297</customer-id>
+            <job-number type="integer">12091</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17339075</id>
+            <customer-id type="integer">6847479</customer-id>
+            <job-number type="integer">12093</job-number>
+            <name>Duct and Dryer Combo</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">17455483</id>
+            <customer-id type="integer">1616983</customer-id>
+            <job-number type="integer">12135</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">13614275</id>
+            <customer-id type="integer">5380153</customer-id>
+            <job-number type="integer">10987</job-number>
+            <name>Duct Cleaning Full</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17454356</id>
+            <customer-id type="integer">6890511</customer-id>
+            <job-number type="integer">12131</job-number>
+            <name>Duct Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">17378154</id>
+            <customer-id type="integer">6857051</customer-id>
+            <job-number type="integer">12111</job-number>
+            <name>Duct and Dryer Combo</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17439582</id>
+            <customer-id type="integer">6885109</customer-id>
+            <job-number type="integer">12130</job-number>
+            <name>Duct and Dryer Combo</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">16189215</id>
+            <customer-id type="integer">1615930</customer-id>
+            <job-number type="integer">11345</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17362814</id>
+            <customer-id type="integer">6852483</customer-id>
+            <job-number type="integer">12105</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">16816594</id>
+            <customer-id type="integer">6674574</customer-id>
+            <job-number type="integer">11658</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17330411</id>
+            <customer-id type="integer">6738298</customer-id>
+            <job-number type="integer">12090</job-number>
+            <name>Insulation</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">17024949</id>
+            <customer-id type="integer">6735456</customer-id>
+            <job-number type="integer">11951</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">16693978</id>
+            <customer-id type="integer">6645194</customer-id>
+            <job-number type="integer">11588</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">16457387</id>
+            <customer-id type="integer">6557937</customer-id>
+            <job-number type="integer">11487</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">13766120</id>
+            <customer-id type="integer">5429980</customer-id>
+            <job-number type="integer">11044</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">16673370</id>
+            <customer-id type="integer">6639757</customer-id>
+            <job-number type="integer">11573</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17022308</id>
+            <customer-id type="integer">6734331</customer-id>
+            <job-number type="integer">11949</job-number>
+            <name>Duct Cleaning Full</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17041729</id>
+            <customer-id type="integer">6739351</customer-id>
+            <job-number type="integer">11962</job-number>
+            <name>Duct Cleaning Full</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17083121</id>
+            <customer-id type="integer">6752328</customer-id>
+            <job-number type="integer">11974</job-number>
+            <name>Duct and Dryer Combo</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17257873</id>
+            <customer-id type="integer">6823043</customer-id>
+            <job-number type="integer">12071</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17198959</id>
+            <customer-id type="integer">6808764</customer-id>
+            <job-number type="integer">12034</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">16486995</id>
+            <customer-id type="integer">6570043</customer-id>
+            <job-number type="integer">11516</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">5278655</id>
+            <customer-id type="integer">1616121</customer-id>
+            <job-number type="integer">8465</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">5260880</id>
+            <customer-id type="integer">1615507</customer-id>
+            <job-number type="integer">8461</job-number>
+            <name>Duct Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">5238573</id>
+            <customer-id type="integer">1615080</customer-id>
+            <job-number type="integer">8445</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">5247155</id>
+            <customer-id type="integer">1615504</customer-id>
+            <job-number type="integer">8454</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">17261576</id>
+            <customer-id type="integer">6824094</customer-id>
+            <job-number type="integer">12073</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">10187891</id>
+            <customer-id type="integer">4292470</customer-id>
+            <job-number type="integer">10085</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17271919</id>
+            <customer-id type="integer">6827430</customer-id>
+            <job-number type="integer">12078</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17346802</id>
+            <customer-id type="integer">1618740</customer-id>
+            <job-number type="integer">12095</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17365197</id>
+            <customer-id type="integer">6852945</customer-id>
+            <job-number type="integer">12109</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17344147</id>
+            <customer-id type="integer">6848115</customer-id>
+            <job-number type="integer">12094</job-number>
+            <name>Insulation</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">13711420</id>
+            <customer-id type="integer">1615930</customer-id>
+            <job-number type="integer">11019</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">16930163</id>
+            <customer-id type="integer">6706682</customer-id>
+            <job-number type="integer">11880</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17362085</id>
+            <customer-id type="integer">1617262</customer-id>
+            <job-number type="integer">12103</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17090385</id>
+            <customer-id type="integer">6754773</customer-id>
+            <job-number type="integer">11989</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17411858</id>
+            <customer-id type="integer">1615496</customer-id>
+            <job-number type="integer">12118</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">17411857</id>
+            <customer-id type="integer">1615491</customer-id>
+            <job-number type="integer">12117</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>scheduled</status>
+          </job>
+          <job>
+            <id type="integer">17357689</id>
+            <customer-id type="integer">6851670</customer-id>
+            <job-number type="integer">12101</job-number>
+            <name>Duct Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17314618</id>
+            <customer-id type="integer">6842662</customer-id>
+            <job-number type="integer">12085</job-number>
+            <name>Duct and Dryer Combo</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17352101</id>
+            <customer-id type="integer">6850504</customer-id>
+            <job-number type="integer">12098</job-number>
+            <name>Dryer Vent Cleaning</name>
+            <status>complete</status>
+          </job>
+          <job>
+            <id type="integer">17336330</id>
+            <customer-id type="integer">6847334</customer-id>
+            <job-number type="integer">12092</job-number>
+            <name>Duct and Dryer Combo</name>
+            <status>complete</status>
+          </job>
+        </jobs>
+    http_version: 
+  recorded_at: Fri, 04 Aug 2017 12:31:43 GMT
+recorded_with: VCR 3.0.3
