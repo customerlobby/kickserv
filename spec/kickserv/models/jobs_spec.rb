@@ -79,6 +79,19 @@ RSpec.describe Kickserv::Models::Job do
     expect(@reader).to receive(:jobs)
     @client.jobs(only: 'job_number,name')
   end
+
+  # Test customers without filter from Kickserv data
+  it 'should get valid job data from Kickserv API' do
+    VCR.use_cassette("get_all_jobs_kickserv") do
+      client =  Kickserv::Client.new(api_key: 'API_TOKEN', subdomain: 'daffyducts')
+      jobs = client.jobs
+      expect(jobs.class).to eq(Array)
+      if jobs.size > 0
+        job = jobs[0]
+        expect(job['id']).not_to eq(nil)
+      end
+    end
+  end
 end
 
 
