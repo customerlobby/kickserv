@@ -21,7 +21,7 @@ http_interactions:
       content-type:
       - application/xml; charset=utf-8
       date:
-      - Fri, 04 Aug 2017 08:49:22 GMT
+      - Fri, 04 Aug 2017 09:32:32 GMT
       expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       pragma:
@@ -29,7 +29,7 @@ http_interactions:
       server:
       - Kickserv
       set-cookie:
-      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTkxYjZjZDRjM2MzMDBmNWU0MDE0NGFmNDc2MWRhOTkxBjsAVEkiDnJldHVybl90bwY7AEYiDi9qb2JzLnhtbA%3D%3D--3520395a5f89656fff307610435ed41f4a7f6f06;
+      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTMyNzA4Y2MzZjk5ZGVlZThjZTQ0NDE5NDU5MTE2MjhlBjsAVEkiDnJldHVybl90bwY7AEYiDi9qb2JzLnhtbA%3D%3D--61823d7821ac1b0dd6933cdc9910f898655e3adc;
         domain=.kickservapp.com; path=/; secure; HttpOnly
       strict-transport-security:
       - max-age=31536000
@@ -40,15 +40,15 @@ http_interactions:
       x-frame-options:
       - SAMEORIGIN
       x-request-id:
-      - a1ffe9f6-5f7e-4c15-b8c1-4aea6e011abb
+      - 527bad75-67a0-45ad-b4ae-09828c529833
       x-revision:
       - 67a1a84f27ec46afa3a239b981591786763d139a
       x-runtime:
-      - '0.601275'
+      - '0.706486'
       x-served-by:
-      - st-paul
+      - arlington
       x-transaction:
-      - 82b01499-13cd-4f31-99c5-d18363f8ed0a
+      - 72a96a33-ad31-47a8-94f1-7a581bc11232
       x-xss-protection:
       - 1; mode=block
       transfer-encoding:
@@ -4079,5 +4079,5 @@ http_interactions:
         \     </allocations>\n      <include-expenses type=\"boolean\">true</include-expenses>\n
         \   </job-allocations>\n  </job>\n</jobs>\n"
     http_version: 
-  recorded_at: Fri, 04 Aug 2017 08:49:22 GMT
+  recorded_at: Fri, 04 Aug 2017 09:32:32 GMT
 recorded_with: VCR 3.0.3
