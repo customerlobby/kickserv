@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'date'
 
 RSpec.configure do |config|
   config.before(:each) do
@@ -80,15 +81,95 @@ RSpec.describe Kickserv::Models::Job do
     @client.jobs(only: 'job_number,name')
   end
 
-  # Test customers without filter from Kickserv data
+  # Test jobs without filter from Kickserv data.
+  # Test case record the http response in
+  # get_all_jobs_kickserv.yml for offline mode
+  # This test case call the http api.
+  # Validate the mandatory fields not nil against response.
   it 'should get valid job data from Kickserv API' do
     VCR.use_cassette("get_all_jobs_kickserv") do
-      client =  Kickserv::Client.new(api_key: 'API_TOKEN', subdomain: 'daffyducts')
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
       jobs = client.jobs
       expect(jobs.class).to eq(Array)
       if jobs.size > 0
         job = jobs[0]
         expect(job['id']).not_to eq(nil)
+        expect(job['job-number']).not_to eq(nil)
+        expect(job['job-type-id']).not_to eq(nil)
+        expect(job['name']).not_to eq(nil)
+        expect(job['status']).not_to eq(nil)
+      end
+    end
+  end
+
+  # Test jobs filter as schedule:today from Kickserv data.
+  # Test case record the http response in
+  # get_all_jobs_kickserv_with_filter_scheduled_on.yml file for offline mode.
+  # This test call http api.
+  # Filter the records based on schedule:today.
+  # Validate each record with current date.
+  it 'should get valid job data from Kickserv API with filter schedule' do
+    VCR.use_cassette("get_all_jobs_kickserv_with_filter_scheduled_on") do
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+      jobs = client.jobs(scheduled: 'today')
+      jobs.each do |job|
+        schedule_date = DateTime.parse(job['scheduled-on']).to_date
+        current_date = DateTime.now.strftime("%Y-%m-%d").to_date
+        expect(schedule_date).to eq(current_date)
+      end
+    end
+  end
+
+  # Test jobs with filter as only from Kickserv data.
+  # Test case record the http response in
+  # get_all_jobs_kickserv_with_filter_only.yml file for offline mode.
+  # This test case call http api.
+  # Filter the records based on only filter tag.
+  # Validate fields present in response.
+  it 'should get valid job data from Kickserv API with filter only' do
+    VCR.use_cassette("get_all_jobs_kickserv_with_filter_only") do
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+      jobs = client.jobs(only: 'job_number,id,customer_id,name,status')
+      jobs.each do |job|
+        expect(job.has_key?("id")).to eq true
+        expect(job.has_key?("customer-id")).to eq true
+        expect(job.has_key?("name")).to eq true
+        expect(job.has_key?("status")).to eq true
+        expect(job.has_key?("job-number")).to eq true
+        expect(job.keys.length).to eq(5)
+      end
+    end
+  end
+
+  # Test jobs with  filter as state from Kickserv data.
+  # Test case use get_all_jobs_kickserv_with_filter_state.yml to record http response.
+  # This test case call http api.
+  # Filter the records based on state.
+  # Validate the response against state field.
+  it 'should get valid job data from Kickserv API with filter state' do
+    VCR.use_cassette("get_all_jobs_kickserv_with_filter_state") do
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+      jobs = client.jobs(state: 'uncompleted')
+      jobs.each do |job|
+        expect(job['state']).to eq('uncompleted')
+      end
+    end
+  end
+
+  # Test jobs with filter with combination of page and scheduled from  kickserv data
+  # Test case use get_all_jobs_kickserv_with_filter_combination.yml to record http response.
+  # This test case call http api.
+  # Filter the records based on combinations like page, scheduled and state.
+  # Validate the response.
+  it 'should get valid job data from Kickserv API with filter combination' do
+    VCR.use_cassette("get_all_jobs_kickserv_with_filter_combination") do
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+      jobs = client.jobs(page: 1, scheduled: 'today', state:'uncompleted')
+        schedule_date = DateTime.parse(job['scheduled-on']).to_date
+        current_date = DateTime.now.strftime("%Y-%m-%d").to_date
+      jobs.each do |job|
+        expect(job['state']).to eq('uncompleted')
+        expect(schedule_date).to eq(current_date)
       end
     end
   end
