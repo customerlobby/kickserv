@@ -46,6 +46,8 @@ client = Kickserv.client
 ```ruby
 client.customers
 client.customers(page: 2)
+client.customers(service_zip_code: '30102')
+client.customers(name: 'Aime Pavao')
 ```
 
 ### Get jobs
@@ -53,6 +55,12 @@ client.customers(page: 2)
 ```ruby
 client.jobs
 client.jobs(page: 2, only: %w{total subtotal})
+client.jobs(scheduled: 'today')
+client.jobs(status: 'scheduled')
+client.jobs(job_type_id: 14761)
+client.jobs(only: 'job_number,id,customer_id,name,status')
+client.jobs(page: 1, scheduled: 'today', status: 'uncompleted')
+
 ```
 
 ## Contributing

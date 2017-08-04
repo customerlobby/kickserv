@@ -8,7 +8,7 @@ module Kickserv
       # include module http_utils to call kickserv apis to fetch data
       include HttpUtils::Request
 
-      def jobs(params={})
+      def jobs(params = {})
         # Get all the jobs from kicksserv APIs and return
         JobXmlReader.new(get('jobs.xml', params)).jobs
       end

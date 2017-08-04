@@ -24,26 +24,28 @@ module Kickserv
         begin
           response = connection.send(method) do |request|
             case method
-            when :get
-              formatted_options = format_options(options)
-              request.url(path,formatted_options)
-            when :post, :put
-              request.headers['Content-Type'] = 'application/json'
-              request.body = options.to_json unless options.empty?
-              request.url(path)
+              when :get
+                formatted_options = format_options(options)
+                request.url(path, formatted_options)
+              when :post, :put
+                request.headers['Content-Type'] = 'application/json'
+                request.body = options.to_json unless options.empty?
+                request.url(path)
             end
-            request.options.timeout      = 120   # read timeout
-            request.options.open_timeout = 300   # connection timeout
+            request.options.timeout = 120 # read timeout
+            request.options.open_timeout = 300 # connection timeout
           end
         rescue
           # handle connection related failures and raise gem specific standard error
           raise ConnectionError.new, 'Connection failed.'
         end
         # check if the status code is 401
-        if response.status == 401
+        if response.status == 200
+          Response.create(response.body)
+        elsif response.status == 401
           raise AuthorizationError.new, 'Invalid credentials.'
         else
-          Response.create(response.body)
+          raise StandardError.new, "Kickserv API Failed, status code: #{response.status}"
         end
       end
 
@@ -51,8 +53,17 @@ module Kickserv
       def format_options(options)
         return if options.blank?
         opts = {}
-        opts[:page] = options[:page] if options.has_key?(:page)
-        opts[:only] = format_fields(options[:only]) if options.has_key?(:only)
+        options.each do |key, value|
+          if key == :page
+            opts[:page] = options[:page] if options.has_key?(:page)
+          elsif key == :only
+            opts[:only] = format_fields(options[:only]) if options.has_key?(:only)
+          elsif key == :include
+            opts[:include] = format_fields(options[:include]) if options.has_key?(:include)
+          else
+            opts[key] = options[key]
+          end
+        end
         opts
       end
 

@@ -8,7 +8,7 @@ module Kickserv
       # include module http_utils to call kickserv apis to fetch data
       include HttpUtils::Request
 
-      def customers(params={})
+      def customers(params = {})
         # Get all the customers data from kickserv APIs and return
         CustomerXmlReader.new(get('customers.xml', params)).customers
       end

@@ -24,36 +24,20 @@ module Kickserv
     # @param xml_doc [NodeSet] Nokogiri XML nodeset
     # Parses the jobs information from the NodeSet and organizes it into an array of hashes
     def parse_jobs(xml_doc)
+      attribute_names = %w(id customer-id total subtotal balance-remaining
+                        created-at scheduled-on started-on completed-on name txn-id
+                        recurring-job-id job-type-id job-status-id duration invoice-terms
+                        invoice-notes estimate-terms estimate-notes description
+                        status invoice-status invoice-date invoice-paid-on
+                        notification-sent total-expenses job-number)
       xml_doc.css('jobs job').map do |node|
         # create a job HASH from the XML node of type job
-        {
-            'id' => get_value(node, 'id'),
-            'customer-id' => get_value(node, 'customer-id'),
-            'total' => get_value(node, 'total'),
-            'subtotal' => get_value(node, 'subtotal'),
-            'balance-remaining' => get_value(node, 'balance-remaining'),
-            'created-at' => get_value(node, 'created-at'),
-            'scheduled-on' => get_value(node, 'scheduled-on'),
-            'started-on' => get_value(node, 'started-on'),
-            'completed-on' => get_value(node, 'completed-on'),
-            'name' => get_value(node, 'name'),
-            'txn-id' => get_value(node, 'txn-id'),
-            'recurring-job-id' => get_value(node, 'recurring-job-id'),
-            'job-type-id' => get_value(node, 'job-type-id'),
-            'job-status-id' => get_value(node, 'job-status-id'),
-            'duration' => get_value(node, 'duration'),
-            'invoice-terms' => get_value(node, 'invoice-terms'),
-            'invoice-notes' => get_value(node, 'invoice-notes'),
-            'estimate-terms' => get_value(node, 'estimate-terms'),
-            'estimate-notes' => get_value(node, 'estimate-notes'),
-            'description' => get_value(node, 'description'),
-            'status' => get_value(node, 'status'),
-            'invoice-status' => get_value(node, 'invoice-status'),
-            'invoice-date' => get_value(node, 'invoice-date'),
-            'invoice-paid-on' => get_value(node, 'invoice-paid-on'),
-            'notification-sent' => get_value(node, 'notification-sent'),
-            'total-expenses' => get_value(node, 'total-expenses')
-        }
+        job = Hash.new
+        attribute_names.each do |attr|
+          value = get_value(node, attr)
+          job[attr] = value if not value.nil?
+        end
+        job
       end
     end
   end
