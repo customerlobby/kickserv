@@ -56,10 +56,10 @@ client.customers(name: 'Aime Pavao')
 client.jobs
 client.jobs(page: 2, only: %w{total subtotal})
 client.jobs(scheduled: 'today')
-client.jobs(status: 'scheduled')
+client.jobs(state: 'completed')
 client.jobs(job_type_id: 14761)
 client.jobs(only: 'job_number,id,customer_id,name,status')
-client.jobs(page: 1, scheduled: 'today', status: 'uncompleted')
+client.jobs(page: 1, scheduled: 'today', state: 'uncompleted')
 
 ```
 
