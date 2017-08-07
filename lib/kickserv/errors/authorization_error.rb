@@ -1,4 +1,8 @@
 # custom error for authorization related failures
-class AuthorizationError < StandardError
+module Kickserv
+  module Error
+    class AuthorizationError < StandardError
 
+    end
+  end
 end

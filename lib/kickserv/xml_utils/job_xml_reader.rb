@@ -1,5 +1,7 @@
 require File.expand_path('../../xml_utils/xml_reader', __FILE__)
 
+require File.expand_path('../../errors/no_data_found_error', __FILE__)
+
 module Kickserv
   # Job entity specific XmlReader used to encapsulate as much as possible of the resulting XML parsing
   # It utilizes a Nokogiri Nodeset to read the XML and convert to hash jobs
@@ -16,6 +18,7 @@ module Kickserv
     def parse_xml(xml_string)
       xml_doc = Nokogiri::XML(xml_string)
       @jobs = parse_jobs(xml_doc)
+      raise Kickserv::Error::NoDataFoundError.new, 'No data found.' if @jobs.empty?
     end
 
     private

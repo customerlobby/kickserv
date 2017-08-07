@@ -16,6 +16,7 @@ module Kickserv
     def parse_xml(xml_string)
       xml_doc = Nokogiri::XML(xml_string)
       @customers = parse_customers(xml_doc)
+      raise Kickserv::Error::NoDataFoundError.new, 'No data found.' if @customers.empty?
     end
 
     private

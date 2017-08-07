@@ -1,5 +1,3 @@
-require File.expand_path('../../errors/authorization_error', __FILE__)
-require File.expand_path('../../errors/connection_error', __FILE__)
 require File.expand_path('../../http_utils/response', __FILE__)
 
 module Kickserv
@@ -37,13 +35,13 @@ module Kickserv
           end
         rescue
           # handle connection related failures and raise gem specific standard error
-          raise ConnectionError.new, 'Connection failed.'
+          raise Kickserv::Error::ConnectionError.new, 'Connection failed.'
         end
         # check if the status code is 401
         if response.status == 200
           Response.create(response.body)
         elsif response.status == 401
-          raise AuthorizationError.new, 'Invalid credentials.'
+          raise Kickserv::Error::AuthorizationError.new, 'Invalid credentials.'
         else
           raise StandardError.new, "Kickserv API Failed, status code: #{response.status}"
         end
