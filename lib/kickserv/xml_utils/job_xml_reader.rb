@@ -18,7 +18,6 @@ module Kickserv
     def parse_xml(xml_string)
       xml_doc = Nokogiri::XML(xml_string)
       @jobs = parse_jobs(xml_doc)
-      raise Kickserv::Error::NoDataFoundError.new, 'No data found.' if @jobs.empty?
     end
 
     private
@@ -33,7 +32,9 @@ module Kickserv
                         invoice-notes estimate-terms estimate-notes description
                         status invoice-status invoice-date invoice-paid-on
                         notification-sent total-expenses job-number)
-      xml_doc.css('jobs job').map do |node|
+
+      # handle array of job data
+      jobs = xml_doc.css('jobs job').map do |node|
         # create a job HASH from the XML node of type job
         job = Hash.new
         attribute_names.each do |attr|
@@ -42,6 +43,18 @@ module Kickserv
         end
         job
       end
+
+      # handle single job data
+      if jobs.empty?
+        node = xml_doc.css('job')
+        # create a job HASH from the XML node of type job
+        jobs = Hash.new
+        attribute_names.each do |attr|
+          value = get_value(node, attr)
+          jobs[attr] = value if not value.nil?
+        end
+      end
+      jobs
     end
   end
 end

@@ -8,9 +8,19 @@ module Kickserv
       # include module http_utils to call kickserv apis to fetch data
       include HttpUtils::Request
 
-      def jobs(params = {})
-        # Get all the jobs from kicksserv APIs and return
-        JobXmlReader.new(get('jobs.xml', params)).jobs
+      def jobs(params ={})
+        if params.has_key?(:job_number)
+          jobs = JobXmlReader.new(get(url: get_url + 'jobs/',
+                                      path: "#{params[:job_number]}.xml")).jobs
+        else
+          # Get all the jobs from Kickserv APIs and return
+          jobs = JobXmlReader.new(get(path: 'jobs.xml', params: params)).jobs
+          if (jobs.nil? || jobs.empty?) && (params.has_key?('page') || params.has_key?(:page))
+            page_count = calculate_page_count('jobs', params, start_index = 1, end_index = params[:page])
+            raise Kickserv::Error::NoDataFoundError.new, "There are only #{page_count} data pages."
+          end
+        end
+        jobs
       end
     end
   end

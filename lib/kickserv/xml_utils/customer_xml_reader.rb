@@ -16,7 +16,6 @@ module Kickserv
     def parse_xml(xml_string)
       xml_doc = Nokogiri::XML(xml_string)
       @customers = parse_customers(xml_doc)
-      raise Kickserv::Error::NoDataFoundError.new, 'No data found.' if @customers.empty?
     end
 
     private
@@ -37,7 +36,8 @@ module Kickserv
                           balance total-balance customer-type-id
                           send-reminders notification-email-address
                           notify-via-email send-notifications customer-number)
-      xml_doc.css('customers customer').map do |node|
+      # handle array of customer data
+      customers = xml_doc.css('customers customer').map do |node|
         # create a customer HASH from the XML node of type customer
         customer = Hash.new
         attribute_names.each do |attr|
@@ -46,6 +46,19 @@ module Kickserv
         end
         customer
       end
+
+      # handle single node of customer data
+      if customers.empty?
+        node = xml_doc.css('customers')
+        # create a customer HASH from the XML node of type customer
+        customers = Hash.new
+        attribute_names.each do |attr|
+          value = get_value(node, attr)
+          customers[attr] = value if not value.nil?
+        end
+        customers
+      end
+      customers
     end
   end
 end

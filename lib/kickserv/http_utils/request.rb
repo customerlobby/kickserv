@@ -1,26 +1,28 @@
 require File.expand_path('../../http_utils/response', __FILE__)
+require File.expand_path('../../errors/connection_error', __FILE__)
+require File.expand_path('../../errors/authorization_error', __FILE__)
 
 module Kickserv
   module HttpUtils
     # Kickserv HTTP API Request Handler implementation
     module Request
       # Perform an HTTP GET request
-      def get(path, options = {})
-        formatted_options = format_options(options)
-        request(:get, path, formatted_options)
+      def get(url: nil, path:, params: {})
+        formatted_options = format_options(params)
+        request(method: :get, url: url, path: path, options: formatted_options)
       end
 
       # Perform an HTTP POST request
-      def post(path, options = {})
-        request(:post, path, options)
+      def post(url: nil, path:, options: {})
+        request(method: :post, url: url, path: path, options: options)
       end
 
       private
 
       # Perform an HTTP request
-      def request(method, path, options)
+      def request(method:, url: nil, path:, options:)
         begin
-          response = connection.send(method) do |request|
+          response = connection(url).send(method) do |request|
             case method
               when :get
                 formatted_options = format_options(options)
@@ -43,7 +45,7 @@ module Kickserv
         elsif response.status == 401
           raise Kickserv::Error::AuthorizationError.new, 'Invalid credentials.'
         else
-          raise StandardError.new, "Kickserv API Failed, status code: #{response.status}"
+          raise StandardError.new, "Failed to fetch data from Kickserv, status code: #{response.status}"
         end
       end
 
@@ -75,7 +77,6 @@ module Kickserv
           return fields.to_s
         end
       end
-
     end
   end
 end
