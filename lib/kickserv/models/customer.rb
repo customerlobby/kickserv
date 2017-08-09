@@ -17,7 +17,6 @@ module Kickserv
         else
           # Get all the customers data from kickserv APIs and return
           customers = CustomerXmlReader.new(get(path: 'customers.xml', params: params)).customers
-          p "SIZE: #{customers.size}, #{customers.empty?} #{customers.nil?}"
           if (customers.nil? || customers.empty?) && (params.has_key?('page') || params.has_key?(:page))
             page_count = calculate_page_count('customers', params, start_index = 1, end_index = params[:page])
             raise Kickserv::Error::NoDataFoundError.new, "There are only #{page_count} data pages."

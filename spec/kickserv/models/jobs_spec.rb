@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'date'
 
+
 RSpec.configure do |config|
   config.before(:each) do
     @client = Kickserv::Client.new
@@ -9,17 +10,9 @@ RSpec.configure do |config|
 end
 
 RSpec.describe Kickserv::Models::Job do
-  # Test case to get jobs with page.
-  it 'should get jobs' do
-    expect(@client).to receive(:get).with('jobs.xml', page: 2).and_return("xml")
-    expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
-    expect(@reader).to receive(:jobs)
-    @client.jobs(page: 2)
-  end
-
   # Test case to get jobs without filter.
   it 'should check jobs without filter' do
-    expect(@client).to receive(:get).with('jobs.xml', {}).and_return("xml")
+    expect(@client).to receive(:get).with(path:'jobs.xml', params:{}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:jobs)
     @client.jobs
@@ -27,7 +20,7 @@ RSpec.describe Kickserv::Models::Job do
 
   # Test case to filter job with schedule day
   it 'should check jobs with filter' do
-    expect(@client).to receive(:get).with('jobs.xml', scheduled: 'today').and_return("xml")
+    expect(@client).to receive(:get).with(path:'jobs.xml', params:{:scheduled=> 'today'}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:jobs)
     @client.jobs(scheduled: 'today')
@@ -35,7 +28,7 @@ RSpec.describe Kickserv::Models::Job do
 
   # Test case to filter with state of job
   it 'should check jobs with state' do
-    expect(@client).to receive(:get).with('jobs.xml', state: 'uncompleted').and_return("xml")
+    expect(@client).to receive(:get).with(path:'jobs.xml', params:{:state=> 'uncompleted'}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:jobs)
     @client.jobs(state: 'uncompleted')
@@ -43,7 +36,7 @@ RSpec.describe Kickserv::Models::Job do
 
   # Test case to filter by employee
   it 'should check jobs with employee number' do
-    expect(@client).to receive(:get).with('jobs.xml', employee_number: 123).and_return("xml")
+    expect(@client).to receive(:get).with(path:'jobs.xml', params:{:employee_number=> 123}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:jobs)
     @client.jobs(employee_number: 123)
@@ -51,7 +44,7 @@ RSpec.describe Kickserv::Models::Job do
 
   # Test case to filter by category
   it 'should check jobs with category' do
-    expect(@client).to receive(:get).with('jobs.xml', job_type_id: 123).and_return("xml")
+    expect(@client).to receive(:get).with(path:'jobs.xml', params:{:job_type_id=> 123}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:jobs)
     @client.jobs(job_type_id: 123)
@@ -59,7 +52,7 @@ RSpec.describe Kickserv::Models::Job do
 
   # Test case to filter by job status
   it 'should check jobs with job status' do
-    expect(@client).to receive(:get).with('jobs.xml', job_status_id: 123).and_return("xml")
+    expect(@client).to receive(:get).with(path:'jobs.xml', params:{:job_status_id => 123}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:jobs)
     @client.jobs(job_status_id: 123)
@@ -67,7 +60,7 @@ RSpec.describe Kickserv::Models::Job do
 
   # Test case with relational database.
   it 'should check jobs relational data' do
-    expect(@client).to receive(:get).with('jobs.xml', include: 'customer,job_charges').and_return("xml")
+    expect(@client).to receive(:get).with(path:'jobs.xml', params:{:include => 'customer,job_charges'}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:jobs)
     @client.jobs(include: 'customer,job_charges')
@@ -75,10 +68,19 @@ RSpec.describe Kickserv::Models::Job do
 
   # Test case to filter with only.
   it 'should check jobs with only parameter' do
-    expect(@client).to receive(:get).with('jobs.xml', only: 'job_number,name').and_return("xml")
+    expect(@client).to receive(:get).with(path:'jobs.xml', params:{:only => 'job_number,name'}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:jobs)
     @client.jobs(only: 'job_number,name')
+  end
+
+  # Test case to filter job with job-number.
+  it 'should get jobs with filter job_number' do
+    job_number = 30
+    expect(@client).to receive(:get).with({:url=> Kickserv.get_url + 'jobs/', :path=>"#{job_number}.xml"}).and_return("xml")
+    expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
+    expect(@reader).to receive(:jobs)
+    @client.jobs(job_number: 30)
   end
 
   # Test jobs without filter from Kickserv data.
@@ -141,34 +143,49 @@ RSpec.describe Kickserv::Models::Job do
     end
   end
 
-  # # Test jobs with  filter as state from Kickserv data.
-  # # Test case use get_all_jobs_kickserv_with_filter_state.yml to record http response.
-  # # This test case call http api.
-  # # Filter the records based on state.
-  # # Validate the response against state field.
+  # Test jobs with filter as job-number from Kickserv data.
+  # Test case record the http response in
+  # get_jobs_with_job_number.yml file for offline mode.
+  # This test case call http api.
+  # Validate fields present in response.
+  it 'should get valid job data from Kickserv API with filter job_number' do
+    VCR.use_cassette("get_jobs_with_job_number") do
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+      jobs = client.jobs(job_number: 3)
+      expect(jobs.has_key?("job-number")).to eq true
+      expect(jobs['job-number']).to eq("3")
+    end
+  end
+
+  # Test jobs with  filter as state from Kickserv data.
+  # Test case use get_all_jobs_kickserv_with_filter_state.yml to record http response.
+  # This test case call http api.
+  # Filter the records based on state.
+  # Validate the response against state field.
   # it 'should get valid job data from Kickserv API with filter state' do
   #   VCR.use_cassette("get_all_jobs_kickserv_with_filter_state") do
-  #     client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
-  #     jobs = client.jobs(state: 'uncompleted')
+  #     client =  Kickserv::Client.new(api_key: '0ed73ed5e0e176336b291f29da3f53517d38bf7b', subdomain: 'daffyducts')
+  #     jobs = client.jobs(state: 'completed')
   #     jobs.each do |job|
-  #       expect(job['state']).to eq('uncompleted')
+  #       expect(jobs.has_key?("state")).to eq true
+  #       expect(job['state']).to eq('completed')
   #     end
   #   end
   # end
-  #
+
   # # Test jobs with filter with combination of page and scheduled from  kickserv data
   # # Test case use get_all_jobs_kickserv_with_filter_combination.yml to record http response.
   # # This test case call http api.
   # # Filter the records based on combinations like page, scheduled and state.
   # # Validate the response.
   # it 'should get valid job data from Kickserv API with filter combination' do
+  #   current_date = DateTime.now.strftime("%Y-%m-%d").to_date
   #   VCR.use_cassette("get_all_jobs_kickserv_with_filter_combination") do
-  #     client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+  #     client =  Kickserv::Client.new(api_key: '0ed73ed5e0e176336b291f29da3f53517d38bf7b', subdomain: 'daffyducts')
   #     jobs = client.jobs(page: 1, scheduled: 'today', state:'uncompleted')
-  #       schedule_date = DateTime.parse(job['scheduled-on']).to_date
-  #       current_date = DateTime.now.strftime("%Y-%m-%d").to_date
   #     jobs.each do |job|
-  #       expect(job['state']).to eq('uncompleted')
+  #       schedule_date = DateTime.parse(job['scheduled-on']).to_date
+  #       #expect(job['state']).to eq('uncompleted')
   #       expect(schedule_date).to eq(current_date)
   #     end
   #   end

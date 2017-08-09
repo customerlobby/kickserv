@@ -3,34 +3,24 @@ module Kickserv
     module Page
       START_INDEX = 1
       END_INDEX = 50000
-
       def calculate_page_count(entity_type, params, start_index = START_INDEX, end_index=END_INDEX)
-        index = start_index + ((end_index - start_index) / 2)
-        result_at_index = call_api(entity_type, update_params(params, index))
-          if result_at_index.empty?
-          calculate_page_count(entity_type, params, start_index, index)
-        else
-          # special handling for greater than END_INDEX
-          if (index + 1) > END_INDEX
-            result_at_start = []
+        # Variable to return total number of available pages.
+        @page_available = 0
+        while(end_index >= start_index)
+          # Calculate the mid of pages.
+          mid = ((start_index + end_index)/2).floor
+          # Check mid is present api list.
+          result_at_index = call_api(entity_type, update_params(params, mid))
+          if result_at_index != nil and (result_at_index.size > 0)
+            # Update start to search page on right side.
+            @page_available =  mid
+            start_index = mid + 1
           else
-            result_at_start = call_api(entity_type, update_params(params, index + 1))
-          end
-
-          # special handling for less than START_INDEX
-          if (index - 1) < START_INDEX
-            result_at_end = [1]
-          else
-            result_at_end = call_api(entity_type, update_params(params, index - 1))
-          end
-          if result_at_start.empty? && result_at_end.size > 0
-            # end page found
-            return index
-          else
-            # look for index which is not empty to
-            calculate_page_count(entity_type, params, index, index + (index / 2) + 1)
+            # Update the end to search page on left side.
+            end_index = mid - 1
           end
         end
+        @page_available
       end
 
       # Update Kickserv API params with the page number

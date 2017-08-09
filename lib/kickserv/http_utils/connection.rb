@@ -6,7 +6,6 @@ module Kickserv
   module HttpUtils
     # Kickserv API connection implementation
     module Connection
-
       def get_url
         "https://#{subdomain}.#{endpoint}#{api_version}/"
       end

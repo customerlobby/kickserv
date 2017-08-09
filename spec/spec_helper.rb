@@ -9,7 +9,6 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
-  config.extend VCR::RSpec::Macros
 end
 
 def source(file_name)
@@ -19,5 +18,5 @@ end
 
 VCR.configure do |config|
   config.cassette_library_dir     = 'spec/fixtures'
-  config.stub_with                  :faraday
+  config.hook_into                  :faraday
 end
