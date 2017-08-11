@@ -48,7 +48,7 @@ client.customers
 client.customers(page: 2)
 client.customers(service_zip_code: '30102')
 client.customers(name: 'Aime Pavao')
-client.customers(customer_number: '2')
+client.customer(2)
 ```
 
 ### Get jobs
@@ -61,7 +61,7 @@ client.jobs(state: 'completed')
 client.jobs(job_type_id: 14761)
 client.jobs(only: 'job_number,id,customer_id,name,status')
 client.jobs(page: 1, scheduled: 'today', state: 'uncompleted')
-client.jobs(job_number: '3')
+client.job(3)
 ```
 
 ## Contributing
