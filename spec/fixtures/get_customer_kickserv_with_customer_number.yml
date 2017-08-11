@@ -21,7 +21,7 @@ http_interactions:
       content-type:
       - application/xml; charset=utf-8
       date:
-      - Thu, 10 Aug 2017 08:43:41 GMT
+      - Fri, 11 Aug 2017 05:40:40 GMT
       expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       pragma:
@@ -29,7 +29,7 @@ http_interactions:
       server:
       - Kickserv
       set-cookie:
-      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWNiOTc1NDMwNzRhZDU1NTE4MjljY2Y5MTFjNzZhNjQ0BjsAVEkiDnJldHVybl90bwY7AEYiFS9jdXN0b21lcnMvMi54bWw%3D--fc4d2f3f08fff2ecb6b7a563fb1160ac7bc0624a;
+      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWRmY2UxNDRlNGMzNjE3YmUwOWUyMzk0Zjg2MmZlODg3BjsAVEkiDnJldHVybl90bwY7AEYiFS9jdXN0b21lcnMvMi54bWw%3D--aa90e93a94df2022ac887ae39f3729dd39f87c9f;
         domain=.kickservapp.com; path=/; secure; HttpOnly
       strict-transport-security:
       - max-age=31536000
@@ -40,15 +40,15 @@ http_interactions:
       x-frame-options:
       - SAMEORIGIN
       x-request-id:
-      - c8318ecd-d26f-4851-a2f4-5e8dc40c2d83
+      - e8bc8fe5-d482-422e-93c2-cadff5e3ea19
       x-revision:
-      - 0508ed9160511be3f6e6fe32519f97993e67418c
+      - e67670e823f3656602ab442128e279d01e4287d9
       x-runtime:
-      - '0.071463'
+      - '0.068324'
       x-served-by:
-      - rochester
+      - chandler
       x-transaction:
-      - dce6cb8e-0315-40a6-89f6-51c88fa7c7c7
+      - cfb54fc9-2791-497d-9be5-5067e8d46083
       x-xss-protection:
       - 1; mode=block
       content-length:
@@ -194,5 +194,5 @@ http_interactions:
           <children type="array"/>
         </customers>
     http_version: 
-  recorded_at: Thu, 10 Aug 2017 08:43:41 GMT
+  recorded_at: Fri, 11 Aug 2017 05:40:40 GMT
 recorded_with: VCR 3.0.3

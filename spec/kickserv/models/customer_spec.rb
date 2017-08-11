@@ -30,7 +30,7 @@ RSpec.describe Kickserv::Models::Customer do
     expect(@client).to receive(:get).with({:url=> Kickserv.get_url + 'customers/', :path=>"#{customer_number}.xml"}).and_return("xml")
     expect(Kickserv::CustomerXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:customers)
-    @client.customers(customer_number: 2)
+    @client.customer(2)
   end
 
   # Test jobs without filter from Kickserv data
@@ -79,9 +79,21 @@ RSpec.describe Kickserv::Models::Customer do
   it 'should get valid customers data from Kickserv API with filter customer_number' do
     VCR.use_cassette("get_customer_kickserv_with_customer_number") do
       client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
-      jobs = client.customers(customer_number: 2)
+      jobs = client.customer(2)
       expect(jobs.has_key?("customer-number")).to eq true
       expect(jobs['customer-number']).to eq("2")
+    end
+  end
+
+  # Test customers  with invalid customer number from Kickserv data.
+  # Test case record the http response in
+  # get_customer_kickserv_with_customer_number_invalid.yml file for offline mode.
+  # This test case call http api.
+  # Check the response against the StandardError.
+  it 'should get valid customers data from Kickserv API with filter invalid_customer_number' do
+    VCR.use_cassette("get_customer_kickserv_with_customer_number_invalid") do
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+      expect {client.customer(2000000){raise}}.to raise_error(StandardError)
     end
   end
 end

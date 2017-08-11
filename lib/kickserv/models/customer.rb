@@ -8,15 +8,17 @@ module Kickserv
       # include module http_utils to call kickserv apis to fetch data
       include HttpUtils::Request
 
+      # Added method to get customers data with different filters.
       def customers(params = {})
-        if params.has_key?(:customer_number)
-          return CustomerXmlReader.new(get(url: get_url + 'customers/',
-                                           path: "#{params[:customer_number]}.xml")).customers
-        else
           # Get all the customers data from kickserv APIs and return
           return CustomerXmlReader.new(get(path: 'customers.xml', params: params)).customers
-        end
       end
-    end
+
+      # Added method to filter customer based on customer-number.
+      def customer(customer_number)
+        return CustomerXmlReader.new(get(url: get_url + 'customers/',
+                                         path: "#{customer_number}.xml")).customers
+      end
+   end
   end
 end

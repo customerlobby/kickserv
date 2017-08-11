@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://daffyducts.kickservapp.com/jobs/2000000.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Authorization:
+      - Basic MGVkNzNlZDVlMGUxNzYzMzZiMjkxZjI5ZGEzZjUzNTE3ZDM4YmY3YjowZWQ3M2VkNWUwZTE3NjMzNmIyOTFmMjlkYTNmNTM1MTdkMzhiZjdi
+  response:
+    status:
+      code: 400
+      message: 
+    headers:
+      cache-control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      content-type:
+      - application/xml; charset=utf-8
+      date:
+      - Fri, 11 Aug 2017 06:05:46 GMT
+      expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      pragma:
+      - no-cache
+      server:
+      - Kickserv
+      set-cookie:
+      - _ksa_secure_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJTY0ZmNmZmE5ZTJhNDRmOWI3MDUyNTQ2NDAwZGQ3YzA3BjsAVEkiDnJldHVybl90bwY7AEYiFi9qb2JzLzIwMDAwMDAueG1sSSIKZmxhc2gGOwBUewdJIgxkaXNjYXJkBjsAVFsGSSIKZXJyb3IGOwBGSSIMZmxhc2hlcwY7AFR7BkkiCmVycm9yBjsARkkiEUludmFsaWQgam9iLgY7AFQ%3D--efd90ec1168543528c52d11099fc225e531862c2;
+        domain=.kickservapp.com; path=/; secure; HttpOnly
+      strict-transport-security:
+      - max-age=31536000
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 9b595797-17d2-449e-8171-428ff1c8894f
+      x-revision:
+      - e67670e823f3656602ab442128e279d01e4287d9
+      x-runtime:
+      - '0.018452'
+      x-served-by:
+      - st-paul
+      x-transaction:
+      - 84b659f3-35c1-4fd6-a6d6-4d59fd14ae8d
+      x-xss-protection:
+      - 1; mode=block
+      content-length:
+      - '88'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <errors>
+          <error>Invalid job.</error>
+        </errors>
+    http_version: 
+  recorded_at: Fri, 11 Aug 2017 06:05:46 GMT
+recorded_with: VCR 3.0.3
