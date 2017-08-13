@@ -8,28 +8,29 @@ RSpec.configure do |config|
 end
 
 RSpec.describe Kickserv::Models::Customer do
-  # Test case to get jobs with page
-  it 'should get customer' do
-    expect(@client).to receive(:get).with('customers.xml', page: 2).and_return("xml")
-    expect(Kickserv::CustomerXmlReader).to receive(:new).with("xml").and_return(@reader)
-    expect(@reader).to receive(:customers)
-    @client.customers(page: 2)
-  end
-
   # Test case to get customer without filter.
   it 'should get customer without filter' do
-    expect(@client).to receive(:get).with('customers.xml', {}).and_return("xml")
+    expect(@client).to receive(:get).with(path:'customers.xml', params:{}).and_return("xml")
     expect(Kickserv::CustomerXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:customers)
     @client.customers
   end
 
-  #Test case to filter customer
+  # Test case to filter customer
   it 'should check customer with filter' do
-    expect(@client).to receive(:get).with('customers.xml', service_zip_code: 55555).and_return("xml")
+    expect(@client).to receive(:get).with(path:'customers.xml', params:{:service_zip_code=> 55555}).and_return("xml")
     expect(Kickserv::CustomerXmlReader).to receive(:new).with("xml").and_return(@reader)
     expect(@reader).to receive(:customers)
     @client.customers(service_zip_code: 55555)
+  end
+
+  # Test case to filter with customer-number.
+  it 'should get customer with filter customer_number' do
+    customer_number = 2
+    expect(@client).to receive(:get).with({:url=> Kickserv.get_url + 'customers/', :path=>"#{customer_number}.xml"}).and_return("xml")
+    expect(Kickserv::CustomerXmlReader).to receive(:new).with("xml").and_return(@reader)
+    expect(@reader).to receive(:customers)
+    @client.customer(2)
   end
 
   # Test jobs without filter from Kickserv data
@@ -66,6 +67,33 @@ RSpec.describe Kickserv::Models::Customer do
       jobs.each do |job|
         expect(job['service-zip-code']).to eq('30102')
       end
+    end
+  end
+
+  # Test customers filter customer_number from Kickserv data.
+  # Test case record the http response in
+  # get_customer_kickserv_with_customer_number.yml file for offline mode.
+  # This test case call http api.
+  # Filter the records based on filter like service_zip_code.
+  # Validate the each records against filter value.
+  it 'should get valid customers data from Kickserv API with filter customer_number' do
+    VCR.use_cassette("get_customer_kickserv_with_customer_number") do
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+      jobs = client.customer(2)
+      expect(jobs.has_key?("customer-number")).to eq true
+      expect(jobs['customer-number']).to eq("2")
+    end
+  end
+
+  # Test customers  with invalid customer number from Kickserv data.
+  # Test case record the http response in
+  # get_customer_kickserv_with_customer_number_invalid.yml file for offline mode.
+  # This test case call http api.
+  # Check the response against the StandardError.
+  it 'should get valid customers data from Kickserv API with filter invalid_customer_number' do
+    VCR.use_cassette("get_customer_kickserv_with_customer_number_invalid") do
+      client =  Kickserv::Client.new(api_key: 'API_KEY', subdomain: 'daffyducts')
+      expect {client.customer(2000000){raise}}.to raise_error(StandardError)
     end
   end
 end

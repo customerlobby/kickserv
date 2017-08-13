@@ -1,18 +1,23 @@
 require 'faraday_middleware'
 
-Dir[File.expand_path('../../faraday/*.rb', __FILE__)].each{|f| require f}
+Dir[File.expand_path('../../faraday/*.rb', __FILE__)].each {|f| require f}
 
 module Kickserv
   module HttpUtils
     # Kickserv API connection implementation
     module Connection
+      def get_url
+        "https://#{subdomain}.#{endpoint}#{api_version}/"
+      end
 
       private
 
-      def connection
+      def connection(url = nil)
         options = {
-            :url => "https://#{subdomain}.#{endpoint}#{api_version}/"
+            :url => get_url
         }
+
+        options[:url] = url unless url.nil?
 
         Faraday::Connection.new(options) do |connection|
           connection.use Faraday::Request::BasicAuthentication, api_key, api_key

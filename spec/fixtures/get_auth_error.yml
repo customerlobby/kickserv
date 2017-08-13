@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://daffyducts.kickservapp.com/jobs.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Authorization:
+      - Basic QVBJX0tFWTpBUElfS0VZ
+  response:
+    status:
+      code: 401
+      message: 
+    headers:
+      cache-control:
+      - no-cache
+      content-type:
+      - application/xml; charset=utf-8
+      date:
+      - Thu, 10 Aug 2017 07:42:32 GMT
+      server:
+      - Kickserv
+      set-cookie:
+      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBjNWM4NWYxNWZhMzA3OTI0YWJhYmU5Y2FjM2ZjYWIzBjsAVEkiDnJldHVybl90bwY7AEYiDi9qb2JzLnhtbA%3D%3D--7e53891efcd966f9a6bc4f1a5ef73db7f0355d8e;
+        domain=.kickservapp.com; path=/; secure; HttpOnly
+      strict-transport-security:
+      - max-age=31536000
+      www-authenticate:
+      - Basic realm="Application"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 135bc753-019a-4ec1-9da4-6aa76887c051
+      x-revision:
+      - 0508ed9160511be3f6e6fe32519f97993e67418c
+      x-runtime:
+      - '0.015220'
+      x-served-by:
+      - rochester
+      x-transaction:
+      - f2e4be23-0088-4bd2-bfc8-59a574ff76e9
+      x-xss-protection:
+      - 1; mode=block
+      content-length:
+      - '27'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: 'HTTP Basic: Access denied.
+
+'
+    http_version: 
+  recorded_at: Thu, 10 Aug 2017 07:42:32 GMT
+recorded_with: VCR 3.0.3
