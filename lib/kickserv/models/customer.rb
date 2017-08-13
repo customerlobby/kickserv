@@ -17,7 +17,7 @@ module Kickserv
       # Added method to filter customer based on customer-number.
       def customer(customer_number)
         return CustomerXmlReader.new(get(url: get_url + 'customers/',
-                                         path: "#{customer_number}.xml")).customers
+                                         path: "#{customer_number}.xml")).customer
       end
    end
   end

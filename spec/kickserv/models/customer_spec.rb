@@ -29,7 +29,7 @@ RSpec.describe Kickserv::Models::Customer do
     customer_number = 2
     expect(@client).to receive(:get).with({:url=> Kickserv.get_url + 'customers/', :path=>"#{customer_number}.xml"}).and_return("xml")
     expect(Kickserv::CustomerXmlReader).to receive(:new).with("xml").and_return(@reader)
-    expect(@reader).to receive(:customers)
+    expect(@reader).to receive(:customer)
     @client.customer(2)
   end
 

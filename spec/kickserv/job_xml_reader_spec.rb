@@ -22,7 +22,7 @@ RSpec.describe Kickserv::JobXmlReader do
 
   # Total number of keys in job xml.
   it "should check job total number of attributes" do
-    expect(@jobs[0].keys.length).to eq(18)
+    expect(@jobs[0].keys.length).to eq(27)
   end
 
   # Total number of keys in customer xml.
@@ -34,11 +34,12 @@ RSpec.describe Kickserv::JobXmlReader do
 
   # Test case for validate xml fields
   it "should validate fields for jobs xml" do
-    key_hash = ['id', 'customer-id', 'total', 'subtotal', 'balance-remaining',
-                'created-at', 'scheduled-on', 'name', 'recurring-job-id', 'job-type-id',
-                'invoice-terms', 'invoice-notes', 'estimate-terms',
-                'description', 'status', 'invoice-status',
-                'notification-sent', 'job-number']
+    key_hash = %w(id customer-id total subtotal balance-remaining
+                        created-at scheduled-on started-on completed-on name txn-id
+                        recurring-job-id job-type-id job-status-id duration invoice-terms
+                        invoice-notes estimate-terms estimate-notes description
+                        status invoice-status invoice-date invoice-paid-on
+                        notification-sent total-expenses job-number)
     expect(@jobs[0].keys).to contain_exactly(*key_hash)
   end
 end
