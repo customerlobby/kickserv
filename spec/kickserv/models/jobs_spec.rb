@@ -79,7 +79,7 @@ RSpec.describe Kickserv::Models::Job do
     job_number = 30
     expect(@client).to receive(:get).with({:url=> Kickserv.get_url + 'jobs/', :path=>"#{job_number}.xml"}).and_return("xml")
     expect(Kickserv::JobXmlReader).to receive(:new).with("xml").and_return(@reader)
-    expect(@reader).to receive(:jobs)
+    expect(@reader).to receive(:job)
     @client.job(30)
   end
 
@@ -138,7 +138,7 @@ RSpec.describe Kickserv::Models::Job do
         expect(job.has_key?("name")).to eq true
         expect(job.has_key?("status")).to eq true
         expect(job.has_key?("job-number")).to eq true
-        expect(job.keys.length).to eq(5)
+        expect(job.keys.length).to eq(27)
       end
     end
   end

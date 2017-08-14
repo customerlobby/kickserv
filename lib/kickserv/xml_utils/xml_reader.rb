@@ -5,14 +5,11 @@ module Kickserv
   # XmlReader is used to encapsulate as much as possible of the resulting XML parsing
   # It utilizes a Nokogiri Nodeset to read the XML and convert to 2 arrays of hashes (customers, jobs)
   class XmlReader
+    @xml_string
     # @return [XmlReader] with the xml_string parsed into instance variables
     # @param xml_string [String] Xml String with the structure provided by the Kickserv API
     def initialize(xml_string)
-      parse_xml(xml_string)
-    end
-
-    def parse_xml(xml_string)
-      # Let Child override and implement this method
+      @xml_string = xml_string
     end
 
     private

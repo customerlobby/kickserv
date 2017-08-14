@@ -17,7 +17,7 @@ module Kickserv
       # Added method to filter job based on job-number.
       def job(job_number)
         return JobXmlReader.new(get(url: get_url + 'jobs/',
-                                    path: "#{job_number}.xml")).jobs
+                                    path: "#{job_number}.xml")).job
       end
     end
   end
