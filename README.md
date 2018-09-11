@@ -22,20 +22,23 @@ Or install it yourself as:
 
 ### Configuration
 
-Before you can make calls to Kickserv you must configure the library with a valid API Token and a valid subdomain.
+Before you can make calls to Kickserv you must configure the library with a valid API Token and a valid account_slug.
 An employee’s unique API token can be found in the employee management section of your Kickserv account.
 
 There are two ways to configure the  gem. You can pass a hash of configuration options when you create
 a client, or you can use a configure block.
 
 ```ruby
-client = Kickserv.client(api_key: "YOUR_TOKEN_HERE", subdomain: "YOUR_SUBDOMAIN_HERE")
+client = Kickserv.client(
+	api_key: "YOUR_TOKEN_HERE",
+	account_slug: "YOUR_ACCOUNT_SLUG_HERE"
+)
 ```
 
 ```ruby
 Kickserv.configure do |config|
   config.api_key = "YOUR_TOKEN_HERE"
-  config.subdomain = "YOUR_SUBDOMAIN_HERE"
+  config.account_slug = "YOUR_ACCOUNT_SLUG_HERE"
 end
 
 client = Kickserv.client
