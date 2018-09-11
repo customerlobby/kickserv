@@ -21,6 +21,6 @@ module Kickserv
         CustomerXmlReader.new(get(url: get_url + 'customers/',
                                   path: "#{customer_number}.xml")).customer
       end
-   end
+    end
   end
 end

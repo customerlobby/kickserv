@@ -2,57 +2,55 @@
 http_interactions:
 - request:
     method: get
-    uri: https://daffyducts.kickservapp.com/customers/2.xml
+    uri: https://kickservapp.com/suffolkplumbing/customers/2.xml
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.12.2
+      - Faraday v0.15.2
       Authorization:
-      - Basic MGVkNzNlZDVlMGUxNzYzMzZiMjkxZjI5ZGEzZjUzNTE3ZDM4YmY3YjowZWQ3M2VkNWUwZTE3NjMzNmIyOTFmMjlkYTNmNTM1MTdkMzhiZjdi
+      - Basic OThlMTgxZmEwY2U4Nzk3NzgzMjUwMmZmYjQzMTNjODQ5N2FjYTk2Yzo5OGUxODFmYTBjZTg3OTc3ODMyNTAyZmZiNDMxM2M4NDk3YWNhOTZj
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
       cache-control:
       - no-cache, no-store, max-age=0, must-revalidate
       content-type:
       - application/xml; charset=utf-8
       date:
-      - Fri, 11 Aug 2017 05:40:40 GMT
+      - Tue, 11 Sep 2018 13:05:52 GMT
       expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       pragma:
       - no-cache
       server:
-      - Kickserv
+      - nginx
       set-cookie:
-      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWRmY2UxNDRlNGMzNjE3YmUwOWUyMzk0Zjg2MmZlODg3BjsAVEkiDnJldHVybl90bwY7AEYiFS9jdXN0b21lcnMvMi54bWw%3D--aa90e93a94df2022ac887ae39f3729dd39f87c9f;
-        domain=.kickservapp.com; path=/; secure; HttpOnly
+      - _kickserv_secure_session=UmluNnRDS1lGNHQwYXZVM254MkdQaEMwWUhyL0FCZzAwT3FyWkFWVFhZUlh5ZExoYmcwZVdwQkw1bXFsSnFwV2tHbDB5Mnkzc3ZyYVMwYnpRRHFyeFE9PS0tRVUveWZFbjB2ZFJZejRXbDVjbmw0dz09--eec8a3a8b2ec4615e34b4bc58b4daaa82fb4d2d0;
+        path=/; secure; HttpOnly
       strict-transport-security:
       - max-age=31536000
-      vary:
-      - Accept-Encoding
       x-content-type-options:
       - nosniff
       x-frame-options:
       - SAMEORIGIN
       x-request-id:
-      - e8bc8fe5-d482-422e-93c2-cadff5e3ea19
+      - 46cd1066-0007-4359-998b-cc2eb7ed5bc9
       x-revision:
-      - e67670e823f3656602ab442128e279d01e4287d9
+      - unknown
       x-runtime:
-      - '0.068324'
+      - '0.115990'
       x-served-by:
-      - chandler
+      - anchorage
       x-transaction:
-      - cfb54fc9-2791-497d-9be5-5067e8d46083
+      - 75ae2733-5611-4d60-ae62-a6c89166b80b
       x-xss-protection:
       - 1; mode=block
       content-length:
-      - '1561'
+      - '1442'
       connection:
       - Close
     body:
@@ -60,63 +58,61 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <customers>
-          <id type="integer">1614794</id>
+          <id type="integer">1857079</id>
           <customer-number type="integer">2</customer-number>
           <origin>manual</origin>
-          <created-at type="dateTime">2009-02-24T13:58:26-05:00</created-at>
-          <name>083108AS</name>
-          <phone-number>(404) 413-3294</phone-number>
-          <fax nil="true"/>
-          <service-address>Adrienne Smith
-        1972 Wright's Way</service-address>
-          <service-city>Jonesboro</service-city>
-          <service-state>GA</service-state>
-          <service-zip-code>30236</service-zip-code>
-          <billing-address>Adrienne Smith
-        1972 Wright's Way</billing-address>
-          <billing-city>Jonesboro</billing-city>
-          <billing-state>GA</billing-state>
-          <billing-zip-code>30236</billing-zip-code>
-          <special-instructions nil="true"/>
-          <email-address>asmith221@gmail.com</email-address>
-          <alt-phone-number nil="true"/>
-          <parent-id type="integer">1614793</parent-id>
+          <created-at type="dateTime">2015-04-06T18:45:47-04:00</created-at>
+          <name>Savino Marge</name>
+          <phone-number>888-666-8830</phone-number>
+          <fax></fax>
+          <service-address>161 Bellport ave</service-address>
+          <service-city>Medford </service-city>
+          <service-state>NY</service-state>
+          <service-zip-code></service-zip-code>
+          <billing-address>601 Merritt 7 </billing-address>
+          <billing-city>Norwalk </billing-city>
+          <billing-state>CT</billing-state>
+          <billing-zip-code>06851</billing-zip-code>
+          <special-instructions></special-instructions>
+          <email-address></email-address>
+          <alt-phone-number></alt-phone-number>
+          <parent-id type="integer">1854914</parent-id>
           <password-digest nil="true"/>
-          <list-id>800000AC-1220550022</list-id>
-          <time-created type="dateTime">2008-09-04T14:40:22-04:00</time-created>
-          <time-modified type="dateTime">2008-09-04T14:41:30-04:00</time-modified>
-          <edit-sequence>1220550022</edit-sequence>
-          <full-name>083108AS</full-name>
+          <list-id nil="true"/>
+          <time-created type="dateTime" nil="true"/>
+          <time-modified type="dateTime" nil="true"/>
+          <edit-sequence nil="true"/>
+          <full-name>Savino Marge</full-name>
           <is-active type="boolean">true</is-active>
-          <parent-ref-list-id>800000AB-1220549967</parent-ref-list-id>
-          <sublevel type="integer">1</sublevel>
-          <company-name nil="true"/>
-          <first-name>Adrienne</first-name>
-          <last-name>Smith</last-name>
-          <phone>(404) 413-3294</phone>
-          <mobile nil="true"/>
+          <parent-ref-list-id nil="true"/>
+          <sublevel type="integer" nil="true"/>
+          <company-name>Savino Marge</company-name>
+          <first-name nil="true"/>
+          <last-name nil="true"/>
+          <phone>888-666-8830</phone>
+          <mobile></mobile>
           <pager nil="true"/>
           <alt-phone nil="true"/>
-          <email>asmith221@gmail.com</email>
-          <contact>Adrian Smith</contact>
+          <email nil="true"/>
+          <contact nil="true"/>
           <alt-contact nil="true"/>
-          <customer-type-ref-full-name>Internet:Spotrunner Web</customer-type-ref-full-name>
-          <terms-ref-full-name>Due on receipt</terms-ref-full-name>
-          <sales-rep-ref-full-name>JT</sales-rep-ref-full-name>
-          <balance type="decimal">0.0</balance>
-          <total-balance type="decimal">0.0</total-balance>
-          <sales-tax-code-ref-full-name>Tax</sales-tax-code-ref-full-name>
-          <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>
+          <customer-type-ref-full-name nil="true"/>
+          <terms-ref-full-name nil="true"/>
+          <sales-rep-ref-full-name nil="true"/>
+          <balance type="decimal" nil="true"/>
+          <total-balance type="decimal" nil="true"/>
+          <sales-tax-code-ref-full-name nil="true"/>
+          <item-sales-tax-ref-full-name nil="true"/>
           <resale-number nil="true"/>
           <account-number nil="true"/>
           <credit-limit type="decimal" nil="true"/>
           <preferred-payment-method-ref-full-name nil="true"/>
-          <job-status>Closed</job-status>
-          <job-start-date type="dateTime">2008-08-31T00:00:00-04:00</job-start-date>
-          <job-projected-end-date type="dateTime">2008-08-31T00:00:00-04:00</job-projected-end-date>
-          <job-end-date type="dateTime">2008-08-31T00:00:00-04:00</job-end-date>
-          <job-desc>GOLD</job-desc>
-          <job-type-ref-full-name>Residential</job-type-ref-full-name>
+          <job-status nil="true"/>
+          <job-start-date type="dateTime" nil="true"/>
+          <job-projected-end-date type="dateTime" nil="true"/>
+          <job-end-date type="dateTime" nil="true"/>
+          <job-desc nil="true"/>
+          <job-type-ref-full-name nil="true"/>
           <is-statement-with-parent type="boolean" nil="true"/>
           <delivery-method nil="true"/>
           <price-level-ref-full-name nil="true"/>
@@ -150,11 +146,11 @@ http_interactions:
           <custom-text10 nil="true"/>
           <custom-number10 type="decimal" nil="true"/>
           <custom-datetime10 type="dateTime" nil="true"/>
-          <updated-at type="dateTime">2009-02-24T14:00:09-05:00</updated-at>
+          <updated-at type="dateTime">2017-10-14T12:43:52-04:00</updated-at>
           <service-country></service-country>
-          <billing-country></billing-country>
-          <sales-tax-code-ref-list-id>80000001-1196217546</sales-tax-code-ref-list-id>
-          <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>
+          <billing-country>usa</billing-country>
+          <sales-tax-code-ref-list-id nil="true"/>
+          <item-sales-tax-ref-list-id nil="true"/>
           <custom-text11 nil="true"/>
           <custom-text12 nil="true"/>
           <custom-text13 nil="true"/>
@@ -165,18 +161,18 @@ http_interactions:
           <custom-text18 nil="true"/>
           <custom-text19 nil="true"/>
           <custom-text20 nil="true"/>
-          <created-by type="integer" nil="true"/>
-          <updated-by type="integer" nil="true"/>
-          <tax-id type="integer" nil="true"/>
-          <which-billing-address>service</which-billing-address>
+          <created-by type="integer">13040</created-by>
+          <updated-by type="integer">13040</updated-by>
+          <tax-id type="integer">4810</tax-id>
+          <which-billing-address>parent</which-billing-address>
           <customer-type-id type="integer" nil="true"/>
           <customer-source-id type="integer" nil="true"/>
           <import-id type="integer" nil="true"/>
           <stripe-customer-id nil="true"/>
-          <token>8Y5UX7H8rs7A7ouE2_QM4ck7dQVwgpxdzKVX3TGZX08</token>
+          <token>AN_cTgNG9eW0PD4rTXnRHbTcFYVpuXQOnloX-KzKgpY</token>
           <remember-me-token nil="true"/>
-          <latitude type="float" nil="true"/>
-          <longitude type="float" nil="true"/>
+          <latitude type="float">40.832136</latitude>
+          <longitude type="float">-72.957586</longitude>
           <company type="boolean">false</company>
           <deleted-at type="dateTime" nil="true"/>
           <qb-error nil="true"/>
@@ -191,8 +187,11 @@ http_interactions:
           <sales-tax-code-id type="integer" nil="true"/>
           <service-address-2 nil="true"/>
           <billing-address-2 nil="true"/>
+          <last-job-completed-number type="integer">8856</last-job-completed-number>
+          <last-job-completed-at type="dateTime">2017-10-20T11:20:26-04:00</last-job-completed-at>
+          <last-job-completed-name>HOMESERVE INTERNAL PLUMBING AND DRAIN</last-job-completed-name>
           <children type="array"/>
         </customers>
     http_version: 
-  recorded_at: Fri, 11 Aug 2017 05:40:40 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Tue, 11 Sep 2018 13:05:52 GMT
+recorded_with: VCR 4.0.0

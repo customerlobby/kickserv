@@ -91,11 +91,11 @@ RSpec.describe Kickserv::Models::Job do
   # Validate the mandatory fields not nil against response.
   it 'should get valid job data from Kickserv API' do
     VCR.use_cassette('get_all_jobs_kickserv') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       jobs = client.jobs
       expect(jobs.class).to eq(Array)
       unless jobs.empty?
-        job = jobs[0]
+        job = jobs.last
         expect(job['id']).not_to eq(nil)
         expect(job['job-number']).not_to eq(nil)
         expect(job['job-type-id']).not_to eq(nil)
@@ -113,7 +113,7 @@ RSpec.describe Kickserv::Models::Job do
   # Validate each record with current date.
   it 'should get valid job data from Kickserv API with filter schedule' do
     VCR.use_cassette('get_all_jobs_kickserv_with_filter_scheduled_on') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       jobs = client.jobs(scheduled: 'today')
       jobs.each do |job|
         schedule_date = DateTime.parse(job['scheduled-on']).to_date
@@ -131,7 +131,7 @@ RSpec.describe Kickserv::Models::Job do
   # Validate fields present in response.
   it 'should get valid job data from Kickserv API with filter only' do
     VCR.use_cassette('get_all_jobs_kickserv_with_filter_only') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       jobs = client.jobs(only: 'job_number,id,customer_id,name,status')
       jobs.each do |job|
         expect(job.key?('id')).to eq true
@@ -151,7 +151,7 @@ RSpec.describe Kickserv::Models::Job do
   # Validate fields present in response.
   it 'should get valid job data from Kickserv API with filter job_number' do
     VCR.use_cassette('get_jobs_with_job_number') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       jobs = client.job(3)
       expect(jobs.key?('job-number')).to eq true
       expect(jobs['job-number']).to eq('3')
@@ -165,7 +165,7 @@ RSpec.describe Kickserv::Models::Job do
   # Check the response against the StandardError.
   it 'should get valid customers data from Kickserv API with filter invalid_job_number' do
     VCR.use_cassette('get_customer_kickserv_with_job_number_invalid') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       expect { client.job(2_000_000) { raise } }.to raise_error(StandardError)
     end
   end
@@ -177,7 +177,7 @@ RSpec.describe Kickserv::Models::Job do
   # Validate the response against state field.
   # it 'should get valid job data from Kickserv API with filter state' do
   #   VCR.use_cassette("get_all_jobs_kickserv_with_filter_state") do
-  #     client =  Kickserv::Client.new(api_key: '0ed73ed5e0e176336b291f29da3f53517d38bf7b', account_slug: 'daffyducts')
+  #     client =  Kickserv::Client.new(api_key: '0ed73ed5e0e176336b291f29da3f53517d38bf7b', account_slug: 'suffolkplumbing')
   #     jobs = client.jobs(state: 'completed')
   #     jobs.each do |job|
   #       expect(jobs.has_key?("state")).to eq true
@@ -194,7 +194,7 @@ RSpec.describe Kickserv::Models::Job do
   # it 'should get valid job data from Kickserv API with filter combination' do
   #   current_date = DateTime.now.strftime("%Y-%m-%d").to_date
   #   VCR.use_cassette("get_all_jobs_kickserv_with_filter_combination") do
-  #     client =  Kickserv::Client.new(api_key: '0ed73ed5e0e176336b291f29da3f53517d38bf7b', account_slug: 'daffyducts')
+  #     client =  Kickserv::Client.new(api_key: '0ed73ed5e0e176336b291f29da3f53517d38bf7b', account_slug: 'suffolkplumbing')
   #     jobs = client.jobs(page: 1, scheduled: 'today', state:'uncompleted')
   #     jobs.each do |job|
   #       schedule_date = DateTime.parse(job['scheduled-on']).to_date

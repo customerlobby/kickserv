@@ -42,7 +42,7 @@ RSpec.describe Kickserv::Models::Customer do
   # Validate the mandatory fields not nil against response.
   it 'should get valid customers data from Kickserv API' do
     VCR.use_cassette('get_all_customers_kickserv') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       jobs = client.customers
       unless jobs.empty?
         job = jobs[0]
@@ -64,7 +64,7 @@ RSpec.describe Kickserv::Models::Customer do
   # Validate the each records against filter value.
   it 'should get valid customers data from Kickserv API with filter service_zip_code' do
     VCR.use_cassette('get_all_customers_kickserv_with_filter_service_zip_code') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       jobs = client.customers(service_zip_code: '30102')
       jobs.each do |job|
         expect(job['service-zip-code']).to eq('30102')
@@ -80,7 +80,7 @@ RSpec.describe Kickserv::Models::Customer do
   # Validate the each records against filter value.
   it 'should get valid customers data from Kickserv API with filter customer_number' do
     VCR.use_cassette('get_customer_kickserv_with_customer_number') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       jobs = client.customer(2)
       expect(jobs.key?('customer-number')).to eq true
       expect(jobs['customer-number']).to eq('2')
@@ -94,7 +94,7 @@ RSpec.describe Kickserv::Models::Customer do
   # Check the response against the StandardError.
   it 'should get valid customers data from Kickserv API with filter invalid_customer_number' do
     VCR.use_cassette('get_customer_kickserv_with_customer_number_invalid') do
-      client = Kickserv::Client.new(api_key: 'API_KEY', account_slug: 'daffyducts')
+      client = Kickserv::Client.new(api_key: '98e181fa0ce87977832502ffb4313c8497aca96c', account_slug: 'suffolkplumbing')
       expect { client.customer(2_000_000) { raise } }.to raise_error(StandardError)
     end
   end
