@@ -9,7 +9,7 @@ module Kickserv
     # Kickserv API connection implementation
     module Connection
       def get_url
-        "https://#{endpoint}#{api_version}/#{account_slug}"
+        "https://#{endpoint}#{api_version}/#{account_slug}/"
       end
 
       private
