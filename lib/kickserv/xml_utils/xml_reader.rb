@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bigdecimal'
 require 'nokogiri'
 
@@ -20,7 +22,7 @@ module Kickserv
     # Helper function that takes a node and field name, returning the value of the field or nil
     def get_value(node, field_name)
       value = node.at_css(field_name)
-      return nil if value.nil? or value.text.empty?
+      return nil if value.nil? || value.text.empty?
       value.text
     end
   end

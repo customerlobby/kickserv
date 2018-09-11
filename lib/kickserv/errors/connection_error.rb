@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # custom error for connection related failures, like no internet connection
 module Kickserv
   module Error

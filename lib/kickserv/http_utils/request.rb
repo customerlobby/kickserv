@@ -1,6 +1,8 @@
-require File.expand_path('../../http_utils/response', __FILE__)
-require File.expand_path('../../errors/connection_error', __FILE__)
-require File.expand_path('../../errors/authorization_error', __FILE__)
+# frozen_string_literal: true
+
+require File.expand_path('../http_utils/response', __dir__)
+require File.expand_path('../errors/connection_error', __dir__)
+require File.expand_path('../errors/authorization_error', __dir__)
 
 module Kickserv
   module HttpUtils
@@ -24,18 +26,18 @@ module Kickserv
         begin
           response = connection(url).send(method) do |request|
             case method
-              when :get
-                formatted_options = format_options(options)
-                request.url(path, formatted_options)
-              when :post, :put
-                request.headers['Content-Type'] = 'application/json'
-                request.body = options.to_json unless options.empty?
-                request.url(path)
+            when :get
+              formatted_options = format_options(options)
+              request.url(path, formatted_options)
+            when :post, :put
+              request.headers['Content-Type'] = 'application/json'
+              request.body = options.to_json unless options.empty?
+              request.url(path)
             end
             request.options.timeout = 120 # read timeout
             request.options.open_timeout = 300 # connection timeout
           end
-        rescue
+        rescue StandardError
           # handle connection related failures and raise gem specific standard error
           raise Kickserv::Error::ConnectionError.new, 'Connection failed.'
         end
@@ -53,13 +55,13 @@ module Kickserv
       def format_options(options)
         return if options.blank?
         opts = {}
-        options.each do |key, value|
+        options.each do |key, _value|
           if key == :page
-            opts[:page] = options[:page] if options.has_key?(:page)
+            opts[:page] = options[:page] if options.key?(:page)
           elsif key == :only
-            opts[:only] = format_fields(options[:only]) if options.has_key?(:only)
+            opts[:only] = format_fields(options[:only]) if options.key?(:only)
           elsif key == :include
-            opts[:include] = format_fields(options[:include]) if options.has_key?(:include)
+            opts[:include] = format_fields(options[:include]) if options.key?(:include)
           else
             opts[key] = options[key]
           end
@@ -72,9 +74,9 @@ module Kickserv
       # @return String
       def format_fields(fields)
         if fields.instance_of?(Array)
-          return fields.join(",")
+          fields.join(',')
         else
-          return fields.to_s
+          fields.to_s
         end
       end
     end

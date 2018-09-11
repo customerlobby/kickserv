@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 require 'faraday'
 require 'faraday_middleware'
 require 'active_support/all'
-require "kickserv/version"
+require 'kickserv/version'
 
-require File.expand_path('../kickserv/configuration', __FILE__)
-require File.expand_path('../kickserv/api', __FILE__)
-require File.expand_path('../kickserv/client', __FILE__)
+require File.expand_path('kickserv/configuration', __dir__)
+require File.expand_path('kickserv/api', __dir__)
+require File.expand_path('kickserv/client', __dir__)
 
 module Kickserv
   extend Configuration
