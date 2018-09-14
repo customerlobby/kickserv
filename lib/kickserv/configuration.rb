@@ -1,19 +1,20 @@
+# frozen_string_literal: true
+
 module Kickserv
   module Configuration
-
-    VALID_OPTIONS_KEYS = [
-      :api_key,
-      :subdomain,
-      :api_version,
-      :adapter,
-      :endpoint
+    VALID_OPTIONS_KEYS = %i[
+      api_key
+      api_version
+      adapter
+      account_slug
+      endpoint
     ].freeze
 
     # By default don't set the api key.
     DEFAULT_API_KEY = nil
 
-    # By default don't set the subdomain.
-    DEFAULT_SUBDOMAIN = nil
+    # By default don't set the account slug.
+    DEFAULT_ACCOUNT_SLUG = nil
 
     # By default use V1 of the API.
     DEFAULT_API_VERSION = nil
@@ -44,11 +45,11 @@ module Kickserv
 
     # Reset all configuration settings to default values.
     def reset
-      self.api_key     = DEFAULT_API_KEY
-      self.subdomain   = DEFAULT_SUBDOMAIN
-      self.api_version = DEFAULT_API_VERSION
-      self.endpoint    = DEFAULT_ENDPOINT
-      self.adapter     = DEFAULT_ADAPTER
+      self.api_key      = DEFAULT_API_KEY
+      self.api_version  = DEFAULT_API_VERSION
+      self.endpoint     = DEFAULT_ENDPOINT
+      self.account_slug = DEFAULT_ACCOUNT_SLUG
+      self.adapter      = DEFAULT_ADAPTER
     end
   end
 end

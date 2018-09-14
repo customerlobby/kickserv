@@ -1,20 +1,22 @@
+# frozen_string_literal: true
+
 require 'faraday_middleware'
 
-Dir[File.expand_path('../../faraday/*.rb', __FILE__)].each {|f| require f}
+Dir[File.expand_path('../faraday/*.rb', __dir__)].each { |f| require f }
 
 module Kickserv
   module HttpUtils
     # Kickserv API connection implementation
     module Connection
       def get_url
-        "https://#{subdomain}.#{endpoint}#{api_version}/"
+        "https://#{endpoint}#{api_version}/#{account_slug}/"
       end
 
       private
 
       def connection(url = nil)
         options = {
-            :url => get_url
+          url: get_url
         }
 
         options[:url] = url unless url.nil?

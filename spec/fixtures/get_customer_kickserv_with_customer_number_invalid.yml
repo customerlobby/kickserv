@@ -2,35 +2,35 @@
 http_interactions:
 - request:
     method: get
-    uri: https://daffyducts.kickservapp.com/customers/2000000.xml
+    uri: https://kickservapp.com/suffolkplumbing/customers/2000000.xml
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.12.2
+      - Faraday v0.15.2
       Authorization:
-      - Basic MGVkNzNlZDVlMGUxNzYzMzZiMjkxZjI5ZGEzZjUzNTE3ZDM4YmY3YjowZWQ3M2VkNWUwZTE3NjMzNmIyOTFmMjlkYTNmNTM1MTdkMzhiZjdi
+      - Basic OThlMTgxZmEwY2U4Nzk3NzgzMjUwMmZmYjQzMTNjODQ5N2FjYTk2Yzo5OGUxODFmYTBjZTg3OTc3ODMyNTAyZmZiNDMxM2M4NDk3YWNhOTZj
   response:
     status:
       code: 400
-      message: 
+      message: Bad Request
     headers:
       cache-control:
       - no-cache, no-store, max-age=0, must-revalidate
       content-type:
       - application/xml; charset=utf-8
       date:
-      - Fri, 11 Aug 2017 05:54:48 GMT
+      - Tue, 11 Sep 2018 13:05:54 GMT
       expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       pragma:
       - no-cache
       server:
-      - Kickserv
+      - nginx
       set-cookie:
-      - _ksa_secure_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJTNiZDYyMjM4MWE3YmJiNjc2YzA2NGYyYzcwMWE5MTlmBjsAVEkiDnJldHVybl90bwY7AEYiGy9jdXN0b21lcnMvMjAwMDAwMC54bWxJIgpmbGFzaAY7AFR7B0kiDGRpc2NhcmQGOwBUWwZJIgplcnJvcgY7AEZJIgxmbGFzaGVzBjsAVHsGSSIKZXJyb3IGOwBGSSIWSW52YWxpZCBjdXN0b21lci4GOwBU--a43a0a56fc16eb1db5c0f49954f13999e356682d;
-        domain=.kickservapp.com; path=/; secure; HttpOnly
+      - _kickserv_secure_session=eEdWdWl2NXppS3E1N09rV2Q3YlRib3RlcjhSSVBIdkIxR1hUeklJRXpsSkZrNzlJa1R0SWxZSUwrMG5DNm5BSExZU2Z4cXc2Q3hwS1RHaVNNSlA0b2xZUDFWMmR2RXVmREY0RHl3WDdJRUFuSUZ5eGhZSmlGSVRwYjRER1pQaWE2ZEM1eXJ0cjY3NWpqOGVWMC9sRm4wcEh3NnlROHI3bUZDWkk5MGdJcUxjeWVjemdIemE2U3g0Nk9ZM2oybmx0NWdZMnhhckFMU1V0VzUvaXdGRnlZQT09LS11ZlRoM2dCYno4d25hbFBLZ0MzZUFRPT0%3D--ef6da078b99a083cc3fd92804afbb2f7325ae6fc;
+        path=/; secure; HttpOnly
       strict-transport-security:
       - max-age=31536000
       x-content-type-options:
@@ -38,15 +38,15 @@ http_interactions:
       x-frame-options:
       - SAMEORIGIN
       x-request-id:
-      - 4b4be195-5500-4df7-b3f3-f567ccf69c72
+      - 554f07e1-0b21-456e-b355-7b17baf393c0
       x-revision:
-      - e67670e823f3656602ab442128e279d01e4287d9
+      - unknown
       x-runtime:
-      - '0.019740'
+      - '0.048605'
       x-served-by:
-      - chandler
+      - long-beach
       x-transaction:
-      - ff58ff4c-cd89-4f28-af69-cd0f8f42510f
+      - c51f36f6-d6b4-4b7a-ad24-456fa77252a2
       x-xss-protection:
       - 1; mode=block
       content-length:
@@ -61,5 +61,5 @@ http_interactions:
           <error>Invalid customer.</error>
         </errors>
     http_version: 
-  recorded_at: Fri, 11 Aug 2017 05:54:49 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Tue, 11 Sep 2018 13:05:54 GMT
+recorded_with: VCR 4.0.0

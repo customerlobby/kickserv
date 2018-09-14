@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Kickserv
   # Wrapper for the Kickserv HTTP API.
   class Client < API

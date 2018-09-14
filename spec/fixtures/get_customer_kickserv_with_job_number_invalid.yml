@@ -2,35 +2,35 @@
 http_interactions:
 - request:
     method: get
-    uri: https://daffyducts.kickservapp.com/jobs/2000000.xml
+    uri: https://kickservapp.com/suffolkplumbing/jobs/2000000.xml
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.12.2
+      - Faraday v0.15.2
       Authorization:
-      - Basic MGVkNzNlZDVlMGUxNzYzMzZiMjkxZjI5ZGEzZjUzNTE3ZDM4YmY3YjowZWQ3M2VkNWUwZTE3NjMzNmIyOTFmMjlkYTNmNTM1MTdkMzhiZjdi
+      - Basic OThlMTgxZmEwY2U4Nzk3NzgzMjUwMmZmYjQzMTNjODQ5N2FjYTk2Yzo5OGUxODFmYTBjZTg3OTc3ODMyNTAyZmZiNDMxM2M4NDk3YWNhOTZj
   response:
     status:
       code: 400
-      message: 
+      message: Bad Request
     headers:
       cache-control:
       - no-cache, no-store, max-age=0, must-revalidate
       content-type:
       - application/xml; charset=utf-8
       date:
-      - Fri, 11 Aug 2017 06:05:46 GMT
+      - Tue, 11 Sep 2018 13:07:03 GMT
       expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       pragma:
       - no-cache
       server:
-      - Kickserv
+      - nginx
       set-cookie:
-      - _ksa_secure_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJTY0ZmNmZmE5ZTJhNDRmOWI3MDUyNTQ2NDAwZGQ3YzA3BjsAVEkiDnJldHVybl90bwY7AEYiFi9qb2JzLzIwMDAwMDAueG1sSSIKZmxhc2gGOwBUewdJIgxkaXNjYXJkBjsAVFsGSSIKZXJyb3IGOwBGSSIMZmxhc2hlcwY7AFR7BkkiCmVycm9yBjsARkkiEUludmFsaWQgam9iLgY7AFQ%3D--efd90ec1168543528c52d11099fc225e531862c2;
-        domain=.kickservapp.com; path=/; secure; HttpOnly
+      - _kickserv_secure_session=UmJ6R2JQSmp2eW1jQjhENzFZWE8yblFOYzd4OXNNUjdrem10TUZOSkpJVGtlQ2E2WGZzc2c1TkQvVE5XT2MzcUpLOEFaeFA5UVloclR4aWZPMDF4TzFhUHA4Y2VSMTJPMy9SOVJpMlJGUXlOTjUvWjBZcGs3Y3hvSk04Wm1nOTVDblBtOEpMV2FXNHh6MzdpK3pxVUNqWFlSZnNDN2w1U2xPcW9qTi9GUkhnajRCR05Xb3NGK2ZjYmpobWx0UmZ4SVJEUVd6djhEZ0Zaakt4MkNld1FEUT09LS02VkFiMzJRRE5keUZuL0pMaVNwUVh3PT0%3D--5aeceee05e5f86863013ab8e3ed8f04f1a522afc;
+        path=/; secure; HttpOnly
       strict-transport-security:
       - max-age=31536000
       x-content-type-options:
@@ -38,15 +38,15 @@ http_interactions:
       x-frame-options:
       - SAMEORIGIN
       x-request-id:
-      - 9b595797-17d2-449e-8171-428ff1c8894f
+      - c5c2de55-14d1-45a0-a046-7336ccd97c03
       x-revision:
-      - e67670e823f3656602ab442128e279d01e4287d9
+      - unknown
       x-runtime:
-      - '0.018452'
+      - '0.040114'
       x-served-by:
-      - st-paul
+      - akron
       x-transaction:
-      - 84b659f3-35c1-4fd6-a6d6-4d59fd14ae8d
+      - 54276c22-9548-4a69-a13b-d0049d42306a
       x-xss-protection:
       - 1; mode=block
       content-length:
@@ -61,5 +61,5 @@ http_interactions:
           <error>Invalid job.</error>
         </errors>
     http_version: 
-  recorded_at: Fri, 11 Aug 2017 06:05:46 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Tue, 11 Sep 2018 13:07:03 GMT
+recorded_with: VCR 4.0.0

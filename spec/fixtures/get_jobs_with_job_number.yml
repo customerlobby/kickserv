@@ -2,57 +2,55 @@
 http_interactions:
 - request:
     method: get
-    uri: https://daffyducts.kickservapp.com/jobs/3.xml
+    uri: https://kickservapp.com/suffolkplumbing/jobs/3.xml
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.12.2
+      - Faraday v0.15.2
       Authorization:
-      - Basic MGVkNzNlZDVlMGUxNzYzMzZiMjkxZjI5ZGEzZjUzNTE3ZDM4YmY3YjowZWQ3M2VkNWUwZTE3NjMzNmIyOTFmMjlkYTNmNTM1MTdkMzhiZjdi
+      - Basic OThlMTgxZmEwY2U4Nzk3NzgzMjUwMmZmYjQzMTNjODQ5N2FjYTk2Yzo5OGUxODFmYTBjZTg3OTc3ODMyNTAyZmZiNDMxM2M4NDk3YWNhOTZj
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
       cache-control:
       - no-cache, no-store, max-age=0, must-revalidate
       content-type:
       - application/xml; charset=utf-8
       date:
-      - Fri, 11 Aug 2017 05:49:28 GMT
+      - Tue, 11 Sep 2018 13:07:01 GMT
       expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       pragma:
       - no-cache
       server:
-      - Kickserv
+      - nginx
       set-cookie:
-      - _ksa_secure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWViZmUyN2FiMWQ2N2Q4NWUzOGVkZGE4ZmEyY2Q3YzBkBjsAVEkiDnJldHVybl90bwY7AEYiEC9qb2JzLzMueG1s--2d39965aa37f38ec724ebfa119d00077cd843d35;
-        domain=.kickservapp.com; path=/; secure; HttpOnly
+      - _kickserv_secure_session=d28yMnlyQyt1MnpqcWtlVG5DZ3dveE9PNm0wNm41L1ZqRVpPbDBFME9VTGhBNXZIQzQvVXQ4TVFVY2YwcTZJd2gzUjF5RlpyVGxzWXVIbUFlYTlsNUE9PS0tQTV5ZE9SMGJXWExvbVFGenArNnVaQT09--27c6567c0dcd3b4a7d9c609cf444c3e5020cae11;
+        path=/; secure; HttpOnly
       strict-transport-security:
       - max-age=31536000
-      vary:
-      - Accept-Encoding
       x-content-type-options:
       - nosniff
       x-frame-options:
       - SAMEORIGIN
       x-request-id:
-      - 2c5fb409-f7ee-4213-a902-abdefc76c217
+      - daf5a3de-fa03-4c2b-a7fd-9287dac1cfc2
       x-revision:
-      - e67670e823f3656602ab442128e279d01e4287d9
+      - unknown
       x-runtime:
-      - '0.081295'
+      - '0.207523'
       x-served-by:
-      - chandler
+      - long-beach
       x-transaction:
-      - 4aae5e4f-eff7-4078-8b1d-8cde7d0a53c6
+      - fede3bef-53e6-4946-8990-bd184b7f6f87
       x-xss-protection:
       - 1; mode=block
       content-length:
-      - '1257'
+      - '1206'
       connection:
       - Close
     body:
@@ -60,19 +58,19 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <job>
-          <id type="integer">2821738</id>
-          <customer-id type="integer">1615125</customer-id>
+          <id type="integer">3459016</id>
+          <customer-id type="integer">1864402</customer-id>
           <job-number type="integer">3</job-number>
-          <created-at type="dateTime">2009-02-24T16:18:23-05:00</created-at>
-          <name>First-Time</name>
-          <scheduled-on type="dateTime">2009-02-21T09:00:00-05:00</scheduled-on>
-          <completed-on type="dateTime">2009-02-24T16:31:29-05:00</completed-on>
-          <ok-to-sync type="boolean">true</ok-to-sync>
-          <txn-id>1CD7-1235512070</txn-id>
-          <edit-sequence>1235512070</edit-sequence>
-          <ref-number>184</ref-number>
+          <created-at type="dateTime">2015-04-07T16:44:39-04:00</created-at>
+          <name>Service</name>
+          <scheduled-on type="dateTime" nil="true"/>
+          <completed-on type="dateTime">2015-04-07T16:48:30-04:00</completed-on>
+          <ok-to-sync type="boolean" nil="true"/>
+          <txn-id nil="true"/>
+          <edit-sequence nil="true"/>
+          <ref-number nil="true"/>
           <subtotal type="decimal">325.0</subtotal>
-          <tax type="decimal">0.0</tax>
+          <tax type="decimal">28.03</tax>
           <balance-remaining type="decimal">0.0</balance-remaining>
           <estimate-type nil="true"/>
           <self-service type="boolean">false</self-service>
@@ -106,21 +104,21 @@ http_interactions:
           <custom-text10 nil="true"/>
           <custom-number10 type="decimal" nil="true"/>
           <custom-datetime10 type="dateTime" nil="true"/>
-          <total type="decimal">325.0</total>
+          <total type="decimal">353.03</total>
           <recurring-job-id type="integer" nil="true"/>
-          <recurring-interval></recurring-interval>
-          <updated-at type="dateTime">2009-02-24T17:04:22-05:00</updated-at>
-          <job-type-id type="integer">14758</job-type-id>
-          <job-status-id type="integer">125</job-status-id>
+          <recurring-interval nil="true"/>
+          <updated-at type="dateTime">2015-09-24T15:31:44-04:00</updated-at>
+          <job-type-id type="integer">17465</job-type-id>
+          <job-status-id type="integer" nil="true"/>
           <recurring-end-date type="dateTime" nil="true"/>
-          <customer-ref-list-id>80000198-1235512054</customer-ref-list-id>
-          <txn-number>708</txn-number>
-          <txn-date type="dateTime">2009-02-24T00:00:00-05:00</txn-date>
-          <sales-tax-percentage type="decimal">0.0</sales-tax-percentage>
-          <item-sales-tax-ref-list-id>80000001-1196218743</item-sales-tax-ref-list-id>
-          <item-sales-tax-ref-full-name>Out of State</item-sales-tax-ref-full-name>
-          <customer-sales-tax-code-ref-list-id>80000001-1196217546</customer-sales-tax-code-ref-list-id>
-          <customer-sales-tax-code-ref-full-name>Tax</customer-sales-tax-code-ref-full-name>
+          <customer-ref-list-id nil="true"/>
+          <txn-number nil="true"/>
+          <txn-date type="dateTime" nil="true"/>
+          <sales-tax-percentage type="decimal" nil="true"/>
+          <item-sales-tax-ref-list-id nil="true"/>
+          <item-sales-tax-ref-full-name nil="true"/>
+          <customer-sales-tax-code-ref-list-id nil="true"/>
+          <customer-sales-tax-code-ref-full-name nil="true"/>
           <custom-text11 nil="true"/>
           <custom-text12 nil="true"/>
           <custom-text13 nil="true"/>
@@ -133,16 +131,16 @@ http_interactions:
           <custom-text20 nil="true"/>
           <duration type="decimal" nil="true"/>
           <ends-at type="dateTime" nil="true"/>
-          <created-by type="integer" nil="true"/>
-          <updated-by type="integer" nil="true"/>
-          <invoice-terms nil="true"/>
-          <invoice-notes nil="true"/>
+          <created-by type="integer">13040</created-by>
+          <updated-by type="integer">13040</updated-by>
+          <invoice-terms>Due upon receipt</invoice-terms>
+          <invoice-notes>Thank you for your business!</invoice-notes>
           <estimate-terms nil="true"/>
           <estimate-notes nil="true"/>
-          <tax-id type="integer" nil="true"/>
+          <tax-id type="integer">4810</tax-id>
           <ship-date type="dateTime" nil="true"/>
           <ship-method-ref-full-name nil="true"/>
-          <description>1 system condo + Oxine fog for mold.</description>
+          <description>slow drain in sink</description>
           <chosen-days-of-week type="array"/>
           <max-recurring-iterator type="integer" nil="true"/>
           <recurring-iterator type="integer" nil="true"/>
@@ -150,11 +148,11 @@ http_interactions:
           <service-type-id type="integer" nil="true"/>
           <status>complete</status>
           <invoice-status>paid</invoice-status>
-          <invoice-date type="dateTime">2009-02-24T16:31:29-05:00</invoice-date>
+          <invoice-date type="dateTime">2015-04-07T16:48:37-04:00</invoice-date>
           <invoice-sent-date type="dateTime" nil="true"/>
-          <tasks-count type="integer">1</tasks-count>
+          <tasks-count type="integer">0</tasks-count>
           <won-date type="dateTime" nil="true"/>
-          <po-number nil="true"/>
+          <po-number></po-number>
           <deleted-at type="dateTime" nil="true"/>
           <schedule nil="true"/>
           <on-hold type="dateTime" nil="true"/>
@@ -166,7 +164,7 @@ http_interactions:
           <started-on type="dateTime" nil="true"/>
           <canceled-on type="dateTime" nil="true"/>
           <qb-error nil="true"/>
-          <invoice-paid-on type="dateTime" nil="true"/>
+          <invoice-paid-on type="dateTime">2015-09-24T15:31:44-04:00</invoice-paid-on>
           <notification-sent type="boolean">false</notification-sent>
           <total-expenses type="decimal">0.0</total-expenses>
           <recurring-date type="dateTime" nil="true"/>
@@ -174,7 +172,9 @@ http_interactions:
             <allocations type="array"/>
             <include-expenses type="boolean">true</include-expenses>
           </job-allocations>
+          <last-recurring-date type="dateTime" nil="true"/>
+          <recurring-ended type="boolean" nil="true"/>
         </job>
     http_version: 
-  recorded_at: Fri, 11 Aug 2017 05:49:28 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Tue, 11 Sep 2018 13:07:01 GMT
+recorded_with: VCR 4.0.0
