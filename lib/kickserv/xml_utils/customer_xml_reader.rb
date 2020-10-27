@@ -70,7 +70,8 @@ module Kickserv
          terms-ref-full-name sales-rep-ref-full-name
          balance total-balance customer-type-id
          send-reminders notification-email-address
-         notify-via-email send-notifications customer-number]
+         notify-via-email send-notifications customer-number
+         email-address]
     end
   end
 end
