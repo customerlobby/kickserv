@@ -1,2 +1,5 @@
+=== 0.2.4
+* Added email-address to be pulled in customers API.
+
 === 0.2.3
 * Added support for account_slug and removed subdomain.
