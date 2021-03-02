@@ -71,7 +71,7 @@ module Kickserv
          balance total-balance customer-type-id
          send-reminders notification-email-address
          notify-via-email send-notifications customer-number
-         email-address]
+         email-address notification-phone-number opt-out-reason notify-via-sms]
     end
   end
 end
