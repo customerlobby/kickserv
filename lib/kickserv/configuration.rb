@@ -23,7 +23,7 @@ module Kickserv
     DEFAULT_ADAPTER = Faraday.default_adapter
 
     # By default use the main api URL.
-    DEFAULT_ENDPOINT = 'kickservapp.com'.freeze
+    DEFAULT_ENDPOINT = 'app.kickserv.com'.freeze
 
     attr_accessor *VALID_OPTIONS_KEYS
 
