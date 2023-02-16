@@ -28,18 +28,10 @@ module Kickserv
     # @param xml_doc [NodeSet] Nokogiri XML nodeset
     # Parses the jobs information from the NodeSet and organizes it into an array of hashes
     def parse_jobs(xml_doc)
-      attribute_names = get_attributes
       # handle array of job data
-      jobs = xml_doc.css('jobs job').map do |node|
-        # create a job HASH from the XML node of type job
-        job = {}
-        attribute_names.each do |attr|
-          value = get_value(node, attr)
-          job[attr] = value
-        end
-        job
+      xml_doc.css('jobs job').map do |node|
+        child_fields_values(node)
       end
-      jobs
     end
 
     def parse_job(xml_doc)
@@ -49,23 +41,10 @@ module Kickserv
         node = xml_doc.css('job')
         unless node.nil?
           # create a job HASH from the XML node of type job
-          job = {}
-          attribute_names.each do |attr|
-            value = get_value(node, attr)
-            job[attr] = value
-          end
+          job = child_fields_values(node)
         end
       end
       job
-    end
-
-    def get_attributes
-      %w[id customer-id total subtotal balance-remaining
-         created-at scheduled-on started-on completed-on name txn-id
-         recurring-job-id job-type-id job-status-id duration invoice-terms
-         invoice-notes estimate-terms estimate-notes description
-         status invoice-status invoice-date invoice-paid-on
-         notification-sent total-expenses job-number]
     end
   end
 end
