@@ -25,5 +25,21 @@ module Kickserv
       return nil if value.nil? || value.text.empty?
       value.text
     end
+
+    # Get node all childrens
+    # @param node [Nokogiri::Node] Node to check the value of
+    # @return [Hash]
+    def child_fields_values(node)
+      fields = {}
+
+      node.children.each do |c|
+        next if c.text?
+
+        value = c.text
+        fields[c.name] = value.nil? || value.empty? ? nil : value
+      end
+
+      fields
+    end
   end
 end

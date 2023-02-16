@@ -25,18 +25,11 @@ module Kickserv
     # parses the needed areas of the XML nodeset and jobs that information into
     # an array of hashes each representing a customer.
     def parse_customers(xml_doc)
-      attribute_names = get_attributes
       # handle array of customer data
       customers = xml_doc.css('customers customer').map do |node|
         # create a customer HASH from the XML node of type customer
-        customer = {}
-        attribute_names.each do |attr|
-          value = get_value(node, attr)
-          customer[attr] = value
-        end
-        customer
+        child_fields_values(node)
       end
-      customers
     end
 
     # @return [Array] of Hashes
@@ -50,28 +43,9 @@ module Kickserv
       if customers.empty?
         node = xml_doc.css('customers')
         # create a customer HASH from the XML node of type customer
-        customer = {}
-        attribute_names.each do |attr|
-          value = get_value(node, attr)
-          customer[attr] = value
-        end
+        customer = child_fields_values(node)
       end
       customer
-    end
-
-    def get_attributes
-      %w[id name first-name last-name email phone alt-phone-number
-         alt-phone mobile billing-address billing-address-2
-         billing-city billing-state billing-country
-         billing-zip-code service-address service-address-2
-         service-city service-state service-country
-         service-zip-code which-billing-address is-active
-         company company-name customer-type-ref-full-name
-         terms-ref-full-name sales-rep-ref-full-name
-         balance total-balance customer-type-id
-         send-reminders notification-email-address
-         notify-via-email send-notifications customer-number
-         email-address]
     end
   end
 end
